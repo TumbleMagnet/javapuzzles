@@ -6,7 +6,6 @@ import be.rouget.puzzles.adventofcode.year2019.computer.ComputerState;
 import com.google.common.collect.Lists;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import sun.nio.ch.Net;
 
 import java.util.LinkedList;
 import java.util.List;

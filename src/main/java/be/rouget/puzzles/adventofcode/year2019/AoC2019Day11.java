@@ -5,7 +5,6 @@ import be.rouget.puzzles.adventofcode.year2019.computer.Computer;
 import be.rouget.puzzles.adventofcode.year2019.computer.ComputerState;
 import com.google.common.base.Objects;
 import com.google.common.collect.Maps;
-import com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

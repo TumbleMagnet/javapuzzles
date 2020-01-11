@@ -8,7 +8,7 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 public class ResourceUtils {
-    private static String RESOURCE_PATH = "C:\\programming\\projects\\puzzles\\src\\main\\resources\\";
+    private static String RESOURCE_PATH = "C:\\programming\\projects\\javapuzzles\\src\\main\\resources\\";
 
     public static String readIntoString(String resourceName) {
         try {
