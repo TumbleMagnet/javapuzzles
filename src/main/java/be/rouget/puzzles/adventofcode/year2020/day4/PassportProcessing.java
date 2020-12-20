@@ -1,6 +1,8 @@
 package be.rouget.puzzles.adventofcode.year2020.day4;
 
 import be.rouget.puzzles.adventofcode.util.ResourceUtils;
+import com.google.common.collect.Lists;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,9 +16,25 @@ public class PassportProcessing {
     private static Logger LOG = LogManager.getLogger(PassportProcessing.class);
 
     private List<String> input;
+    private List<Passport> passports = Lists.newArrayList();
 
     public PassportProcessing(List<String> input) {
         this.input = input;
+        LOG.info("Input has {} lines...", input.size());
+
+        List<String> lineBuffer = Lists.newArrayList();
+        for (String line : input) {
+            if (StringUtils.isBlank(line)) {
+                passports.add(new Passport(lineBuffer));
+                lineBuffer.clear();
+            } else {
+                lineBuffer.add(line);
+            }
+        }
+        if (!lineBuffer.isEmpty()) {
+            passports.add(new Passport(lineBuffer));
+        }
+        LOG.info("Parsed {} passports...", passports.size());
     }
 
     public static void main(String[] args) {
@@ -27,9 +45,10 @@ public class PassportProcessing {
     }
 
     public long computeResultForPart1() {
-        return -1;
+        return passports.stream().filter(Passport::hasMandatoryProperties).count();
     }
+
     public long computeResultForPart2() {
-        return -1;
+        return passports.stream().filter(Passport::isValid).count();
     }
 }
