@@ -17,6 +17,7 @@ public class SolveMultilineInput {
 
     public SolveMultilineInput(List<String> input) {
         this.input = input;
+        LOG.info("Input has {} lines...", input.size());
     }
 
     public static void main(String[] args) {
