@@ -1,4 +1,4 @@
-package be.rouget.puzzles.adventofcode.year2020;
+package be.rouget.puzzles.adventofcode.year2020.day1;
 
 import be.rouget.puzzles.adventofcode.util.ResourceUtils;
 import com.google.common.base.Stopwatch;
@@ -58,7 +58,7 @@ public class AoC2020Day01 {
         List<Long> allValues = toSortedValues(input);
         for (Long candidate1 : allValues) {
 
-            // Find pair in remaning values whose sum is 2020 - candidate1
+            // Find pair in remaining values whose sum is 2020 - candidate1
             List<Long> remaining = otherValues(allValues, candidate1);
             long subTotal = 2020L - candidate1;
 
