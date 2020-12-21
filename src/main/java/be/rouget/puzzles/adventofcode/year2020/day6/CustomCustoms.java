@@ -32,6 +32,7 @@ public class CustomCustoms {
     }
 
     public long computeResultForPart1() {
+        // Answers for a group are union of answers for ech person
         Set<String> combinedAnswers = Sets.newHashSet();
         long total = 0;
         for (String line : input) {
@@ -39,28 +40,38 @@ public class CustomCustoms {
                 total += combinedAnswers.size();
                 combinedAnswers.clear();
             } else {
-                String[] lineChars = line.split("(?!^)");
-                combinedAnswers.addAll(Arrays.asList(lineChars));
+                List<String> collection = extractCharacters(line);
+                combinedAnswers.addAll(collection);
             }
         }
         total += combinedAnswers.size();
         return total;
     }
 
-
     public long computeResultForPart2() {
-        int total = 0;
-        Group group = new Group();
+        // Answers for a group are intersection of answers for ech person
+        Set<String> combinedAnswers = null;
+        long total = 0;
         for (String line : input) {
             if (StringUtils.isBlank(line)) {
-                total += group.getNumberOfCommonAnswers();
-                group = new Group();
-            }
-            else {
-                group.addAnswersForOnePerson(line);
+                total += combinedAnswers.size();
+                combinedAnswers = null;
+            } else {
+                if (combinedAnswers == null) {
+                    combinedAnswers = Sets.newHashSet(extractCharacters(line));
+                } else {
+                    combinedAnswers.retainAll(Sets.newHashSet(extractCharacters(line)));
+                }
             }
         }
-        total += group.getNumberOfCommonAnswers();
+        total += combinedAnswers.size();
         return total;
     }
+
+    private List<String> extractCharacters(String line) {
+        String[] lineChars = line.split("(?!^)");
+        List<String> collection = Arrays.asList(lineChars);
+        return collection;
+    }
+
 }
