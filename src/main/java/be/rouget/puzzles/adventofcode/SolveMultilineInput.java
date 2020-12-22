@@ -9,7 +9,7 @@ import java.util.List;
 public class SolveMultilineInput {
 
     private static final String YEAR = "2020";
-    private static final String DAY = "03";
+    private static final String DAY = "XX";
 
     private static Logger LOG = LogManager.getLogger(SolveMultilineInput.class);
 
