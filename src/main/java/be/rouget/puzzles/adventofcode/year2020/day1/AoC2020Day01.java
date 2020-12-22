@@ -22,7 +22,7 @@ public class AoC2020Day01 {
     }
 
     public static void main(String[] args) {
-        List<String> input = ResourceUtils.readLines("aoc_2020_day01_input.txt");
+        List<String> input = ResourceUtils.readLines("2020/aoc_2020_day01_input.txt");
         LOG.info("Input has {} lines", input.size());
         AoC2020Day01 aoc = new AoC2020Day01(input);
 

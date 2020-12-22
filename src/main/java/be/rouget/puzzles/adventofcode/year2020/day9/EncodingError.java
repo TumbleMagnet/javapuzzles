@@ -24,7 +24,7 @@ public class EncodingError {
     }
 
     public static void main(String[] args) {
-        List<String> input = ResourceUtils.readLines("aoc_" + YEAR + "_day" + DAY + "_input.txt");
+        List<String> input = ResourceUtils.readLines(YEAR + "/aoc_" + YEAR + "_day" + DAY + "_input.txt");
         EncodingError aoc = new EncodingError(input, 25);
         long result1 = aoc.computeResultForPart1();
         LOG.info("Result for part 1 is: " + result1);

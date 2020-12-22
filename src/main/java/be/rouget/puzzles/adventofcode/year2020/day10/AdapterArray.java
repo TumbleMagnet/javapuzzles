@@ -1,4 +1,4 @@
-package be.rouget.puzzles.adventofcode;
+package be.rouget.puzzles.adventofcode.year2020.day10;
 
 import be.rouget.puzzles.adventofcode.util.ResourceUtils;
 import org.apache.logging.log4j.LogManager;
@@ -6,23 +6,23 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
-public class SolveMultilineInput {
+public class AdapterArray {
 
     private static final String YEAR = "2020";
-    private static final String DAY = "XX";
+    private static final String DAY = "10";
 
-    private static final Logger LOG = LogManager.getLogger(SolveMultilineInput.class);
+    private static final Logger LOG = LogManager.getLogger(AdapterArray.class);
 
     private final List<String> input;
 
-    public SolveMultilineInput(List<String> input) {
+    public AdapterArray(List<String> input) {
         this.input = input;
         LOG.info("Input has {} lines...", input.size());
     }
 
     public static void main(String[] args) {
         List<String> input = ResourceUtils.readLines(YEAR + "/aoc_" + YEAR + "_day" + DAY + "_input.txt");
-        SolveMultilineInput aoc = new SolveMultilineInput(input);
+        AdapterArray aoc = new AdapterArray(input);
         LOG.info("Result for part 1 is: " + aoc.computeResultForPart1());
         LOG.info("Result for part 2 is: " + aoc.computeResultForPart2());
     }

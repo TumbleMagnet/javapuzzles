@@ -25,7 +25,7 @@ public class CustomCustoms {
     }
 
     public static void main(String[] args) {
-        List<String> input = ResourceUtils.readLines("aoc_" + YEAR + "_day" + DAY + "_input.txt");
+        List<String> input = ResourceUtils.readLines(YEAR + "/aoc_" + YEAR + "_day" + DAY + "_input.txt");
         CustomCustoms aoc = new CustomCustoms(input);
         LOG.info("Result for part 1 is: " + aoc.computeResultForPart1());
         LOG.info("Result for part 2 is: " + aoc.computeResultForPart2());

@@ -20,7 +20,7 @@ public class AoC2020Day02 {
     }
 
     public static void main(String[] args) {
-        List<String> input = ResourceUtils.readLines("aoc_2020_day02_input.txt");
+        List<String> input = ResourceUtils.readLines("2020/aoc_2020_day02_input.txt");
         AoC2020Day02 aoc = new AoC2020Day02(input);
         LOG.info("Result for part 1 is: " + aoc.computeResultForPart1());
         LOG.info("Result for part 2 is: " + aoc.computeResultForPart2());
