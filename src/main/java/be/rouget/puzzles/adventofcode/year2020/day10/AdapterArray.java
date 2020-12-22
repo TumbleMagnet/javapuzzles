@@ -1,10 +1,14 @@
 package be.rouget.puzzles.adventofcode.year2020.day10;
 
 import be.rouget.puzzles.adventofcode.util.ResourceUtils;
+import com.google.common.collect.Maps;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class AdapterArray {
 
@@ -28,9 +32,54 @@ public class AdapterArray {
     }
 
     public long computeResultForPart1() {
-        return -1;
+        List<Integer> sortedValues = input.stream()
+                .map(Integer::parseInt)
+                .sorted(Comparator.naturalOrder())
+                .collect(Collectors.toList());
+        int previousValue = 0;
+        int countOfOnes = 0;
+        int countOfThrees = 0;
+        for (Integer currentValue : sortedValues) {
+            int diff = currentValue - previousValue;
+            if (diff == 1) {
+                countOfOnes++;
+            } else if (diff == 3) {
+                countOfThrees++;
+            } else {
+                throw new IllegalStateException("Difference between " + previousValue + " and " + currentValue + " is " + diff);
+            }
+            previousValue = currentValue;
+        }
+        // Last difference to device is always 3
+        countOfThrees++;
+
+        return (long) countOfOnes * countOfThrees;
     }
     public long computeResultForPart2() {
-        return -1;
+        List<Integer> reversedValues = input.stream()
+                .map(Integer::parseInt)
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());
+        reversedValues.add(0);
+        Map<Integer, Long> numberOfPathsPerAdapter = Maps.newHashMap();
+        Integer lastValue = null;
+        for (Integer currentValue : reversedValues) {
+            if (numberOfPathsPerAdapter.isEmpty()) {
+                numberOfPathsPerAdapter.put(currentValue, 1L);
+            }
+            else {
+                // Number of path for current value is the sum of path from higher values reachable from current value
+                long sum = 0;
+                for (int delta = 1; delta<= 3; delta++) {
+                    Long previousSum = numberOfPathsPerAdapter.get(currentValue + delta);
+                    if (previousSum != null) {
+                        sum += previousSum;
+                    }
+                }
+                numberOfPathsPerAdapter.put(currentValue, sum);
+            }
+            lastValue = currentValue;
+        }
+        return numberOfPathsPerAdapter.get(lastValue);
     }
 }
