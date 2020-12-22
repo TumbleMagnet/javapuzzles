@@ -11,9 +11,9 @@ public class SolveMultilineInput {
     private static final String YEAR = "2020";
     private static final String DAY = "XX";
 
-    private static Logger LOG = LogManager.getLogger(SolveMultilineInput.class);
+    private static final Logger LOG = LogManager.getLogger(SolveMultilineInput.class);
 
-    private List<String> input;
+    private final List<String> input;
 
     public SolveMultilineInput(List<String> input) {
         this.input = input;
