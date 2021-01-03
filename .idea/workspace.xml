@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution for day 17">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day17/ActiveStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day17/ConwayCubes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day17/Coordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day17/CubeMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day17/HyperCoordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day17/HyperCubeMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day17/MapCharacter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day17/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day17/Range.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day17/RectangleMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2020/aoc_2020_day17_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day17/ConwayCubesTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution for day 18, setup day 19.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day18/MathExpression1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day18/MathExpression2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day18/OperationOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day19/MonsterMessages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2020/aoc_2020_day18_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2020/aoc_2020_day19_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day18/MathExpression2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day18/MathExpressionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +26,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -68,21 +64,24 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2020.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day16" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2020.day19" />
+      <recent name="be.rouget.puzzles.adventofcode.year2020.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day16" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConwayCubes">
-    <configuration name="ConwayCubes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day17.ConwayCubes" />
+  <component name="RunManager" selected="Application.OperationOrder">
+    <configuration name="MonsterMessages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day19.MonsterMessages" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day17.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketTranslation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day16.TicketTranslation" />
+    <configuration name="OperationOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18.OperationOrder" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day16.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,49 +102,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConwayCubesTest.computeResultForPart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MathExpression2Test.testSimpleExpressions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day17.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day17" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day17.ConwayCubesTest" />
-      <option name="METHOD_NAME" value="computeResultForPart1" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18.MathExpression2Test" />
+      <option name="METHOD_NAME" value="testSimpleExpressions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FieldRuleTest.fromInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MathExpressionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day16.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day16" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day16.FieldRuleTest" />
-      <option name="METHOD_NAME" value="fromInput" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18.MathExpressionTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketTest.fromInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MathExpressionTest.testSimpleExpressions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day16.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day16" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day16.TicketTest" />
-      <option name="METHOD_NAME" value="fromInput" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18.MathExpressionTest" />
+      <option name="METHOD_NAME" value="testSimpleExpressions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConwayCubes" />
-        <item itemvalue="JUnit.ConwayCubesTest.computeResultForPart1" />
-        <item itemvalue="Application.TicketTranslation" />
-        <item itemvalue="JUnit.TicketTest.fromInput" />
-        <item itemvalue="JUnit.FieldRuleTest.fromInput" />
+        <item itemvalue="Application.OperationOrder" />
+        <item itemvalue="Application.MonsterMessages" />
+        <item itemvalue="JUnit.MathExpression2Test.testSimpleExpressions" />
+        <item itemvalue="JUnit.MathExpressionTest" />
+        <item itemvalue="JUnit.MathExpressionTest.testSimpleExpressions" />
       </list>
     </recent_temporary>
   </component>
@@ -191,14 +189,22 @@
       <option name="project" value="LOCAL" />
       <updated>1609515521350</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Solution for day 17">
+      <created>1609544122447</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609544122447</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Setup day 16" />
     <MESSAGE value="Solution for day 16" />
     <MESSAGE value="Solution for day 17" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution for day 17" />
+    <MESSAGE value="Solution for day 18, setup day 19." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution for day 18, setup day 19." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -213,6 +219,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day17/CubeMap.java</url>
           <line>46</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day18/MathExpression2Test.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
