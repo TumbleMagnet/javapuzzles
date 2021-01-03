@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution for day 18, setup day 19.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day18/MathExpression1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day18/MathExpression2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day18/OperationOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day19/MonsterMessages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2020/aoc_2020_day18_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2020/aoc_2020_day19_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day18/MathExpression2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day18/MathExpressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day19/Rule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2020/aoc_2020_day19_sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day19/RuleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day19/MonsterMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day19/MonsterMessages.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +29,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1mSwi4bOKtZWEV5vlOxHXgzOaHT" />
   <component name="ProjectViewState">
@@ -64,6 +67,7 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2020.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day16" />
@@ -75,7 +79,7 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day16" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OperationOrder">
+  <component name="RunManager" selected="Application.MonsterMessages">
     <configuration name="MonsterMessages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day19.MonsterMessages" />
       <module name="javapuzzles" />
@@ -133,17 +137,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathExpressionTest.testSimpleExpressions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RuleTest.testRules" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day18.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18.MathExpressionTest" />
-      <option name="METHOD_NAME" value="testSimpleExpressions" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day19" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day19.RuleTest" />
+      <option name="METHOD_NAME" value="testRules" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OperationOrder" />
         <item itemvalue="Application.MonsterMessages" />
+        <item itemvalue="JUnit.RuleTest.testRules" />
+        <item itemvalue="Application.OperationOrder" />
         <item itemvalue="JUnit.MathExpression2Test.testSimpleExpressions" />
         <item itemvalue="JUnit.MathExpressionTest" />
-        <item itemvalue="JUnit.MathExpressionTest.testSimpleExpressions" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609544122447</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Solution for day 18, setup day 19.">
+      <created>1609680160396</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609680160396</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
