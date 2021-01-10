@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day19/Rule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2020/aoc_2020_day19_sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day19/RuleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/MapCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/RectangleMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day20/FinalImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day20/Flip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day20/ImagePixel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day20/ImageTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day20/JurassicJigsaw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day20/Rotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day20/TiledImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day20/TransformedTileKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2020/aoc_2020_day20_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day20/ImageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day19/MonsterMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day19/MonsterMessages.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +28,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/2020" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21609196" />
@@ -57,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\programming\projects\javapuzzles\src\main\java\be\rouget\puzzles\adventofcode\util\map" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2020" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources" />
     </key>
@@ -67,19 +77,34 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2020.day20" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day16" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2020.day20" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day16" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MonsterMessages">
+  <component name="RunManager" selected="Application.JurassicJigsaw">
+    <configuration name="JurassicJigsaw" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day20.JurassicJigsaw" />
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day20.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MonsterMessages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day19.MonsterMessages" />
       <module name="javapuzzles" />
@@ -93,46 +118,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OperationOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18.OperationOrder" />
+    <configuration name="ImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day18.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathExpression2Test.testSimpleExpressions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day18.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18.MathExpression2Test" />
-      <option name="METHOD_NAME" value="testSimpleExpressions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathExpressionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day18.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day18.MathExpressionTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day20" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day20.ImageTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageTest.matchesHorizontally" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day20.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day20" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day20.ImageTest" />
+      <option name="METHOD_NAME" value="matchesHorizontally" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JurassicJigsaw" />
+        <item itemvalue="JUnit.ImageTest" />
+        <item itemvalue="JUnit.ImageTest.matchesHorizontally" />
         <item itemvalue="Application.MonsterMessages" />
         <item itemvalue="JUnit.RuleTest.testRules" />
-        <item itemvalue="Application.OperationOrder" />
-        <item itemvalue="JUnit.MathExpression2Test.testSimpleExpressions" />
-        <item itemvalue="JUnit.MathExpressionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609680160396</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Solution day 19">
+      <created>1609692683536</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609692683536</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -215,7 +234,8 @@
     <MESSAGE value="Solution for day 16" />
     <MESSAGE value="Solution for day 17" />
     <MESSAGE value="Solution for day 18, setup day 19." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution for day 18, setup day 19." />
+    <MESSAGE value="Solution day 19" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution day 19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -238,6 +258,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="be.rouget.puzzles.adventofcode.year2020.day20.Image" memberName="tiles" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
