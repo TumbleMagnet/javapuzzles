@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day22/CrabCombat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day22/Deck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2020/aoc_2020_day22_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day22/CrabCombatTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day23/CrabCups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day23/CupGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day23/CupGameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +20,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -68,27 +67,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2020.day23" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day22" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day20" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day19" />
-      <recent name="be.rouget.puzzles.adventofcode.year2020.day18" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2020.day23" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day22" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day20" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day19" />
-      <recent name="be.rouget.puzzles.adventofcode.year2020.day18" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CrabCombat">
-    <configuration name="CrabCombat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day22.CrabCombat" />
+  <component name="RunManager" selected="Application.CrabCups">
+    <configuration name="CrabCups" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day23.CrabCups" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day22.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,65 +95,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrabCombatTest.computeResultForPart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CupGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day22.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day22" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day22.CrabCombatTest" />
-      <option name="METHOD_NAME" value="computeResultForPart1" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day23" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day23.CupGameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CupGameTest.testSampleGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day23.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day23" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day23.CupGameTest" />
+      <option name="METHOD_NAME" value="testSampleGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrabCombatTest.computeResultForPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CupGameTest.testSampleGame1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day22.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day22" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day22.CrabCombatTest" />
-      <option name="METHOD_NAME" value="computeResultForPart2" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day23" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day23.CupGameTest" />
+      <option name="METHOD_NAME" value="testSampleGame1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrabCombatTest.preventInfiniteRecursion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CupGameTest.testSampleGame2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day22.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day22" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day22.CrabCombatTest" />
-      <option name="METHOD_NAME" value="preventInfiniteRecursion" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CrabCombatTest.testDeckEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day22.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day22" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day22.CrabCombatTest" />
-      <option name="METHOD_NAME" value="testDeckEquals" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2020.day23" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day23.CupGameTest" />
+      <option name="METHOD_NAME" value="testSampleGame2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CrabCombat" />
-        <item itemvalue="JUnit.CrabCombatTest.preventInfiniteRecursion" />
-        <item itemvalue="JUnit.CrabCombatTest.testDeckEquals" />
-        <item itemvalue="JUnit.CrabCombatTest.computeResultForPart2" />
-        <item itemvalue="JUnit.CrabCombatTest.computeResultForPart1" />
+        <item itemvalue="Application.CrabCups" />
+        <item itemvalue="JUnit.CupGameTest" />
+        <item itemvalue="JUnit.CupGameTest.testSampleGame2" />
+        <item itemvalue="JUnit.CupGameTest.testSampleGame1" />
+        <item itemvalue="JUnit.CupGameTest.testSampleGame" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610809697641</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Solution day 22">
+      <created>1610899080032</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610899080032</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -238,7 +243,8 @@
     <MESSAGE value="Solution for day 18, setup day 19." />
     <MESSAGE value="Solution day 19" />
     <MESSAGE value="Solution day 21" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution day 21" />
+    <MESSAGE value="Solution day 22" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution day 22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
