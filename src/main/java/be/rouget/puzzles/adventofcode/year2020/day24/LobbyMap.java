@@ -1,37 +1,35 @@
 package be.rouget.puzzles.adventofcode.year2020.day24;
 
-import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.Set;
 
 public class LobbyMap {
 
-    private final Map<HexPosition, Tile> tiles = Maps.newHashMap();
+    private final Set<HexPosition> flippedTiles = Sets.newHashSet();
 
     public LobbyMap() {
     }
 
     public LobbyMap(LobbyMap map) {
-        for (Tile tile : map.tiles.values()) {
-            Tile tileCopy = new Tile(tile.getPosition(), tile.isFlipped());
-            this.tiles.put(tileCopy.getPosition(), tileCopy);
-        }
+        flippedTiles.addAll(map.flippedTiles);
     }
 
-    public Tile getTile(HexPosition position) {
-        Tile tile = tiles.get(position);
-        if (tile == null) {
-            tile = new Tile(position, false); // Not flipped by default
-            tiles.put(position, tile);
+    public boolean isFlipped(HexPosition position) {
+        return flippedTiles.contains(position);
+    }
+
+    public void flip(HexPosition position) {
+        if (isFlipped(position)) {
+            flippedTiles.remove(position);
+        } else {
+            flippedTiles.add(position);
         }
-        return tile;
     }
 
     public long countFlippedTiles() {
-        return tiles.values().stream().filter(Tile::isFlipped).count();
+        return flippedTiles.size();
     }
 
     public LobbyMap addOneDay() {
@@ -39,29 +37,21 @@ public class LobbyMap {
         LobbyMap newMap = new LobbyMap(this);
 
         // Any black tile with zero or more than 2 black tiles immediately adjacent to it is flipped to white.
-        List<HexPosition> blackPositions = tiles.values().stream()
-                .filter(Tile::isFlipped)
-                .map(Tile::getPosition)
-                .collect(Collectors.toList()); // Intermediate collect as countFlippedNeighbours() will cause ConcurrentModificationException on "tiles"
-        blackPositions.stream()
+        flippedTiles.stream()
                 .filter(position -> {
                     long flippedNeighbours = countFlippedNeighbours(position);
                     return flippedNeighbours == 0 || flippedNeighbours > 2;
                 })
-                .forEach(position -> newMap.getTile(position).flip());
+                .forEach(newMap::flip);
 
         // Any white tile with exactly 2 black tiles immediately adjacent to it is flipped to black.
         // (limit to white tiles which are neighbours of black tiles and make sure each one is flipped only once)
-        List<HexPosition> neighbourPositionsOfBlackTiles = tiles.values().stream()
-                .filter(Tile::isFlipped)
-                .map(Tile::getPosition)
+        flippedTiles.stream()
                 .flatMap(position -> position.getNeighbours().stream())
                 .distinct()
-                .collect(Collectors.toList()); // Intermediate collect as getTile() and countFlippedNeighbours() will cause ConcurrentModificationException on "tiles"
-        neighbourPositionsOfBlackTiles.stream()
-                .filter(position -> !getTile(position).isFlipped())
+                .filter(position -> !isFlipped(position))
                 .filter(position -> countFlippedNeighbours(position) == 2)
-                .forEach(position -> newMap.getTile(position).flip());
+                .forEach(newMap::flip);
 
         return newMap;
     }
@@ -69,8 +59,7 @@ public class LobbyMap {
     public long countFlippedNeighbours(HexPosition position) {
         return Arrays.stream(HexDirection.values())
                 .map(position::move)
-                .map(this::getTile)
-                .filter(Tile::isFlipped)
+                .filter(this::isFlipped)
                 .count();
     }
 }
