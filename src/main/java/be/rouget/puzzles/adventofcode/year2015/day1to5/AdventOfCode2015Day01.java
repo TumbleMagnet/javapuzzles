@@ -1,4 +1,4 @@
-package be.rouget.puzzles.adventofcode.year2015;
+package be.rouget.puzzles.adventofcode.year2015.day1to5;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;

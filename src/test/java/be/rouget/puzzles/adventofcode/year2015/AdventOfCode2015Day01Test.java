@@ -2,8 +2,8 @@ package be.rouget.puzzles.adventofcode.year2015;
 
 import org.junit.Test;
 
-import static be.rouget.puzzles.adventofcode.year2015.AdventOfCode2015Day01.computeIndexOfFirstBasement;
-import static be.rouget.puzzles.adventofcode.year2015.AdventOfCode2015Day01.computeTargetFloor;
+import static be.rouget.puzzles.adventofcode.year2015.day1to5.AdventOfCode2015Day01.computeIndexOfFirstBasement;
+import static be.rouget.puzzles.adventofcode.year2015.day1to5.AdventOfCode2015Day01.computeTargetFloor;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AdventOfCode2015Day01Test {

@@ -1,13 +1,11 @@
-package be.rouget.puzzles.adventofcode.year2015;
+package be.rouget.puzzles.adventofcode.year2015.day1to5;
 
 import com.google.common.collect.Lists;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
 import java.io.IOException;
 import java.math.BigInteger;
-import java.nio.charset.Charset;
 import java.util.Collections;
 import java.util.List;
 

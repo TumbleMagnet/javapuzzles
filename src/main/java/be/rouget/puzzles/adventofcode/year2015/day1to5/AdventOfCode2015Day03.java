@@ -1,4 +1,4 @@
-package be.rouget.puzzles.adventofcode.year2015;
+package be.rouget.puzzles.adventofcode.year2015.day1to5;
 
 import be.rouget.puzzles.adventofcode.util.ResourceUtils;
 import com.google.common.base.Objects;
