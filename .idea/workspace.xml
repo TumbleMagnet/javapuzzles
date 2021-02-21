@@ -5,23 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day6/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day6/FireHazard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day6/Instruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day6/LightGrid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day6/LightGridWithBrightness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day25/ComboBreaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day06_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2020/aoc_2020_day25_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/AdventOfCode2015Day05Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day25/ComboBreakerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/AndGate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/AssemblyRequired.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/Circuit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/ConstantConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/ConstantInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/Instruction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/LeftShiftGate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/NotGate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/OrGate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/RightShiftGate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/WireConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day7/WireInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day8/Matchsticks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day07_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day08_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/AdventOfCode2015Day01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day1to5/AdventOfCode2015Day01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/AdventOfCode2015Day02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day1to5/AdventOfCode2015Day02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/AdventOfCode2015Day03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day1to5/AdventOfCode2015Day03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/AdventOfCode2015Day04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day1to5/AdventOfCode2015Day04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/AdventOfCode2015Day05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day1to5/AdventOfCode2015Day05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/AdventOfCode2015Day01Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/AdventOfCode2015Day01Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -68,6 +69,9 @@
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day7" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2015" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2020" />
@@ -88,14 +92,14 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day22" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day8" />
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day7" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day6" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day25" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day24" />
-      <recent name="be.rouget.puzzles.adventofcode.year2020.day23" />
-      <recent name="be.rouget.puzzles.adventofcode.year2020.day22" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FireHazard">
+  <component name="RunManager" selected="Application.Matchsticks">
     <configuration name="AdventOfCode2015Day05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day1to5.AdventOfCode2015Day05" />
       <module name="javapuzzles" />
@@ -109,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComboBreaker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2020.day25.ComboBreaker" />
+    <configuration name="AssemblyRequired" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day7.AssemblyRequired" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2020.day25.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,18 +139,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdventOfCode2015Day05Test.isNice2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Matchsticks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day8.Matchsticks" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day1to5.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.AdventOfCode2015Day05Test" />
-      <option name="METHOD_NAME" value="isNice2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Matchsticks" />
+        <item itemvalue="Application.AssemblyRequired" />
         <item itemvalue="Application.FireHazard" />
         <item itemvalue="Application.AdventOfCode2015Day05" />
         <item itemvalue="JUnit.AdventOfCode2015Day05Test.testIsNice2" />
-        <item itemvalue="JUnit.AdventOfCode2015Day05Test.isNice2" />
-        <item itemvalue="Application.ComboBreaker" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611504241977</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Final solution 2015 day 6">
+      <created>1612629149333</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1612629149333</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -277,7 +285,8 @@
     <MESSAGE value="Solution day 23" />
     <MESSAGE value="First solution day 24" />
     <MESSAGE value="Final solution day 24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final solution day 24" />
+    <MESSAGE value="Final solution 2015 day 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
