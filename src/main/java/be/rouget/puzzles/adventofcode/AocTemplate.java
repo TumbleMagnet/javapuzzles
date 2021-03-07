@@ -6,25 +6,25 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
-public class SolveMultilineInput {
+public class AocTemplate {
 
     private static final String YEAR = "2020";
     private static final String DAY = "XX";
 
-    private static final Logger LOG = LogManager.getLogger(SolveMultilineInput.class);
-
-    private final List<String> input;
-
-    public SolveMultilineInput(List<String> input) {
-        this.input = input;
-        LOG.info("Input has {} lines...", input.size());
-    }
+    private static final Logger LOG = LogManager.getLogger(AocTemplate.class);
 
     public static void main(String[] args) {
         List<String> input = ResourceUtils.readLines(YEAR + "/aoc_" + YEAR + "_day" + DAY + "_input.txt");
-        SolveMultilineInput aoc = new SolveMultilineInput(input);
+        AocTemplate aoc = new AocTemplate(input);
         LOG.info("Result for part 1 is: " + aoc.computeResultForPart1());
         LOG.info("Result for part 2 is: " + aoc.computeResultForPart2());
+    }
+
+    private final List<String> input;
+
+    public AocTemplate(List<String> input) {
+        this.input = input;
+        LOG.info("Input has {} lines...", input.size());
     }
 
     public long computeResultForPart1() {

@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day15/CookieRecipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day15/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day15_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day16/Aunt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day16/Compound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day16_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/SolveMultilineInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day16/AuntSue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/SolveSingleLineInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day3/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day3/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -78,20 +82,20 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day25" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day16" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day15" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day12" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day11" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CookieRecipe">
-    <configuration name="CookieRecipe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day15.CookieRecipe" />
+  <component name="RunManager" selected="Application.AuntSue">
+    <configuration name="AuntSue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day16.AuntSue" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day15.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JSAbacusFramework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day12.JSAbacusFramework" />
+    <configuration name="CookieRecipe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day15.CookieRecipe" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day12.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AuntSue" />
         <item itemvalue="Application.CookieRecipe" />
         <item itemvalue="Application.ReindeerOlympics" />
         <item itemvalue="JUnit.ReindeerTest.computeDistance" />
         <item itemvalue="Application.KnightsOfTheDinnerTable" />
-        <item itemvalue="Application.JSAbacusFramework" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615113300297</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Final solution 2015 day 15">
+      <created>1615124475869</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1615124475869</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -319,7 +330,8 @@
     <MESSAGE value="Final solution 2015 day 12" />
     <MESSAGE value="Final solution 2015 day 13" />
     <MESSAGE value="Final solution 2015 day 14" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 14" />
+    <MESSAGE value="Final solution 2015 day 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,6 +1,5 @@
 package be.rouget.puzzles.adventofcode.year2020.day3;
 
-import be.rouget.puzzles.adventofcode.SolveMultilineInput;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
