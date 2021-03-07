@@ -1,5 +1,6 @@
 package be.rouget.puzzles.adventofcode.year2019;
 
+import be.rouget.puzzles.adventofcode.util.PermutationGenerator;
 import be.rouget.puzzles.adventofcode.util.ResourceUtils;
 import be.rouget.puzzles.adventofcode.year2019.computer.Computer;
 import be.rouget.puzzles.adventofcode.year2019.computer.ComputerState;
@@ -24,7 +25,7 @@ public class AoC2019Day07 {
 //        LOG.info("Maximum power: " + maxPower);
 
         // Part 2
-        PermutationGenerator generator2 = new PermutationGenerator(Lists.newArrayList(5,6,7,8,9));
+        PermutationGenerator<Integer> generator2 = new PermutationGenerator<Integer>(Lists.newArrayList(5,6,7,8,9));
         int maxPower2 = generator2.generatePermutations().stream().mapToInt(p -> computePowerWithFeedback(program, p)).max().orElseThrow(IllegalStateException::new);
         LOG.info("Maximum power with feedback: " + maxPower2);
     }
@@ -88,35 +89,4 @@ public class AoC2019Day07 {
 
         return power;
     }
-
-    public static class PermutationGenerator {
-        private List<Integer> allChoices;
-        private List<List<Integer>> permutations = Lists.newArrayList();
-
-        public PermutationGenerator(List<Integer> allChoices) {
-            this.allChoices = allChoices;
-        }
-
-        public List<List<Integer>> generatePermutations() {
-            permutations = Lists.newArrayList();
-            generatePermutations(Lists.newArrayList(), allChoices);
-            return permutations;
-        }
-
-        private void generatePermutations(List<Integer> currentFragment, List<Integer> remainingChoices) {
-            if (remainingChoices.isEmpty()) {
-                permutations.add(currentFragment);
-                return;
-            }
-            for (Integer choice: remainingChoices) {
-                List<Integer> newFragment = Lists.newArrayList(currentFragment);
-                newFragment.add(choice);
-                List<Integer> choicesLeft = Lists.newArrayList(remainingChoices);
-                choicesLeft.remove(choice);
-                generatePermutations(newFragment, choicesLeft);
-            }
-        }
-
-    }
-
 }

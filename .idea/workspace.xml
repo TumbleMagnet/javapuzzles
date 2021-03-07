@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/PermutationGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day13/GuestPair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day13/KnightsOfTheDinnerTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day13/SeatingHappiness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day13_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day14/RaceStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day14/Reindeer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day14/ReindeerOlympics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day14_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/day14/ReindeerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/AoC2019Day07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/AoC2019Day07.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,21 +74,21 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2015" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day25" />
-      <recent name="be.rouget.puzzles.adventofcode.year2020.day24" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day12" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day10" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day9" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KnightsOfTheDinnerTable">
+  <component name="RunManager" selected="Application.ReindeerOlympics">
     <configuration name="CorporatePolicy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day11.CorporatePolicy" />
       <module name="javapuzzles" />
@@ -127,33 +128,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CorporatePolicyTest.testIncrement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReindeerOlympics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day14.ReindeerOlympics" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day11.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day11" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day11.CorporatePolicyTest" />
-      <option name="METHOD_NAME" value="testIncrement" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CorporatePolicyTest.testPart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReindeerTest.computeDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day11.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day11" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day11.CorporatePolicyTest" />
-      <option name="METHOD_NAME" value="testPart1" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day14" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day14.ReindeerTest" />
+      <option name="METHOD_NAME" value="computeDistance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReindeerOlympics" />
+        <item itemvalue="JUnit.ReindeerTest.computeDistance" />
         <item itemvalue="Application.KnightsOfTheDinnerTable" />
         <item itemvalue="Application.JSAbacusFramework" />
         <item itemvalue="Application.CorporatePolicy" />
-        <item itemvalue="JUnit.CorporatePolicyTest.testPart1" />
-        <item itemvalue="JUnit.CorporatePolicyTest.testIncrement" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615037350086</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Final solution 2015 day 13">
+      <created>1615053951505</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1615053951505</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -308,7 +313,8 @@
     <MESSAGE value="Final solution 2015 day 7 and 8" />
     <MESSAGE value="Final solution 2015 day 9" />
     <MESSAGE value="Final solution 2015 day 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 12" />
+    <MESSAGE value="Final solution 2015 day 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -328,6 +334,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day18/MathExpression2Test.java</url>
           <line>13</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day14/Reindeer.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
