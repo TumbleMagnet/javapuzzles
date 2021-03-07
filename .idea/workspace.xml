@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day14/RaceStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day14/Reindeer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day14/ReindeerOlympics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day14_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/day14/ReindeerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day15/CookieRecipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day15/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day15_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/AoC2019Day07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/AoC2019Day07.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,20 +78,20 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day25" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day15" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day12" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day11" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReindeerOlympics">
-    <configuration name="CorporatePolicy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day11.CorporatePolicy" />
+  <component name="RunManager" selected="Application.CookieRecipe">
+    <configuration name="CookieRecipe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day15.CookieRecipe" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day11.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CookieRecipe" />
         <item itemvalue="Application.ReindeerOlympics" />
         <item itemvalue="JUnit.ReindeerTest.computeDistance" />
         <item itemvalue="Application.KnightsOfTheDinnerTable" />
         <item itemvalue="Application.JSAbacusFramework" />
-        <item itemvalue="Application.CorporatePolicy" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615053951505</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Final solution 2015 day 14">
+      <created>1615113300297</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1615113300297</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -314,7 +318,8 @@
     <MESSAGE value="Final solution 2015 day 9" />
     <MESSAGE value="Final solution 2015 day 12" />
     <MESSAGE value="Final solution 2015 day 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 13" />
+    <MESSAGE value="Final solution 2015 day 14" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 14" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
