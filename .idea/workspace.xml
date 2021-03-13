@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day16/Aunt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day16/Compound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day16_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day17/NoSuchThingAsTooMuch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day17_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/day17/NoSuchThingAsTooMuchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/SolveMultilineInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day16/AuntSue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/SolveSingleLineInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day3/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2020/day3/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -75,21 +71,21 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day17" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2015" />
-      <recent name="be.rouget.puzzles.adventofcode.year2020.day25" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day17" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day16" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day15" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day13" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day12" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AuntSue">
+  <component name="RunManager" selected="Application.NoSuchThingAsTooMuch">
     <configuration name="AuntSue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day16.AuntSue" />
       <module name="javapuzzles" />
@@ -103,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CookieRecipe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day15.CookieRecipe" />
+    <configuration name="NoSuchThingAsTooMuch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17.NoSuchThingAsTooMuch" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day15.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,43 +112,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KnightsOfTheDinnerTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day13.KnightsOfTheDinnerTable" />
+    <configuration name="NoSuchThingAsTooMuchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day13.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17.NoSuchThingAsTooMuchTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReindeerOlympics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day14.ReindeerOlympics" />
+    <configuration name="NoSuchThingAsTooMuchTest.testPart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day14.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17.NoSuchThingAsTooMuchTest" />
+      <option name="METHOD_NAME" value="testPart1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReindeerTest.computeDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoSuchThingAsTooMuchTest.testParts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day14.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day14" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day14.ReindeerTest" />
-      <option name="METHOD_NAME" value="computeDistance" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17.NoSuchThingAsTooMuchTest" />
+      <option name="METHOD_NAME" value="testParts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NoSuchThingAsTooMuch" />
+        <item itemvalue="JUnit.NoSuchThingAsTooMuchTest.testParts" />
+        <item itemvalue="JUnit.NoSuchThingAsTooMuchTest" />
+        <item itemvalue="JUnit.NoSuchThingAsTooMuchTest.testPart1" />
         <item itemvalue="Application.AuntSue" />
-        <item itemvalue="Application.CookieRecipe" />
-        <item itemvalue="Application.ReindeerOlympics" />
-        <item itemvalue="JUnit.ReindeerTest.computeDistance" />
-        <item itemvalue="Application.KnightsOfTheDinnerTable" />
       </list>
     </recent_temporary>
   </component>
@@ -310,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615124475869</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Final solution 2015 day 16">
+      <created>1615128121865</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1615128121865</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -331,7 +339,8 @@
     <MESSAGE value="Final solution 2015 day 13" />
     <MESSAGE value="Final solution 2015 day 14" />
     <MESSAGE value="Final solution 2015 day 15" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 15" />
+    <MESSAGE value="Final solution 2015 day 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
