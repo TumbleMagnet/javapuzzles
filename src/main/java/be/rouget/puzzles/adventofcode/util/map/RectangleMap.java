@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class RectangleMap<E extends MapCharacter> {
 
@@ -72,6 +73,16 @@ public class RectangleMap<E extends MapCharacter> {
     public boolean isPositionInMap(Position position) {
         return position.getX() >= 0 && position.getX() < width
                 && position.getY() >= 0 && position.getY() < height;
+    }
+
+    public List<Position> enumerateNeighbourPositions(Position position) {
+        if (!isPositionInMap(position)) {
+            throw new IllegalArgumentException("Position " + position.toString() + " is not in map!");
+        }
+
+        return position.enumerateNeighbours().stream()
+                .filter(neighbour -> isPositionInMap(neighbour))
+                .collect(Collectors.toList());
     }
 
     public String toString() {
