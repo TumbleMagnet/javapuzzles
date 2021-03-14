@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day18/GifForYourYard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day18/LightState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day18_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/util/map/PositionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/SimpleGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Vertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/VertexWithDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day19/MedicineForRudolph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day19/Replacement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day19_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/day19/MedicineForRudolphTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/RectangleMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/RectangleMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +25,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -51,7 +55,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/2015" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21609196" />
@@ -62,6 +66,7 @@
       <recent name="be.rouget.puzzles.adventofcode.year2015.day7" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\programming\projects\javapuzzles\src\main\java\be\rouget\puzzles\adventofcode\util" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2015" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2020" />
       <recent name="C:\programming\projects\javapuzzles\src\main\java\be\rouget\puzzles\adventofcode\util\map" />
@@ -71,24 +76,38 @@
       <recent name="" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="be.rouget.puzzles.adventofcode.util.dijkstra" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day19" />
       <recent name="be.rouget.puzzles.adventofcode.util.map" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day17" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day11" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day10" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day17" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day16" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day15" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day14" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GifForYourYard">
+  <component name="RunManager" selected="Application.MedicineForRudolph">
+    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.util.dijkstra.Dijkstra" />
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.dijkstra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GifForYourYard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day18.GifForYourYard" />
       <module name="javapuzzles" />
@@ -102,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoSuchThingAsTooMuch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17.NoSuchThingAsTooMuch" />
+    <configuration name="MedicineForRudolph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day19.MedicineForRudolph" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day17.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,32 +134,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoSuchThingAsTooMuchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MedicineForRudolphTest.testReplaceAtIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day17.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17.NoSuchThingAsTooMuchTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NoSuchThingAsTooMuchTest.testParts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day17.NoSuchThingAsTooMuchTest" />
-      <option name="METHOD_NAME" value="testParts" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day19" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day19.MedicineForRudolphTest" />
+      <option name="METHOD_NAME" value="testReplaceAtIndex" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MedicineForRudolph" />
+        <item itemvalue="Application.Dijkstra" />
+        <item itemvalue="JUnit.MedicineForRudolphTest.testReplaceAtIndex" />
         <item itemvalue="Application.GifForYourYard" />
         <item itemvalue="JUnit.PositionTest.enumerateNeighbours" />
-        <item itemvalue="Application.NoSuchThingAsTooMuch" />
-        <item itemvalue="JUnit.NoSuchThingAsTooMuchTest.testParts" />
-        <item itemvalue="JUnit.NoSuchThingAsTooMuchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -328,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615635402696</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Final solution 2015 day 18">
+      <created>1615720416230</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1615720416230</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -351,7 +362,8 @@
     <MESSAGE value="Final solution 2015 day 15" />
     <MESSAGE value="Final solution 2015 day 16" />
     <MESSAGE value="Final solution 2015 day 17" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 17" />
+    <MESSAGE value="Final solution 2015 day 18" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 18" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
