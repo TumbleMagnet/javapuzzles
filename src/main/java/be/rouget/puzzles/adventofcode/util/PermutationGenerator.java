@@ -30,5 +30,4 @@ public class PermutationGenerator<T> {
             generatePermutations(newFragment, choicesLeft);
         }
     }
-
 }
