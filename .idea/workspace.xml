@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day20/InfiniteElvesAndInfiniteHouses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/day20/InfiniteElvesAndInfiniteHousesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day21/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day21/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day21/ItemType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day21/RpgSimulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day21_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/day21/CharacterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javapuzzles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javapuzzles.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/PermutationGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/PermutationGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +21,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -50,7 +51,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/2015" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21609196" />
@@ -61,8 +62,8 @@
       <recent name="be.rouget.puzzles.adventofcode.year2015.day7" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\programming\projects\javapuzzles\src\main\java\be\rouget\puzzles\adventofcode\util" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2015" />
+      <recent name="C:\programming\projects\javapuzzles\src\main\java\be\rouget\puzzles\adventofcode\util" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2020" />
       <recent name="C:\programming\projects\javapuzzles\src\main\java\be\rouget\puzzles\adventofcode\util\map" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources" />
@@ -75,21 +76,21 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day20" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day19" />
       <recent name="be.rouget.puzzles.adventofcode.util.map" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day17" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day14" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day20" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day17" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day16" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InfiniteElvesAndInfiniteHousesTest.testFindDivisors">
+  <component name="RunManager" selected="Application.RpgSimulator">
     <configuration name="InfiniteElvesAndInfiniteHouses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day20.InfiniteElvesAndInfiniteHouses" />
       <module name="javapuzzles" />
@@ -103,17 +104,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InfiniteElvesAndInfiniteHousesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RpgSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day21.RpgSimulator" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day20.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day20" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day20.InfiniteElvesAndInfiniteHousesTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CharacterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day21.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day21" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day21.CharacterTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CharacterTest.testFights" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day21.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day21" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day21.CharacterTest" />
+      <option name="METHOD_NAME" value="testFights" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,45 +164,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InfiniteElvesAndInfiniteHousesTest.testNumberOfGitsForHouse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day20.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day20" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day20.InfiniteElvesAndInfiniteHousesTest" />
-      <option name="METHOD_NAME" value="testNumberOfGitsForHouse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InfiniteElvesAndInfiniteHousesTest.testProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day20.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day20" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day20.InfiniteElvesAndInfiniteHousesTest" />
-      <option name="METHOD_NAME" value="testProduct" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RpgSimulator" />
+        <item itemvalue="JUnit.CharacterTest" />
+        <item itemvalue="JUnit.CharacterTest.testFights" />
         <item itemvalue="JUnit.InfiniteElvesAndInfiniteHousesTest.testFindDivisors" />
         <item itemvalue="Application.InfiniteElvesAndInfiniteHouses" />
-        <item itemvalue="JUnit.InfiniteElvesAndInfiniteHousesTest" />
-        <item itemvalue="JUnit.InfiniteElvesAndInfiniteHousesTest.testProduct" />
-        <item itemvalue="JUnit.InfiniteElvesAndInfiniteHousesTest.testNumberOfGitsForHouse" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615742126874</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Final solution 2015 day 20">
+      <created>1616258259291</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1616258259291</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -371,7 +376,8 @@
     <MESSAGE value="Final solution 2015 day 17" />
     <MESSAGE value="Final solution 2015 day 18" />
     <MESSAGE value="Final solution 2015 day 19" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 19" />
+    <MESSAGE value="Final solution 2015 day 20" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 20" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
