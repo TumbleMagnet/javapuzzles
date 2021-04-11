@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day23/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day23/Instruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day23/InstructionCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day23/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day23/TuringLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day23_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/day23/TuringLockTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Final solution 2015 day 24">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/SubListGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day24/ItHangsInTheBalance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day24_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/util/SubListGeneratorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
     </list>
@@ -57,7 +54,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21609196" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="Console" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -77,22 +74,39 @@
       <recent name="be.rouget.puzzles.adventofcode.util.dijkstra" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.util" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode" />
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day24" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day23" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day22" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day21" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day20" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day19" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day24" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day23" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day22" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day20" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day19" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TuringLock">
+  <component name="RunManager" selected="Application.ItHangsInTheBalance">
+    <configuration name="ItHangsInTheBalance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day24.ItHangsInTheBalance" />
+      <module name="javapuzzles" />
+      <option name="VM_PARAMETERS" value="-Xmx8G" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day24.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TuringLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day23.TuringLock" />
       <module name="javapuzzles" />
@@ -106,73 +120,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WizardSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day22.WizardSimulator" />
+    <configuration name="ItHangsInTheBalanceTest.testSampleInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day22.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day24.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TuringLockTest.testSampleProgram" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day23.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day23" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day23.TuringLockTest" />
-      <option name="METHOD_NAME" value="testSampleProgram" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day24" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day24.ItHangsInTheBalanceTest" />
+      <option name="METHOD_NAME" value="testSampleInput" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WizardFightTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SubListGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day22.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day22" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day22.WizardFightTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.util" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.util.SubListGeneratorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WizardFightTest.sampleFight2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SubListGeneratorTest.testSubLists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day22.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day22" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day22.WizardFightTest" />
-      <option name="METHOD_NAME" value="sampleFight2" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.util" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.util.SubListGeneratorTest" />
+      <option name="METHOD_NAME" value="testSubLists" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ItHangsInTheBalance" />
+      <item itemvalue="Application.TuringLock" />
+      <item itemvalue="JUnit.ItHangsInTheBalanceTest.testSampleInput" />
+      <item itemvalue="JUnit.SubListGeneratorTest" />
+      <item itemvalue="JUnit.SubListGeneratorTest.testSubLists" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ItHangsInTheBalance" />
+        <item itemvalue="JUnit.SubListGeneratorTest.testSubLists" />
+        <item itemvalue="JUnit.SubListGeneratorTest" />
+        <item itemvalue="JUnit.ItHangsInTheBalanceTest.testSampleInput" />
         <item itemvalue="Application.TuringLock" />
-        <item itemvalue="JUnit.TuringLockTest.testSampleProgram" />
-        <item itemvalue="Application.WizardSimulator" />
-        <item itemvalue="JUnit.WizardFightTest" />
-        <item itemvalue="JUnit.WizardFightTest.sampleFight2" />
       </list>
     </recent_temporary>
   </component>
@@ -367,11 +375,17 @@
       <option name="project" value="LOCAL" />
       <updated>1617460747006</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Final solution 2015 day 23">
+      <created>1618052172096</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1618052172096</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Setup day 16" />
     <MESSAGE value="Solution for day 16" />
     <MESSAGE value="Solution for day 17" />
     <MESSAGE value="Solution for day 18, setup day 19." />
@@ -395,7 +409,9 @@
     <MESSAGE value="Final solution 2015 day 20" />
     <MESSAGE value="Final solution 2015 day 21" />
     <MESSAGE value="Final solution 2015 day 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 22" />
+    <MESSAGE value="Final solution 2015 day 23" />
+    <MESSAGE value="Final solution 2015 day 24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
