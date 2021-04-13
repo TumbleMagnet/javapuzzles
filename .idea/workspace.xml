@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day25/LetItSnow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/day25/LetItSnowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day1/BlockPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day1/Instruction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day1/NoTimeForATaxicab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day1/Rotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day01_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/2015" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/2016" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21609196" />
@@ -58,11 +63,11 @@
       <recent name="be.rouget.puzzles.adventofcode.year2015.day7" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\programming\projects\javapuzzles\src\main\resources\2016" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2015" />
       <recent name="C:\programming\projects\javapuzzles\src\main\java\be\rouget\puzzles\adventofcode\util" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2020" />
       <recent name="C:\programming\projects\javapuzzles\src\main\java\be\rouget\puzzles\adventofcode\util\map" />
-      <recent name="C:\programming\projects\javapuzzles\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -75,21 +80,21 @@
       <recent name="be.rouget.puzzles.adventofcode.util" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day1" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day25" />
       <recent name="be.rouget.puzzles.adventofcode" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day24" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day23" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day22" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.util.map" />
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day1" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day25" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day24" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day23" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day22" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day21" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LetItSnow">
+  <component name="RunManager" selected="Application.NoTimeForATaxicab">
     <configuration name="ItHangsInTheBalance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day24.ItHangsInTheBalance" />
       <module name="javapuzzles" />
@@ -117,6 +122,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NoTimeForATaxicab" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day1.NoTimeForATaxicab" />
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LetItSnowTest.testNextCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
@@ -133,32 +151,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubListGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SegmentTest.testIntersection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.util" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.util.SubListGeneratorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SubListGeneratorTest.testSubLists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.util" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.util.SubListGeneratorTest" />
-      <option name="METHOD_NAME" value="testSubLists" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day1" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day1.SegmentTest" />
+      <option name="METHOD_NAME" value="testIntersection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,17 +170,17 @@
     <list>
       <item itemvalue="Application.ItHangsInTheBalance" />
       <item itemvalue="Application.LetItSnow" />
-      <item itemvalue="JUnit.SubListGeneratorTest" />
-      <item itemvalue="JUnit.SubListGeneratorTest.testSubLists" />
       <item itemvalue="JUnit.LetItSnowTest.testNextCode" />
+      <item itemvalue="Application.NoTimeForATaxicab" />
+      <item itemvalue="JUnit.SegmentTest.testIntersection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NoTimeForATaxicab" />
+        <item itemvalue="JUnit.SegmentTest.testIntersection" />
         <item itemvalue="Application.LetItSnow" />
         <item itemvalue="JUnit.LetItSnowTest.testNextCode" />
         <item itemvalue="Application.ItHangsInTheBalance" />
-        <item itemvalue="JUnit.SubListGeneratorTest.testSubLists" />
-        <item itemvalue="JUnit.SubListGeneratorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -386,11 +389,17 @@
       <option name="project" value="LOCAL" />
       <updated>1618143590989</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Final solution 2015 day 25">
+      <created>1618308897240</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1618308897240</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution for day 16" />
     <MESSAGE value="Solution for day 17" />
     <MESSAGE value="Solution for day 18, setup day 19." />
     <MESSAGE value="Solution day 19" />
@@ -415,7 +424,8 @@
     <MESSAGE value="Final solution 2015 day 22" />
     <MESSAGE value="Final solution 2015 day 23" />
     <MESSAGE value="Final solution 2015 day 24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 24" />
+    <MESSAGE value="Final solution 2015 day 25" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2015 day 25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -452,5 +462,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/javapuzzles$SegmentTest_testIntersection.ic" NAME="SegmentTest.testIntersection Coverage Results" MODIFIED="1618313878311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>be.rouget.puzzles.adventofcode.year2016.day1.*</FILTER>
+    </SUITE>
   </component>
 </project>

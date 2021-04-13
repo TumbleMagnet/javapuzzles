@@ -20,10 +20,7 @@ public class AocTemplate {
         LOG.info("Result for part 2 is: " + aoc.computeResultForPart2());
     }
 
-    private final List<String> input;
-
     public AocTemplate(List<String> input) {
-        this.input = input;
         LOG.info("Input has {} lines...", input.size());
     }
 
