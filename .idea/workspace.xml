@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Final solution 2015 day 24">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/SubListGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day24/ItHangsInTheBalance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2015/aoc_2015_day24_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/util/SubListGeneratorTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day25/LetItSnow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2015/day25/LetItSnowTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,21 +75,21 @@
       <recent name="be.rouget.puzzles.adventofcode.util" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day25" />
       <recent name="be.rouget.puzzles.adventofcode" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day24" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day23" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day22" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day21" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2015.day25" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day24" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day23" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day22" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day21" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day20" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ItHangsInTheBalance">
+  <component name="RunManager" selected="Application.LetItSnow">
     <configuration name="ItHangsInTheBalance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day24.ItHangsInTheBalance" />
       <module name="javapuzzles" />
@@ -107,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TuringLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day23.TuringLock" />
+    <configuration name="LetItSnow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day25.LetItSnow" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day23.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day25.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,17 +117,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItHangsInTheBalanceTest.testSampleInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LetItSnowTest.testNextCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day24.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day25.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day24" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day24.ItHangsInTheBalanceTest" />
-      <option name="METHOD_NAME" value="testSampleInput" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2015.day25" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day25.LetItSnowTest" />
+      <option name="METHOD_NAME" value="testNextCode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,18 +166,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.ItHangsInTheBalance" />
-      <item itemvalue="Application.TuringLock" />
-      <item itemvalue="JUnit.ItHangsInTheBalanceTest.testSampleInput" />
+      <item itemvalue="Application.LetItSnow" />
       <item itemvalue="JUnit.SubListGeneratorTest" />
       <item itemvalue="JUnit.SubListGeneratorTest.testSubLists" />
+      <item itemvalue="JUnit.LetItSnowTest.testNextCode" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LetItSnow" />
+        <item itemvalue="JUnit.LetItSnowTest.testNextCode" />
         <item itemvalue="Application.ItHangsInTheBalance" />
         <item itemvalue="JUnit.SubListGeneratorTest.testSubLists" />
         <item itemvalue="JUnit.SubListGeneratorTest" />
-        <item itemvalue="JUnit.ItHangsInTheBalanceTest.testSampleInput" />
-        <item itemvalue="Application.TuringLock" />
       </list>
     </recent_temporary>
   </component>
@@ -382,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618052172096</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Final solution 2015 day 24">
+      <created>1618143590989</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1618143590989</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
