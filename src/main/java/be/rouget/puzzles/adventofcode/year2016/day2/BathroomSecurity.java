@@ -10,8 +10,21 @@ public class BathroomSecurity {
 
     private static final String YEAR = "2016";
     private static final String DAY = "02";
-
     private static final Logger LOG = LogManager.getLogger(BathroomSecurity.class);
+
+    private static final List<String> KEYMAP_PART1 = List.of(
+            "123",
+            "456",
+            "789"
+    );
+    private static final List<String> KEYMAP_PART2 = List.of(
+            "..1..",
+            ".234.",
+            "56789",
+            ".ABC.",
+            "..D.."
+    );
+
     private final List<String> input;
 
     public static void main(String[] args) {
@@ -27,20 +40,19 @@ public class BathroomSecurity {
     }
 
     public String computeResultForPart1() {
-        return computeCode(new KeyPad(Key.KEY_5, KeyPad.PART1_KEYS));
+        return computeCode(new KeyMap(KEYMAP_PART1));
     }
 
     public String computeResultForPart2() {
-        return computeCode(new KeyPad(Key.KEY_5, KeyPad.PART2_KEYS));
+        return computeCode(new KeyMap(KEYMAP_PART2));
     }
 
-    private String computeCode(KeyPad keyPad) {
+    private String computeCode(KeyMap keyMap) {
         String code = "";
         for (String line : input) {
-            keyPad.doMoves(line);
-            code += keyPad.getCurrentKey().getCharacter();
+            keyMap.doMoves(line);
+            code += keyMap.getCurrentKey().getMapChar();
         }
         return code;
     }
-
 }
