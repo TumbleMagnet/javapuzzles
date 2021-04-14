@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day2/BathroomSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day2/Key.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day2/KeyMoves.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day2/KeyPad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day2/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day02_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javapuzzles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javapuzzles.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/ResourceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/ResourceUtils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +26,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -32,6 +45,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1mSwi4bOKtZWEV5vlOxHXgzOaHT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,11 +59,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/2016" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21609196" />
-    <property name="settings.editor.selected.configurable" value="Console" />
+    <property name="settings.editor.selected.configurable" value="shared-indexes" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -64,11 +80,15 @@
       <recent name="" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
       <recent name="be.rouget.puzzles.adventofcode.util.dijkstra" />
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="be.rouget.puzzles.adventofcode.util" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="be.rouget.puzzles.adventofcode.year2016.day1" />
@@ -78,21 +98,20 @@
       <recent name="be.rouget.puzzles.adventofcode.year2015.day23" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
       <recent name="be.rouget.puzzles.adventofcode.util.map" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day1" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day25" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day24" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day23" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NoTimeForATaxicab">
-    <configuration name="ItHangsInTheBalance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2015.day24.ItHangsInTheBalance" />
+  <component name="RunManager" selected="Application.BathroomSecurity">
+    <configuration name="BathroomSecurity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day2.BathroomSecurity" />
       <module name="javapuzzles" />
-      <option name="VM_PARAMETERS" value="-Xmx8G" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2015.day24.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,19 +178,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ItHangsInTheBalance" />
       <item itemvalue="Application.LetItSnow" />
       <item itemvalue="Application.NoTimeForATaxicab" />
+      <item itemvalue="Application.BathroomSecurity" />
       <item itemvalue="JUnit.LetItSnowTest.testNextCode" />
       <item itemvalue="JUnit.SegmentTest.testIntersection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BathroomSecurity" />
         <item itemvalue="Application.NoTimeForATaxicab" />
         <item itemvalue="JUnit.SegmentTest.testIntersection" />
         <item itemvalue="Application.LetItSnow" />
         <item itemvalue="JUnit.LetItSnowTest.testNextCode" />
-        <item itemvalue="Application.ItHangsInTheBalance" />
       </list>
     </recent_temporary>
   </component>
@@ -394,8 +413,25 @@
       <option name="project" value="LOCAL" />
       <updated>1618315069786</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Final solution 2016 day 1">
+      <created>1618396830469</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1618396830469</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Solution for day 18, setup day 19." />
