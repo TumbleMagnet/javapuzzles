@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day4/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day4/SecurityThroughObscurity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day4/ShiftCypher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day04_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day4/ShiftCypherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day5/HowAboutANiceGameOfChess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day5/HowAboutANiceGameOfChessTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +54,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21609196" />
-    <property name="settings.editor.selected.configurable" value="shared-indexes" />
+    <property name="settings.editor.selected.configurable" value="Console" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -85,40 +82,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day5" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day4" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day1" />
       <recent name="be.rouget.puzzles.adventofcode.year2015.day25" />
       <recent name="be.rouget.puzzles.adventofcode" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day24" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day5" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day4" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day3" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
       <recent name="be.rouget.puzzles.adventofcode.util.map" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SecurityThroughObscurity">
-    <configuration name="BathroomSecurity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day2.BathroomSecurity" />
+  <component name="RunManager" selected="Application.HowAboutANiceGameOfChess">
+    <configuration name="HowAboutANiceGameOfChess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day5.HowAboutANiceGameOfChess" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NoTimeForATaxicab" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day1.NoTimeForATaxicab" />
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day1.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,49 +123,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquaresWithThreeSides" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day3.SquaresWithThreeSides" />
+    <configuration name="HowAboutANiceGameOfChessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day3.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day5" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day5.HowAboutANiceGameOfChessTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShiftCypherTest.testDecrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HowAboutANiceGameOfChessTest.testHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day4.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day4" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day4.ShiftCypherTest" />
-      <option name="METHOD_NAME" value="testDecrypt" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day5" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day5.HowAboutANiceGameOfChessTest" />
+      <option name="METHOD_NAME" value="testHash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HowAboutANiceGameOfChessTest.testPart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day5" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day5.HowAboutANiceGameOfChessTest" />
+      <option name="METHOD_NAME" value="testPart1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NoTimeForATaxicab" />
-      <item itemvalue="Application.BathroomSecurity" />
-      <item itemvalue="Application.SquaresWithThreeSides" />
       <item itemvalue="Application.SecurityThroughObscurity" />
-      <item itemvalue="JUnit.ShiftCypherTest.testDecrypt" />
+      <item itemvalue="Application.HowAboutANiceGameOfChess" />
+      <item itemvalue="JUnit.HowAboutANiceGameOfChessTest.testHash" />
+      <item itemvalue="JUnit.HowAboutANiceGameOfChessTest.testPart1" />
+      <item itemvalue="JUnit.HowAboutANiceGameOfChessTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HowAboutANiceGameOfChess" />
+        <item itemvalue="JUnit.HowAboutANiceGameOfChessTest" />
+        <item itemvalue="JUnit.HowAboutANiceGameOfChessTest.testPart1" />
+        <item itemvalue="JUnit.HowAboutANiceGameOfChessTest.testHash" />
         <item itemvalue="Application.SecurityThroughObscurity" />
-        <item itemvalue="JUnit.ShiftCypherTest.testDecrypt" />
-        <item itemvalue="Application.SquaresWithThreeSides" />
-        <item itemvalue="Application.BathroomSecurity" />
-        <item itemvalue="Application.NoTimeForATaxicab" />
       </list>
     </recent_temporary>
   </component>
@@ -432,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618478561209</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Final solution 2016 day 4">
+      <created>1618483771037</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1618483771037</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -446,7 +455,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution day 22" />
     <MESSAGE value="Solution day 23" />
     <MESSAGE value="First solution day 24" />
     <MESSAGE value="Final solution day 24" />
@@ -471,7 +479,8 @@
     <MESSAGE value="Final solution 2016 day 2" />
     <MESSAGE value="Final solution 2016 day 2: improved solution by re-using RectangleMap" />
     <MESSAGE value="Final solution 2016 day 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2016 day 3" />
+    <MESSAGE value="Final solution 2016 day 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2016 day 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
