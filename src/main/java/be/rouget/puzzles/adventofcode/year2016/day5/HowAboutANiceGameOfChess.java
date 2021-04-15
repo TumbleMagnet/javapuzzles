@@ -1,17 +1,12 @@
 package be.rouget.puzzles.adventofcode.year2016.day5;
 
-import be.rouget.puzzles.adventofcode.util.ResourceUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.xml.bind.DatatypeConverter;
-import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class HowAboutANiceGameOfChess {
 
@@ -38,17 +33,16 @@ public class HowAboutANiceGameOfChess {
     }
 
     public String computeResultForPart1() {
-        String password = "";
+        StringBuilder password = new StringBuilder();
         long index = 0;
         while (password.length() < 8) {
             String hash = hash(index);
             if (hash.startsWith("00000")) {
-
-                password += hash.substring(5, 6);
+                password.append(hash.charAt(5));
             }
             index++;
         }
-        return password;
+        return password.toString();
     }
 
     public String computeResultForPart2() {
@@ -66,7 +60,7 @@ public class HowAboutANiceGameOfChess {
             }
             index++;
         }
-        return Arrays.stream(password2).collect(Collectors.joining());
+        return String.join("", password2);
     }
 
     private void updatePassword(int position, String letter) {
@@ -80,8 +74,8 @@ public class HowAboutANiceGameOfChess {
     }
 
     private boolean isPasswordComplete() {
-        for (int i = 0; i < password2.length; i++) {
-            if (password2[i] == null) {
+        for (String s : password2) {
+            if (s == null) {
                 return false;
             }
         }
