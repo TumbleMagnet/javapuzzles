@@ -5,6 +5,7 @@ import com.google.common.collect.Maps;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -49,6 +50,10 @@ public class RectangleMap<E extends MapCharacter> {
         this.width = width;
         this.height = height;
         this.elements = Maps.newHashMap(elements);
+    }
+
+    public RectangleMap(RectangleMap<E> original) {
+        this(original.width, original.height, original.elements);
     }
 
     public int getWidth() {
@@ -98,5 +103,18 @@ public class RectangleMap<E extends MapCharacter> {
 
     public Set<Map.Entry<Position, E>> getElements() {
         return elements.entrySet();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        RectangleMap<?> that = (RectangleMap<?>) o;
+        return width == that.width && height == that.height && elements.equals(that.elements);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(width, height, elements);
     }
 }

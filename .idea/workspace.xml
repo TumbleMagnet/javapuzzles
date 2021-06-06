@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day7/IPV7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day07_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day7/IPV7Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/Operations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/RectangleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/RotateColumnCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/RotateRowCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/ScreenCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/ScreenPixel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/TinyScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/TwoFactorAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day08_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day8/TinyScreenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day8/TwoFactorAuthenticationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/RectangleMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/RectangleMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
@@ -83,21 +92,21 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day8" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day7" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day5" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day4" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day1" />
-      <recent name="be.rouget.puzzles.adventofcode.year2015.day25" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day8" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day7" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day6" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day5" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day4" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IPV7">
+  <component name="RunManager" selected="Application.TwoFactorAuthentication">
     <configuration name="IPV7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day7.IPV7" />
       <module name="javapuzzles" />
@@ -111,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignalsAndNoise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day6.SignalsAndNoise" />
+    <configuration name="TwoFactorAuthentication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day8.TwoFactorAuthentication" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day6.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,67 +133,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPV7Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TinyScreenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day7.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day7" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day7.IPV7Test" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day8" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day8.TinyScreenTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPV7Test.testSupportsSSL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TinyScreenTest.testRectangleCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day7.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day7" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day7.IPV7Test" />
-      <option name="METHOD_NAME" value="testSupportsSSL" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day8" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day8.TinyScreenTest" />
+      <option name="METHOD_NAME" value="testRectangleCommand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPV7Test.testSupportsTLS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TwoFactorAuthenticationTest.testParseCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day7.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day7" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day7.IPV7Test" />
-      <option name="METHOD_NAME" value="testSupportsTLS" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day8" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day8.TwoFactorAuthenticationTest" />
+      <option name="METHOD_NAME" value="testParseCommand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SignalsAndNoise" />
       <item itemvalue="Application.IPV7" />
-      <item itemvalue="JUnit.IPV7Test.testSupportsTLS" />
-      <item itemvalue="JUnit.IPV7Test.testSupportsSSL" />
-      <item itemvalue="JUnit.IPV7Test" />
+      <item itemvalue="Application.TwoFactorAuthentication" />
+      <item itemvalue="JUnit.TwoFactorAuthenticationTest.testParseCommand" />
+      <item itemvalue="JUnit.TinyScreenTest.testRectangleCommand" />
+      <item itemvalue="JUnit.TinyScreenTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TwoFactorAuthentication" />
+        <item itemvalue="JUnit.TinyScreenTest.testRectangleCommand" />
+        <item itemvalue="JUnit.TinyScreenTest" />
+        <item itemvalue="JUnit.TwoFactorAuthenticationTest.testParseCommand" />
         <item itemvalue="Application.IPV7" />
-        <item itemvalue="JUnit.IPV7Test" />
-        <item itemvalue="JUnit.IPV7Test.testSupportsSSL" />
-        <item itemvalue="JUnit.IPV7Test.testSupportsTLS" />
-        <item itemvalue="Application.SignalsAndNoise" />
       </list>
     </recent_temporary>
   </component>
@@ -463,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618580735513</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Solution 2016 day 7">
+      <created>1622057716994</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1622057716994</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -477,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2015 day 6" />
     <MESSAGE value="Final solution 2015 day 7 and 8" />
     <MESSAGE value="Final solution 2015 day 9" />
     <MESSAGE value="Final solution 2015 day 12" />
@@ -502,7 +517,8 @@
     <MESSAGE value="Final solution 2016 day 5" />
     <MESSAGE value="Final solution 2016 day 5 (cleanup)" />
     <MESSAGE value="Final solution 2016 day 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final solution 2016 day 6" />
+    <MESSAGE value="Solution 2016 day 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
