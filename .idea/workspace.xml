@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/Operations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/RectangleCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/RotateColumnCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/RotateRowCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/ScreenCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/ScreenPixel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/TinyScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day8/TwoFactorAuthentication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day08_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day8/TinyScreenTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day8/TwoFactorAuthenticationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day9/ExplosivesInCyberspace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day9/Instruction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day09_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day9/ExplosivesInCyberspaceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/RectangleMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/RectangleMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +21,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,27 +84,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day9" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day8" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day7" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day5" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day4" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day1" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day9" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day8" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day7" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day6" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day5" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TwoFactorAuthentication">
-    <configuration name="IPV7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day7.IPV7" />
+  <component name="RunManager" selected="Application.ExplosivesInCyberspace">
+    <configuration name="ExplosivesInCyberspace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day9.ExplosivesInCyberspace" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day7.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,17 +125,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TinyScreenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExplosivesInCyberspaceTest.testDecompress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day8.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day8" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day8.TinyScreenTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day9" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day9.ExplosivesInCyberspaceTest" />
+      <option name="METHOD_NAME" value="testDecompress" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExplosivesInCyberspaceTest.testLengthAfterDecompression" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day9" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day9.ExplosivesInCyberspaceTest" />
+      <option name="METHOD_NAME" value="testLengthAfterDecompression" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,36 +173,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoFactorAuthenticationTest.testParseCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day8" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day8.TwoFactorAuthenticationTest" />
-      <option name="METHOD_NAME" value="testParseCommand" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.IPV7" />
       <item itemvalue="Application.TwoFactorAuthentication" />
-      <item itemvalue="JUnit.TwoFactorAuthenticationTest.testParseCommand" />
       <item itemvalue="JUnit.TinyScreenTest.testRectangleCommand" />
-      <item itemvalue="JUnit.TinyScreenTest" />
+      <item itemvalue="Application.ExplosivesInCyberspace" />
+      <item itemvalue="JUnit.ExplosivesInCyberspaceTest.testDecompress" />
+      <item itemvalue="JUnit.ExplosivesInCyberspaceTest.testLengthAfterDecompression" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExplosivesInCyberspace" />
+        <item itemvalue="JUnit.ExplosivesInCyberspaceTest.testLengthAfterDecompression" />
+        <item itemvalue="JUnit.ExplosivesInCyberspaceTest.testDecompress" />
         <item itemvalue="Application.TwoFactorAuthentication" />
         <item itemvalue="JUnit.TinyScreenTest.testRectangleCommand" />
-        <item itemvalue="JUnit.TinyScreenTest" />
-        <item itemvalue="JUnit.TwoFactorAuthenticationTest.testParseCommand" />
-        <item itemvalue="Application.IPV7" />
       </list>
     </recent_temporary>
   </component>
@@ -479,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622057716994</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Solution 2016 day 8">
+      <created>1622977974925</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1622977974925</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -493,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2015 day 7 and 8" />
     <MESSAGE value="Final solution 2015 day 9" />
     <MESSAGE value="Final solution 2015 day 12" />
     <MESSAGE value="Final solution 2015 day 13" />
@@ -518,7 +517,8 @@
     <MESSAGE value="Final solution 2016 day 5 (cleanup)" />
     <MESSAGE value="Final solution 2016 day 6" />
     <MESSAGE value="Solution 2016 day 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 7" />
+    <MESSAGE value="Solution 2016 day 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
