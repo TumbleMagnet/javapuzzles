@@ -1,13 +1,13 @@
 package be.rouget.puzzles.adventofcode.year2016.day11;
 
 import be.rouget.puzzles.adventofcode.util.graph.AStar;
-import be.rouget.puzzles.adventofcode.util.graph.Dijkstra;
 import com.google.common.collect.Sets;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.Collection;
+import java.util.EnumSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import static be.rouget.puzzles.adventofcode.year2016.day11.EquipmentType.GENERATOR;
 import static be.rouget.puzzles.adventofcode.year2016.day11.EquipmentType.MICROCHIP;
@@ -28,7 +28,7 @@ public class RadioisotopeThermoelectricGenerators {
     }
 
     public long computeResultForPart1() {
-        return numberOfMovesToFinalState(getStartState()); // Runs in about 6 seconds
+        return numberOfMovesToFinalState(getStartState()); // Runs in about 2 seconds
     }
 
     public long computeResultForPart2() {
@@ -45,8 +45,11 @@ public class RadioisotopeThermoelectricGenerators {
                 new Equipment(GENERATOR, DILITHIUM),
                 new Equipment(MICROCHIP, DILITHIUM)
         );
-        startState.getEquipmentOnFloor(0).addAll(additionalEquipment);
-        return numberOfMovesToFinalState(startState); // Runs in about 9 minutes and 10 Gb memory
+        startState.getMicrochipsOnFloor(0).add(ELERIUM);
+        startState.getMicrochipsOnFloor(0).add(DILITHIUM);
+        startState.getGeneratorsOnFloor(0).add(ELERIUM);
+        startState.getGeneratorsOnFloor(0).add(DILITHIUM);
+        return numberOfMovesToFinalState(startState); // Runs in about 2 minutes 30 second and 10 Gb memory
     }
 
     private State getStartState() {
@@ -77,11 +80,12 @@ public class RadioisotopeThermoelectricGenerators {
                 Sets.newHashSet(),
                 Sets.newHashSet()
         };
-        return new State(0, floors);
+        return State.createState(0, floors);
     }
 
     public int numberOfMovesToFinalState(State startState) {
         // Search for shortest path from start to final state
         return AStar.shortestDistance(new StateGraph(), startState, State::isFinalState, State::estimateRemainingMoves);
     }
+
 }

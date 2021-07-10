@@ -21,7 +21,7 @@ class RadioisotopeThermoelectricGeneratorsTest {
                 Sets.newHashSet(new Equipment(GENERATOR, LITHIUM)),
                 Sets.newHashSet()
         };
-        State startState = new State(0, floors);
+        State startState = State.createState(0, floors);
         int count = new RadioisotopeThermoelectricGenerators().numberOfMovesToFinalState(startState);
         assertThat(count).isEqualTo(11);
     }

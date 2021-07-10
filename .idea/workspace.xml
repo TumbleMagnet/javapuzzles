@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/AStar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/VertexWithPriority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/Equipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/EquipmentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/Isotope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/MoveDirection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGenerators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/StateGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGeneratorsTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/Dijkstra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Graph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/SimpleGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/SimpleGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/Vertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/VertexWithDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/VertexWithDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day19/MedicineForRudolph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day19/MedicineForRudolph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGenerators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGenerators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGeneratorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGeneratorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +38,7 @@
     </file-type-list>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
+    <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="1mSwi4bOKtZWEV5vlOxHXgzOaHT" />
   <component name="ProjectViewState">
@@ -70,6 +55,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21609196" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Console" />
   </component>
   <component name="RecentsManager">
@@ -86,6 +72,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day11.State" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
@@ -195,8 +184,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.RadioisotopeThermoelectricGenerators" />
-        <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest.numberOfMovesToFinalState" />
         <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest" />
+        <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest.numberOfMovesToFinalState" />
         <item itemvalue="Application.Dijkstra" />
         <item itemvalue="Application.BalanceBots" />
       </list>
@@ -505,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624190004958</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Solution 2016 day 11 : slow solution">
+      <created>1625912424878</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1625912424879</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -519,8 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2015 day 13" />
-    <MESSAGE value="Final solution 2015 day 14" />
     <MESSAGE value="Final solution 2015 day 15" />
     <MESSAGE value="Final solution 2015 day 16" />
     <MESSAGE value="Final solution 2015 day 17" />
@@ -544,7 +538,9 @@
     <MESSAGE value="Solution 2016 day 8" />
     <MESSAGE value="Solution 2016 day 9" />
     <MESSAGE value="Solution 2016 day 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 10" />
+    <MESSAGE value="Solution 2016 day 11 : slow solution" />
+    <MESSAGE value="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

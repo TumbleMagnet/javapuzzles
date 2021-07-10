@@ -1,20 +1,51 @@
 package be.rouget.puzzles.adventofcode.year2016.day11;
 
-import com.google.common.collect.Sets;
 import lombok.Value;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.EnumSet;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import static be.rouget.puzzles.adventofcode.year2016.day11.EquipmentType.GENERATOR;
+import static be.rouget.puzzles.adventofcode.year2016.day11.EquipmentType.MICROCHIP;
 
 @Value
 public class State {
     private static final int NUMBER_OF_FLOORS = 4;
     int elevatorFloor; // 0 to 3
-    Set<Equipment>[] floors;
+    EnumSet<Isotope>[] microchips;
+    EnumSet<Isotope>[] generators;
+
+    public static State createState(int elevatorFloor, Set<Equipment>[] floors) {
+        return new State(elevatorFloor, extractType(floors, MICROCHIP), extractType(floors, GENERATOR));
+    }
+
+    private static EnumSet<Isotope>[] extractType(Set<Equipment>[] equipments, EquipmentType type) {
+        EnumSet<Isotope>[] extracted = new EnumSet[equipments.length];
+        for (int i = 0; i < equipments.length; i++) {
+            extracted[i] = equipments[i].stream()
+                    .filter(e -> e.getType() == type)
+                    .map(Equipment::getIsotope)
+                    .collect(Collectors.toCollection(() -> EnumSet.noneOf(Isotope.class)));
+        }
+        return extracted;
+    }
+
+    public EnumSet<Isotope> getMicrochipsOnFloor(int floorIndex) {
+        return microchips[floorIndex];
+    }
+
+    public EnumSet<Isotope> getGeneratorsOnFloor(int floorIndex) {
+        return generators[floorIndex];
+    }
 
     public Set<Equipment> getEquipmentOnFloor(int floorIndex) {
-        return floors[floorIndex];
+        return Stream.concat(
+                microchips[floorIndex].stream().map(i -> new Equipment(EquipmentType.MICROCHIP, i)),
+                generators[floorIndex].stream().map(i -> new Equipment(EquipmentType.GENERATOR, i))
+        ).collect(Collectors.toSet());
     }
 
     public Set<Equipment> getEquipmentOnCurrentFloor() {
@@ -22,7 +53,7 @@ public class State {
     }
 
     public Set<MoveDirection> possibleMoves() {
-        Set<MoveDirection> directions = Sets.newHashSet();
+        Set<MoveDirection> directions = EnumSet.noneOf(MoveDirection.class);
         if (elevatorFloor > 0) {
             directions.add(MoveDirection.DOWN);
         }
@@ -47,26 +78,33 @@ public class State {
         if (movedEquipments.size() > 2) {
             throw new IllegalArgumentException("Cannot move more than 2 equipments, tried to move " + movedEquipments.size() + ": " + StringUtils.join(movedEquipments, ','));
         }
-        Set<Equipment> equipmentOnCurrentFloor = getEquipmentOnFloor(elevatorFloor);
-        for (Equipment equipmentToMove : movedEquipments) {
-            if (!equipmentOnCurrentFloor.contains(equipmentToMove)) {
-                throw new IllegalArgumentException("Illegal move: equipment on floor " + elevatorFloor + " does not contain " + equipmentToMove);
-            }
+
+        // Start new State by copying floor objects
+        EnumSet<Isotope>[] updatedMicrochips = new EnumSet[NUMBER_OF_FLOORS];
+        EnumSet<Isotope>[] updatedGenerators = new EnumSet[NUMBER_OF_FLOORS];
+        for (int i = 0; i < NUMBER_OF_FLOORS; i++) {
+            updatedMicrochips[i] = EnumSet.copyOf(microchips[i]);
+            updatedGenerators[i] = EnumSet.copyOf(generators[i]);
         }
 
-        // Build new State by moving objects
-        Set<Equipment>[] updatedFloors = new Set[NUMBER_OF_FLOORS];
-        for (int i = 0; i < NUMBER_OF_FLOORS; i++) {
-            Set<Equipment> updatedFloor = Sets.newHashSet(getEquipmentOnFloor(i));
-            if (i == elevatorFloor) {
-                updatedFloor.removeAll(movedEquipments);
+        // Move equipments
+        for (Equipment equipmentToMove : movedEquipments) {
+            switch (equipmentToMove.getType()) {
+                case MICROCHIP:
+                    if (!updatedMicrochips[elevatorFloor].remove(equipmentToMove.getIsotope())) {
+                        throw new IllegalArgumentException("Illegal move: equipment on floor " + elevatorFloor + " does not contain " + equipmentToMove);
+                    }
+                    updatedMicrochips[destinationFloor].add(equipmentToMove.getIsotope());
+                    break;
+                case GENERATOR:
+                    if (!updatedGenerators[elevatorFloor].remove(equipmentToMove.getIsotope())) {
+                        throw new IllegalArgumentException("Illegal move: equipment on floor " + elevatorFloor + " does not contain " + equipmentToMove);
+                    }
+                    updatedGenerators[destinationFloor].add(equipmentToMove.getIsotope());
+                    break;
             }
-            if (i == destinationFloor) {
-                updatedFloor.addAll(movedEquipments);
-            }
-            updatedFloors[i] = updatedFloor;
         }
-        return new State(destinationFloor, updatedFloors);
+        return new State(destinationFloor, updatedMicrochips, updatedGenerators);
     }
 
     public boolean isValid() {
@@ -82,22 +120,15 @@ public class State {
         // No chips => OK
         // No generators => OK
         // Else every chip should have its corresponding generator
-        Set<Equipment> equipments = getEquipmentOnFloor(floorIndex);
-        Set<Isotope> chipIsotopes = equipments.stream()
-                .filter(e -> e.getType() == EquipmentType.MICROCHIP)
-                .map(Equipment::getIsotope)
-                .collect(Collectors.toSet());
-        Set<Isotope> generatorIsotopes = equipments.stream()
-                .filter(e -> e.getType() == EquipmentType.GENERATOR)
-                .map(Equipment::getIsotope)
-                .collect(Collectors.toSet());
+        EnumSet<Isotope> chipIsotopes = microchips[floorIndex];
+        EnumSet<Isotope> generatorIsotopes = generators[floorIndex];
         return chipIsotopes.isEmpty() || generatorIsotopes.isEmpty() || generatorIsotopes.containsAll(chipIsotopes);
     }
 
     public boolean isFinalState() {
         // All floors are empty except for top floor
         for (int i = 0; i < NUMBER_OF_FLOORS-1; i++) {
-            if (!getEquipmentOnFloor(i).isEmpty()) {
+            if (!getMicrochipsOnFloor(i).isEmpty()  || !getGeneratorsOnFloor(i).isEmpty()) {
                 return false;
             }
         }
@@ -108,14 +139,13 @@ public class State {
      * @return a lower-bound estimation of the remaining number of moves (to be used as heuristic in A* search)
      */
     public int estimateRemainingMoves() {
-        // Add the distance of each equipment to the top floor and double it to get estimated number of moves:
-        // in practice moving a generator+chip pair up one floor takes 4 moves
+        // Add the distance of each equipment to the top floor
         int totalDistance = 0;
         for (int i = 0; i < (NUMBER_OF_FLOORS - 1); i++) {
-            for (Equipment equipment : getEquipmentOnFloor(i)) {
-                totalDistance += NUMBER_OF_FLOORS - 1 - i;
-            }
+            int floorDistance = NUMBER_OF_FLOORS - 1 - i;
+            totalDistance += floorDistance * (getMicrochipsOnFloor(i).size() + getGeneratorsOnFloor(i).size());
         }
+        // Use that distance as heuristic
         return totalDistance;
     }
 }
