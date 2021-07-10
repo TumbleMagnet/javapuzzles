@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet.">
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day12/BunnyComputer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day12/Instruction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day12/InstructionCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day12/LeonardosMonorail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day12_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGenerators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGenerators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGeneratorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGeneratorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -56,7 +58,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21609196" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Console" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -95,20 +97,20 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day7" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day12" />
       <recent name="be.rouget.puzzles.adventofcode.util.graph" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day9" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day8" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RadioisotopeThermoelectricGenerators">
-    <configuration name="BalanceBots" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day10.BalanceBots" />
+  <component name="RunManager" selected="Application.LeonardosMonorail">
+    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.util.graph.Dijkstra" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day10.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.util.graph.Dijkstra" />
+    <configuration name="LeonardosMonorail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day12.LeonardosMonorail" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.graph.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,19 +177,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BalanceBots" />
       <item itemvalue="Application.Dijkstra" />
       <item itemvalue="Application.RadioisotopeThermoelectricGenerators" />
       <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest.numberOfMovesToFinalState" />
       <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest" />
+      <item itemvalue="Application.LeonardosMonorail" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeonardosMonorail" />
         <item itemvalue="Application.RadioisotopeThermoelectricGenerators" />
         <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest" />
         <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest.numberOfMovesToFinalState" />
         <item itemvalue="Application.Dijkstra" />
-        <item itemvalue="Application.BalanceBots" />
       </list>
     </recent_temporary>
   </component>
@@ -501,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625912424879</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet.">
+      <created>1625917397183</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1625917397183</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
