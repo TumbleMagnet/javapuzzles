@@ -1,4 +1,4 @@
-package be.rouget.puzzles.adventofcode.util.dijkstra;
+package be.rouget.puzzles.adventofcode.util.graph;
 
 import com.google.common.base.Objects;
 

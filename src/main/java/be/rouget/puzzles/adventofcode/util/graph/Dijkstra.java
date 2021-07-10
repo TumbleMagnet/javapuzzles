@@ -1,4 +1,4 @@
-package be.rouget.puzzles.adventofcode.util.dijkstra;
+package be.rouget.puzzles.adventofcode.util.graph;
 
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
@@ -7,33 +7,37 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Set;
+import java.util.function.Predicate;
 
 public class Dijkstra {
 
-    public static int shortestDistance(Graph graph, String startName, String destinationName) {
+    public static int shortestDistance(SimpleGraph graph, String startName, String destinationName) {
+        return shortestDistance(graph, graph.getVertex(startName), v -> v.getName().equals(destinationName));
+    }
 
-        Set<Vertex> visited = Sets.newHashSet();
-        Queue<VertexWithDistance> toVisitQueue = new PriorityQueue<>();
-        Map<Vertex, VertexWithDistance> distances = Maps.newHashMap();
+    public static <V> int shortestDistance(Graph<V> graph, V start, Predicate<V> destinationPredicate) {
 
-        Vertex start = graph.getVertex(startName);
-        VertexWithDistance startWithDistance = new VertexWithDistance(start, 0);
+        Set<V> visited = Sets.newHashSet();
+        Queue<VertexWithDistance<V>> toVisitQueue = new PriorityQueue<>();
+        Map<V, VertexWithDistance<V>> distances = Maps.newHashMap();
+
+        VertexWithDistance<V> startWithDistance = new VertexWithDistance(start, 0);
 
         toVisitQueue.add(startWithDistance);
         distances.put(start, startWithDistance);
 
         while (!toVisitQueue.isEmpty()) {
 
-            VertexWithDistance current = toVisitQueue.remove();
+            VertexWithDistance<V> current = toVisitQueue.remove();
 
-            if (current.getVertex().getName().equals(destinationName)) {
+            if (destinationPredicate.test(current.getVertex())) {
                 return current.getDistance();
             }
 
             // Compute distances to neighbours and add them to the nodes to visit
-            for (Edge edge : graph.edgesFrom(current.getVertex())) {
+            for (Edge<V> edge : graph.edgesFrom(current.getVertex())) {
 
-                Vertex neighbour = edge.getTo();
+                V neighbour = edge.getTo();
                 if (visited.contains(neighbour)) {
                     continue;
                 }
@@ -63,16 +67,16 @@ public class Dijkstra {
             visited.add(current.getVertex());
         }
 
-        throw new IllegalStateException("Did not find path from " + startName + " to " + destinationName);
+        throw new IllegalStateException("Did not find path from start to destination");
     }
 
     public static void main(String[] args) {
-        Graph graph = initGraph();
+        SimpleGraph graph = initGraph();
 
         System.out.println("Shortest distance from A to E is: " + shortestDistance(graph, "A", "E"));
     }
 
-    private static Graph initGraph() {
+    private static SimpleGraph initGraph() {
         SimpleGraph graph = new SimpleGraph();
 
         Vertex a = new Vertex("A");

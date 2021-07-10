@@ -1,16 +1,16 @@
-package be.rouget.puzzles.adventofcode.util.dijkstra;
+package be.rouget.puzzles.adventofcode.util.graph;
 
-public class VertexWithDistance implements Comparable<VertexWithDistance> {
+public class VertexWithDistance<V> implements Comparable<VertexWithDistance<V>> {
 
-    private Vertex vertex;
+    private V vertex;
     private int distance;
 
-    public VertexWithDistance(Vertex vertex, int distance) {
+    public VertexWithDistance(V vertex, int distance) {
         this.vertex = vertex;
         this.distance = distance;
     }
 
-    public Vertex getVertex() {
+    public V getVertex() {
         return vertex;
     }
 

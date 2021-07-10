@@ -4,19 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2016 day 10">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day10/BalanceBots.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day10/Bot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day10/BotInstruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day10/Destination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day10/DestinationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day10/InputInstruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day10/Instruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day10/InstructionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day10_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day10/BotInstructionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day10/InputInstructionTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/AStar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/VertexWithPriority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/Equipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/EquipmentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/Isotope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/MoveDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGenerators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day11/StateGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day11/RadioisotopeThermoelectricGeneratorsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/SimpleGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/SimpleGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/dijkstra/VertexWithDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/VertexWithDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day19/MedicineForRudolph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day19/MedicineForRudolph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -92,21 +99,21 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day9" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day8" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day7" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day5" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.util.graph" />
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day9" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day8" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day7" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BalanceBots">
+  <component name="RunManager" selected="Application.RadioisotopeThermoelectricGenerators">
     <configuration name="BalanceBots" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day10.BalanceBots" />
       <module name="javapuzzles" />
@@ -120,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExplosivesInCyberspace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day9.ExplosivesInCyberspace" />
+    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.util.graph.Dijkstra" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day9.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,68 +140,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BotInstructionTest.testParseFromInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioisotopeThermoelectricGenerators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day11.RadioisotopeThermoelectricGenerators" />
       <module name="javapuzzles" />
+      <option name="VM_PARAMETERS" value="-Xmx10G" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day10.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day10" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day10.BotInstructionTest" />
-      <option name="METHOD_NAME" value="testParseFromInput" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExplosivesInCyberspaceTest.testLengthAfterDecompression" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioisotopeThermoelectricGeneratorsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day9.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day9" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day9.ExplosivesInCyberspaceTest" />
-      <option name="METHOD_NAME" value="testLengthAfterDecompression" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day11" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day11.RadioisotopeThermoelectricGeneratorsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputInstructionTest.testParseFromInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioisotopeThermoelectricGeneratorsTest.numberOfMovesToFinalState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day10.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day10" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day10.InputInstructionTest" />
-      <option name="METHOD_NAME" value="testParseFromInput" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day11" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day11.RadioisotopeThermoelectricGeneratorsTest" />
+      <option name="METHOD_NAME" value="numberOfMovesToFinalState" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ExplosivesInCyberspace" />
-      <item itemvalue="JUnit.ExplosivesInCyberspaceTest.testLengthAfterDecompression" />
       <item itemvalue="Application.BalanceBots" />
-      <item itemvalue="JUnit.InputInstructionTest.testParseFromInput" />
-      <item itemvalue="JUnit.BotInstructionTest.testParseFromInput" />
+      <item itemvalue="Application.Dijkstra" />
+      <item itemvalue="Application.RadioisotopeThermoelectricGenerators" />
+      <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest.numberOfMovesToFinalState" />
+      <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RadioisotopeThermoelectricGenerators" />
+        <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest.numberOfMovesToFinalState" />
+        <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest" />
+        <item itemvalue="Application.Dijkstra" />
         <item itemvalue="Application.BalanceBots" />
-        <item itemvalue="JUnit.BotInstructionTest.testParseFromInput" />
-        <item itemvalue="JUnit.InputInstructionTest.testParseFromInput" />
-        <item itemvalue="Application.ExplosivesInCyberspace" />
-        <item itemvalue="JUnit.ExplosivesInCyberspaceTest.testLengthAfterDecompression" />
       </list>
     </recent_temporary>
   </component>
@@ -494,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624104446644</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Solution 2016 day 10">
+      <created>1624190004958</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1624190004958</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -566,6 +577,11 @@
         <PinnedItemInfo parentTag="be.rouget.puzzles.adventofcode.year2020.day20.Image" memberName="tiles" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="targetStates.toArray()[2]" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

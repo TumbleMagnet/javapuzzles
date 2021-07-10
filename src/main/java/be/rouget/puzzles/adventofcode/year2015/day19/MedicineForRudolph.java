@@ -2,9 +2,7 @@ package be.rouget.puzzles.adventofcode.year2015.day19;
 
 import be.rouget.puzzles.adventofcode.util.AocStringUtils;
 import be.rouget.puzzles.adventofcode.util.ResourceUtils;
-import be.rouget.puzzles.adventofcode.util.dijkstra.Dijkstra;
 import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
