@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day12/BunnyComputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day12/Instruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day12/InstructionCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day12/LeonardosMonorail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day12_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/FloorMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/MapSquare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/TwistyMaze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day13/FloorMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,9 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -90,34 +89,21 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day9" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day8" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day7" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day12" />
       <recent name="be.rouget.puzzles.adventofcode.util.graph" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day10" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day9" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LeonardosMonorail">
-    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.util.graph.Dijkstra" />
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TwistyMaze">
     <configuration name="LeonardosMonorail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day12.LeonardosMonorail" />
       <module name="javapuzzles" />
@@ -145,51 +131,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioisotopeThermoelectricGeneratorsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TwistyMaze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day13.TwistyMaze" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day11.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day11" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day11.RadioisotopeThermoelectricGeneratorsTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioisotopeThermoelectricGeneratorsTest.numberOfMovesToFinalState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FloorMapTest.testMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day11.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day11" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day11.RadioisotopeThermoelectricGeneratorsTest" />
-      <option name="METHOD_NAME" value="numberOfMovesToFinalState" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day13" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day13.FloorMapTest" />
+      <option name="METHOD_NAME" value="testMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FloorMapTest.testShortestPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day13" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day13.FloorMapTest" />
+      <option name="METHOD_NAME" value="testShortestPath" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Dijkstra" />
       <item itemvalue="Application.RadioisotopeThermoelectricGenerators" />
-      <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest.numberOfMovesToFinalState" />
-      <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest" />
       <item itemvalue="Application.LeonardosMonorail" />
+      <item itemvalue="JUnit.FloorMapTest.testMap" />
+      <item itemvalue="JUnit.FloorMapTest.testShortestPath" />
+      <item itemvalue="Application.TwistyMaze" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TwistyMaze" />
+        <item itemvalue="JUnit.FloorMapTest.testShortestPath" />
+        <item itemvalue="JUnit.FloorMapTest.testMap" />
         <item itemvalue="Application.LeonardosMonorail" />
         <item itemvalue="Application.RadioisotopeThermoelectricGenerators" />
-        <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest" />
-        <item itemvalue="JUnit.RadioisotopeThermoelectricGeneratorsTest.numberOfMovesToFinalState" />
-        <item itemvalue="Application.Dijkstra" />
       </list>
     </recent_temporary>
   </component>
@@ -510,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625917397183</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Solution 2016 day 12.">
+      <created>1625930387207</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1625930387207</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -524,7 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2015 day 15" />
     <MESSAGE value="Final solution 2015 day 16" />
     <MESSAGE value="Final solution 2015 day 17" />
     <MESSAGE value="Final solution 2015 day 18" />
@@ -549,7 +555,8 @@
     <MESSAGE value="Solution 2016 day 10" />
     <MESSAGE value="Solution 2016 day 11 : slow solution" />
     <MESSAGE value="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet." />
+    <MESSAGE value="Solution 2016 day 12." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 12." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
