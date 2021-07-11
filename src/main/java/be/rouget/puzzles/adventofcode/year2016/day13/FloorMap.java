@@ -64,22 +64,15 @@ public class FloorMap {
         Set<Position> positionsToVisit = Sets.newHashSet(from);
 
         for (int i = 0; i < moves; i++) {
-            Set<Position> newPositions = doMove(graph, visitedPositions, positionsToVisit);
+            Set<Position> newPositions = positionsToVisit.stream()
+                    .flatMap(position -> graph.edgesFrom(position).stream())
+                    .map(Edge::getTo)
+                    .filter(p -> !visitedPositions.contains(p))
+                    .collect(Collectors.toSet());
             visitedPositions.addAll(newPositions);
             positionsToVisit = newPositions;
         }
         return visitedPositions.size();
-    }
-
-    private Set<Position> doMove(FloorGraph graph, Set<Position> visitedPositions, Set<Position> positionsToVisit) {
-        Set<Position> newPositions = Sets.newHashSet();
-        for (Position position : positionsToVisit) {
-            graph.edgesFrom(position).stream()
-                    .map(Edge::getTo)
-                    .filter(p -> !visitedPositions.contains(p))
-                    .forEach(newPositions::add);
-        }
-        return newPositions;
     }
 
     public boolean isPositionInMap(Position position) {

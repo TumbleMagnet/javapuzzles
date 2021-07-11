@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/FloorMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/MapSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/TwistyMaze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day13/FloorMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/FloorMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/FloorMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/TwistyMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/TwistyMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -517,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625930387207</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Solution 2016 day 13.">
+      <created>1626005016091</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1626005016091</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -531,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2015 day 16" />
     <MESSAGE value="Final solution 2015 day 17" />
     <MESSAGE value="Final solution 2015 day 18" />
     <MESSAGE value="Final solution 2015 day 19" />
@@ -556,7 +560,8 @@
     <MESSAGE value="Solution 2016 day 11 : slow solution" />
     <MESSAGE value="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet." />
     <MESSAGE value="Solution 2016 day 12." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 12." />
+    <MESSAGE value="Solution 2016 day 13." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 13." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
