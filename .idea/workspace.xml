@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2016 day 14">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day14/OneTimePad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day14/OneTimePadTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/FloorMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/FloorMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/TwistyMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day13/TwistyMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,27 +87,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day9" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day8" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day12" />
       <recent name="be.rouget.puzzles.adventofcode.util.graph" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day11" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day10" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TwistyMaze">
-    <configuration name="LeonardosMonorail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day12.LeonardosMonorail" />
+  <component name="RunManager" selected="Application.OneTimePad">
+    <configuration name="OneTimePad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14.OneTimePad" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day12.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,79 +115,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioisotopeThermoelectricGenerators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day11.RadioisotopeThermoelectricGenerators" />
+    <configuration name="OneTimePadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
-      <option name="VM_PARAMETERS" value="-Xmx10G" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day11.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14.OneTimePadTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwistyMaze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day13.TwistyMaze" />
+    <configuration name="OneTimePadTest.testExtractRepeatedChars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day13.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FloorMapTest.testMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day13.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day13" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day13.FloorMapTest" />
-      <option name="METHOD_NAME" value="testMap" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14.OneTimePadTest" />
+      <option name="METHOD_NAME" value="testExtractRepeatedChars" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FloorMapTest.testShortestPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OneTimePadTest.testPart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day13.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day13" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day13.FloorMapTest" />
-      <option name="METHOD_NAME" value="testShortestPath" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14.OneTimePadTest" />
+      <option name="METHOD_NAME" value="testPart1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneTimePadTest.testPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day14.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14.OneTimePadTest" />
+      <option name="METHOD_NAME" value="testPart2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RadioisotopeThermoelectricGenerators" />
-      <item itemvalue="Application.LeonardosMonorail" />
-      <item itemvalue="JUnit.FloorMapTest.testMap" />
-      <item itemvalue="JUnit.FloorMapTest.testShortestPath" />
-      <item itemvalue="Application.TwistyMaze" />
+      <item itemvalue="Application.OneTimePad" />
+      <item itemvalue="JUnit.OneTimePadTest.testExtractRepeatedChars" />
+      <item itemvalue="JUnit.OneTimePadTest.testPart1" />
+      <item itemvalue="JUnit.OneTimePadTest" />
+      <item itemvalue="JUnit.OneTimePadTest.testPart2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TwistyMaze" />
-        <item itemvalue="JUnit.FloorMapTest.testShortestPath" />
-        <item itemvalue="JUnit.FloorMapTest.testMap" />
-        <item itemvalue="Application.LeonardosMonorail" />
-        <item itemvalue="Application.RadioisotopeThermoelectricGenerators" />
+        <item itemvalue="Application.OneTimePad" />
+        <item itemvalue="JUnit.OneTimePadTest.testPart2" />
+        <item itemvalue="JUnit.OneTimePadTest" />
+        <item itemvalue="JUnit.OneTimePadTest.testPart1" />
+        <item itemvalue="JUnit.OneTimePadTest.testExtractRepeatedChars" />
       </list>
     </recent_temporary>
   </component>
@@ -522,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626005016091</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Solution 2016 day 13: cleanup">
+      <created>1626005385177</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1626005385177</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -536,8 +547,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2015 day 17" />
-    <MESSAGE value="Final solution 2015 day 18" />
     <MESSAGE value="Final solution 2015 day 19" />
     <MESSAGE value="Final solution 2015 day 20" />
     <MESSAGE value="Final solution 2015 day 21" />
@@ -561,7 +570,9 @@
     <MESSAGE value="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet." />
     <MESSAGE value="Solution 2016 day 12." />
     <MESSAGE value="Solution 2016 day 13." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 13." />
+    <MESSAGE value="Solution 2016 day 13: cleanup" />
+    <MESSAGE value="Solution 2016 day 14" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 14" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
