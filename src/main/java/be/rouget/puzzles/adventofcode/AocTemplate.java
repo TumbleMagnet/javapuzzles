@@ -8,7 +8,7 @@ import java.util.List;
 
 public class AocTemplate {
 
-    private static final String YEAR = "2020";
+    private static final String YEAR = "2021";
     private static final String DAY = "XX";
 
     private static final Logger LOG = LogManager.getLogger(AocTemplate.class);
