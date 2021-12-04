@@ -4,12 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day15/Disc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day15/TimingIsEverything.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day15_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day15/DiscTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2021 day 1 and 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day1/SonarSweep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day2/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day2/Dive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day2/Instruction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day2/SubmarinePart1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day2/SubmarinePart2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day01_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day02_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_4_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_4_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_4_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_4_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_0_M1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javapuzzles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javapuzzles.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +38,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +55,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="2" />
   </component>
@@ -52,7 +72,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/2016" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/2021" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21609196" />
@@ -65,11 +85,11 @@
       <recent name="be.rouget.puzzles.adventofcode.year2015.day7" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\programming\projects\javapuzzles\src\main\resources\2021" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2016" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2015" />
       <recent name="C:\programming\projects\javapuzzles\src\main\java\be\rouget\puzzles\adventofcode\util" />
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2020" />
-      <recent name="C:\programming\projects\javapuzzles\src\main\java\be\rouget\puzzles\adventofcode\util\map" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -96,20 +116,46 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day10" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day2" />
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day1" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day15" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day13" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day12" />
-      <recent name="be.rouget.puzzles.adventofcode.util.graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TimingIsEverything">
+  <component name="RunManager" selected="Application.Dive">
+    <configuration name="Dive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day2.Dive" />
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OneTimePad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14.OneTimePad" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day14.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SonarSweep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day1.SonarSweep" />
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,51 +192,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OneTimePadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14.OneTimePadTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OneTimePadTest.testPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day14.OneTimePadTest" />
-      <option name="METHOD_NAME" value="testPart2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.OneTimePad" />
-      <item itemvalue="JUnit.OneTimePadTest" />
-      <item itemvalue="JUnit.OneTimePadTest.testPart2" />
       <item itemvalue="Application.TimingIsEverything" />
       <item itemvalue="JUnit.DiscTest.getPositionAtTime" />
+      <item itemvalue="Application.SonarSweep" />
+      <item itemvalue="Application.Dive" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Dive" />
+        <item itemvalue="Application.SonarSweep" />
         <item itemvalue="Application.TimingIsEverything" />
         <item itemvalue="JUnit.DiscTest.getPositionAtTime" />
         <item itemvalue="Application.OneTimePad" />
-        <item itemvalue="JUnit.OneTimePadTest.testPart2" />
-        <item itemvalue="JUnit.OneTimePadTest" />
       </list>
     </recent_temporary>
   </component>
@@ -539,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633274887580</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Solution 2016 day 15">
+      <created>1637699983154</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1637699983154</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -553,8 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2015 day 19" />
-    <MESSAGE value="Final solution 2015 day 20" />
     <MESSAGE value="Final solution 2015 day 21" />
     <MESSAGE value="Final solution 2015 day 22" />
     <MESSAGE value="Final solution 2015 day 23" />
@@ -578,7 +598,9 @@
     <MESSAGE value="Solution 2016 day 13." />
     <MESSAGE value="Solution 2016 day 13: cleanup" />
     <MESSAGE value="Solution 2016 day 14" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 14" />
+    <MESSAGE value="Solution 2016 day 15" />
+    <MESSAGE value="Solution 2021 day 1 and 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 1 and 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
