@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2021 day 5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day5/HydrothermalVenture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day5/VentLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day05_input.txt" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day16/DragonChecksum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day16/DragonChecksumTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +19,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -91,27 +90,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day16" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day4" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day15" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day13" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day11" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day16" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day5" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day4" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day3" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day2" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HydrothermalVenture">
-    <configuration name="BinaryDiagnostic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day3.BinaryDiagnostic" />
+  <component name="RunManager" selected="Application.DragonChecksum">
+    <configuration name="DragonChecksum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day16.DragonChecksum" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day3.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,52 +144,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BingoGridTest.testGrid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DragonChecksumTest.testChecksum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day4.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day4" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day4.BingoGridTest" />
-      <option name="METHOD_NAME" value="testGrid" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day16" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day16.DragonChecksumTest" />
+      <option name="METHOD_NAME" value="testChecksum" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BingoGridTest.testParseLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DragonChecksumTest.testGenerateWithDragonCurve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day4.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day4" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day4.BingoGridTest" />
-      <option name="METHOD_NAME" value="testParseLine" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day16" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day16.DragonChecksumTest" />
+      <option name="METHOD_NAME" value="testGenerateWithDragonCurve" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BinaryDiagnostic" />
       <item itemvalue="Application.GiantSquid" />
-      <item itemvalue="JUnit.BingoGridTest.testParseLine" />
-      <item itemvalue="JUnit.BingoGridTest.testGrid" />
       <item itemvalue="Application.HydrothermalVenture" />
+      <item itemvalue="Application.DragonChecksum" />
+      <item itemvalue="JUnit.DragonChecksumTest.testGenerateWithDragonCurve" />
+      <item itemvalue="JUnit.DragonChecksumTest.testChecksum" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DragonChecksum" />
+        <item itemvalue="JUnit.DragonChecksumTest.testChecksum" />
+        <item itemvalue="JUnit.DragonChecksumTest.testGenerateWithDragonCurve" />
         <item itemvalue="Application.HydrothermalVenture" />
         <item itemvalue="Application.GiantSquid" />
-        <item itemvalue="JUnit.BingoGridTest.testGrid" />
-        <item itemvalue="JUnit.BingoGridTest.testParseLine" />
-        <item itemvalue="Application.BinaryDiagnostic" />
       </list>
     </recent_temporary>
   </component>
@@ -202,13 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Solution for day 16">
-      <created>1609515521350</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1609515521350</updated>
     </task>
     <task id="LOCAL-00004" summary="Solution for day 17">
       <created>1609544122447</created>
@@ -546,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638644703747</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Solution 2021 day 5">
+      <created>1638704156850</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1638704156850</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
