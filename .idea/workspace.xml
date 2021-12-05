@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2021 day 3 and 4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day3/BinaryDiagnostic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day4/BingoGrid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day4/GiantSquid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day03_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day04_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day4/BingoGridTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2021 day 5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day5/HydrothermalVenture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day5/VentLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day05_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +20,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -102,14 +98,14 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day11" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day5" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day4" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day3" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day2" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day1" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day15" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GiantSquid">
+  <component name="RunManager" selected="Application.HydrothermalVenture">
     <configuration name="BinaryDiagnostic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day3.BinaryDiagnostic" />
       <module name="javapuzzles" />
@@ -123,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day2.Dive" />
+    <configuration name="GiantSquid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day4.GiantSquid" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day2.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GiantSquid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day4.GiantSquid" />
+    <configuration name="HydrothermalVenture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day5.HydrothermalVenture" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day4.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,19 +178,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Dive" />
       <item itemvalue="Application.BinaryDiagnostic" />
       <item itemvalue="Application.GiantSquid" />
       <item itemvalue="JUnit.BingoGridTest.testParseLine" />
       <item itemvalue="JUnit.BingoGridTest.testGrid" />
+      <item itemvalue="Application.HydrothermalVenture" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HydrothermalVenture" />
         <item itemvalue="Application.GiantSquid" />
         <item itemvalue="JUnit.BingoGridTest.testGrid" />
         <item itemvalue="JUnit.BingoGridTest.testParseLine" />
         <item itemvalue="Application.BinaryDiagnostic" />
-        <item itemvalue="Application.Dive" />
       </list>
     </recent_temporary>
   </component>
@@ -206,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Setup day 16">
-      <created>1609501322946</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1609501322946</updated>
     </task>
     <task id="LOCAL-00003" summary="Solution for day 16">
       <created>1609515521350</created>
@@ -550,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638621226282</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Solution 2021 day 3 and 4">
+      <created>1638644703747</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1638644703747</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -564,7 +560,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2015 day 22" />
     <MESSAGE value="Final solution 2015 day 23" />
     <MESSAGE value="Final solution 2015 day 24" />
     <MESSAGE value="Final solution 2015 day 25" />
@@ -589,7 +584,8 @@
     <MESSAGE value="Solution 2016 day 15" />
     <MESSAGE value="Solution 2021 day 1 and 2" />
     <MESSAGE value="Solution 2021 day 3 and 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 3 and 4" />
+    <MESSAGE value="Solution 2021 day 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
