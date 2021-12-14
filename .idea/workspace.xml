@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day6/LanternFish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day06_input.txt" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2021 day 7 and 8">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day7/TreacheryOfWhales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day8/Digit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day8/Display.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day8/SevenSegmentSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day07_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day08_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/util/PermutationGeneratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day7/TreacheryOfWhalesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day8/DisplayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_12_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javapuzzles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javapuzzles.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,27 +102,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day8" />
+      <recent name="be.rouget.puzzles.adventofcode.util" />
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day7" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day6" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day16" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day4" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day15" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day14" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day8" />
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day7" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day6" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day16" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day5" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day4" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LanternFish">
-    <configuration name="DragonChecksum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day16.DragonChecksum" />
+  <component name="RunManager" selected="Application.SevenSegmentSearch">
+    <configuration name="SevenSegmentSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day8.SevenSegmentSearch" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day16.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LanternFish" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day6.LanternFish" />
+    <configuration name="TreacheryOfWhales" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day7.TreacheryOfWhales" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day6.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,68 +143,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DragonChecksumTest.testChecksum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DisplayTest.getDecodedOutput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day16.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day16" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day16.DragonChecksumTest" />
-      <option name="METHOD_NAME" value="testChecksum" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day8" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day8.DisplayTest" />
+      <option name="METHOD_NAME" value="getDecodedOutput" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DragonChecksumTest.testGenerateWithDragonCurve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PermutationGeneratorTest.generatePermutations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day16.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day16" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day16.DragonChecksumTest" />
-      <option name="METHOD_NAME" value="testGenerateWithDragonCurve" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.util" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.util.PermutationGeneratorTest" />
+      <option name="METHOD_NAME" value="generatePermutations" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LanternFishTest.testCountDescendants2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TreacheryOfWhalesTest.testExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day6.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day6" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day6.LanternFishTest" />
-      <option name="METHOD_NAME" value="testCountDescendants2" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day7" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day7.TreacheryOfWhalesTest" />
+      <option name="METHOD_NAME" value="testExamples" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DragonChecksum" />
-      <item itemvalue="JUnit.DragonChecksumTest.testGenerateWithDragonCurve" />
-      <item itemvalue="JUnit.DragonChecksumTest.testChecksum" />
-      <item itemvalue="Application.LanternFish" />
-      <item itemvalue="JUnit.LanternFishTest.testCountDescendants2" />
+      <item itemvalue="Application.TreacheryOfWhales" />
+      <item itemvalue="Application.SevenSegmentSearch" />
+      <item itemvalue="JUnit.TreacheryOfWhalesTest.testExamples" />
+      <item itemvalue="JUnit.PermutationGeneratorTest.generatePermutations" />
+      <item itemvalue="JUnit.DisplayTest.getDecodedOutput" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LanternFish" />
-        <item itemvalue="JUnit.LanternFishTest.testCountDescendants2" />
-        <item itemvalue="Application.DragonChecksum" />
-        <item itemvalue="JUnit.DragonChecksumTest.testChecksum" />
-        <item itemvalue="JUnit.DragonChecksumTest.testGenerateWithDragonCurve" />
+        <item itemvalue="Application.SevenSegmentSearch" />
+        <item itemvalue="JUnit.DisplayTest.getDecodedOutput" />
+        <item itemvalue="JUnit.PermutationGeneratorTest.generatePermutations" />
+        <item itemvalue="Application.TreacheryOfWhales" />
+        <item itemvalue="JUnit.TreacheryOfWhalesTest.testExamples" />
       </list>
     </recent_temporary>
   </component>
@@ -204,13 +216,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Solution for day 18, setup day 19.">
-      <created>1609680160396</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1609680160396</updated>
     </task>
     <task id="LOCAL-00006" summary="Solution day 19">
       <created>1609692683536</created>
@@ -548,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638717404125</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Solution 2021 day 6">
+      <created>1638909343948</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1638909343948</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -562,8 +574,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2015 day 24" />
-    <MESSAGE value="Final solution 2015 day 25" />
     <MESSAGE value="Final solution 2016 day 1" />
     <MESSAGE value="Final solution 2016 day 2" />
     <MESSAGE value="Final solution 2016 day 2: improved solution by re-using RectangleMap" />
@@ -587,7 +597,9 @@
     <MESSAGE value="Solution 2021 day 3 and 4" />
     <MESSAGE value="Solution 2021 day 5" />
     <MESSAGE value="Solution 2016 day 16" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 16" />
+    <MESSAGE value="Solution 2021 day 6" />
+    <MESSAGE value="Solution 2021 day 7 and 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 7 and 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
