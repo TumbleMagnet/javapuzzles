@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2021 day 7 and 8">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day7/TreacheryOfWhales.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day8/Digit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day8/Display.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day8/SevenSegmentSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day07_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day08_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/util/PermutationGeneratorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day7/TreacheryOfWhalesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day8/DisplayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_12_1.xml" beforeDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day9/SmokeBasin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day09_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day9/SmokeBasinTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javapuzzles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javapuzzles.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,21 +91,21 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day9" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day8" />
       <recent name="be.rouget.puzzles.adventofcode.util" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day7" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day6" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day16" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day8" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day7" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day6" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day16" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SevenSegmentSearch">
+  <component name="RunManager" selected="Application.SmokeBasin">
     <configuration name="SevenSegmentSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day8.SevenSegmentSearch" />
       <module name="javapuzzles" />
@@ -130,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreacheryOfWhales" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day7.TreacheryOfWhales" />
+    <configuration name="SmokeBasin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day9.SmokeBasin" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day7.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,36 +164,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreacheryOfWhalesTest.testExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SmokeBasinTest.testSolutions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day7.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day7" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day7.TreacheryOfWhalesTest" />
-      <option name="METHOD_NAME" value="testExamples" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day9" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day9.SmokeBasinTest" />
+      <option name="METHOD_NAME" value="testSolutions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TreacheryOfWhales" />
       <item itemvalue="Application.SevenSegmentSearch" />
-      <item itemvalue="JUnit.TreacheryOfWhalesTest.testExamples" />
+      <item itemvalue="Application.SmokeBasin" />
       <item itemvalue="JUnit.PermutationGeneratorTest.generatePermutations" />
       <item itemvalue="JUnit.DisplayTest.getDecodedOutput" />
+      <item itemvalue="JUnit.SmokeBasinTest.testSolutions" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SmokeBasin" />
+        <item itemvalue="JUnit.SmokeBasinTest.testSolutions" />
         <item itemvalue="Application.SevenSegmentSearch" />
         <item itemvalue="JUnit.DisplayTest.getDecodedOutput" />
         <item itemvalue="JUnit.PermutationGeneratorTest.generatePermutations" />
-        <item itemvalue="Application.TreacheryOfWhales" />
-        <item itemvalue="JUnit.TreacheryOfWhalesTest.testExamples" />
       </list>
     </recent_temporary>
   </component>
@@ -216,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Solution day 19">
-      <created>1609692683536</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1609692683536</updated>
     </task>
     <task id="LOCAL-00007" summary="Solution day 21">
       <created>1610809697641</created>
@@ -560,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638909343948</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Solution 2021 day 7 and 8">
+      <created>1639514086287</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1639514086288</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
