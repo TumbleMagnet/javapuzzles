@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day9/SmokeBasin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day09_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day9/SmokeBasinTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2021 day 10">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day10/ProgramLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day10/SyntaxScoring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day10_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day10/SyntaxScoringTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +21,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,21 +92,21 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day9" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day8" />
       <recent name="be.rouget.puzzles.adventofcode.util" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day7" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day6" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day10" />
       <recent name="be.rouget.puzzles.adventofcode" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day8" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day7" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day6" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day16" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SmokeBasin">
+  <component name="RunManager" selected="Application.SyntaxScoring">
     <configuration name="SevenSegmentSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day8.SevenSegmentSearch" />
       <module name="javapuzzles" />
@@ -132,34 +133,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DisplayTest.getDecodedOutput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SyntaxScoring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day10.SyntaxScoring" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day8.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day8" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day8.DisplayTest" />
-      <option name="METHOD_NAME" value="getDecodedOutput" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PermutationGeneratorTest.generatePermutations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.util" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.util.PermutationGeneratorTest" />
-      <option name="METHOD_NAME" value="generatePermutations" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,20 +162,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SyntaxScoringTest.firstInvalidCharacter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day10" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day10.SyntaxScoringTest" />
+      <option name="METHOD_NAME" value="firstInvalidCharacter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.SevenSegmentSearch" />
       <item itemvalue="Application.SmokeBasin" />
-      <item itemvalue="JUnit.PermutationGeneratorTest.generatePermutations" />
-      <item itemvalue="JUnit.DisplayTest.getDecodedOutput" />
       <item itemvalue="JUnit.SmokeBasinTest.testSolutions" />
+      <item itemvalue="Application.SyntaxScoring" />
+      <item itemvalue="JUnit.SyntaxScoringTest.firstInvalidCharacter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SyntaxScoring" />
+        <item itemvalue="JUnit.SyntaxScoringTest.firstInvalidCharacter" />
         <item itemvalue="Application.SmokeBasin" />
         <item itemvalue="JUnit.SmokeBasinTest.testSolutions" />
         <item itemvalue="Application.SevenSegmentSearch" />
-        <item itemvalue="JUnit.DisplayTest.getDecodedOutput" />
-        <item itemvalue="JUnit.PermutationGeneratorTest.generatePermutations" />
       </list>
     </recent_temporary>
   </component>
@@ -205,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Solution day 21">
-      <created>1610809697641</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1610809697641</updated>
     </task>
     <task id="LOCAL-00008" summary="Solution day 22">
       <created>1610899080032</created>
@@ -549,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639514086288</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Solution 2021 day 9">
+      <created>1639773199236</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1639773199236</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -563,8 +561,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2016 day 1" />
-    <MESSAGE value="Final solution 2016 day 2" />
     <MESSAGE value="Final solution 2016 day 2: improved solution by re-using RectangleMap" />
     <MESSAGE value="Final solution 2016 day 3" />
     <MESSAGE value="Final solution 2016 day 4" />
@@ -588,7 +584,9 @@
     <MESSAGE value="Solution 2016 day 16" />
     <MESSAGE value="Solution 2021 day 6" />
     <MESSAGE value="Solution 2021 day 7 and 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 7 and 8" />
+    <MESSAGE value="Solution 2021 day 9" />
+    <MESSAGE value="Solution 2021 day 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
