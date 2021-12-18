@@ -32,9 +32,8 @@ public class DumboOctopus {
     public long computeResultForPart1() {
         RectangleMap<OctopusChar> grid =  new RectangleMap<>(this.input, OctopusChar::fromInputCharacter);
         int numberOfFlashes = 0;
-        for (int step = 1; step <= 100; step++) {
-            int numberOfFlashesThisStep = step(grid);
-            numberOfFlashes += numberOfFlashesThisStep;
+        for (int i = 0; i < 100; i++) {
+            numberOfFlashes += step(grid);
         }
         return numberOfFlashes;
     }
@@ -43,8 +42,7 @@ public class DumboOctopus {
         RectangleMap<OctopusChar> grid =  new RectangleMap<>(this.input, OctopusChar::fromInputCharacter);
         int step = 1;
         while (true) {
-            int numberOfFlashes = step(grid);
-            if (numberOfFlashes == grid.getWidth() * grid.getHeight()) {
+            if (step(grid) == grid.getWidth() * grid.getHeight()) {
                 return step;
             }
             step++;

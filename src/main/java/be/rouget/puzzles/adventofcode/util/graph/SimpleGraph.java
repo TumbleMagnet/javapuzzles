@@ -7,23 +7,23 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class SimpleGraph implements Graph<Vertex> {
-    private Map<String, Vertex> vertexesByName = Maps.newHashMap();
-    private List<Edge<Vertex>> edges = Lists.newArrayList();
+public class SimpleGraph<T extends Vertex> implements Graph<T> {
+    private final Map<String, T> vertexesByName = Maps.newHashMap();
+    private final List<Edge<T>> edges = Lists.newArrayList();
 
-    public void addUndirectedEdge(Vertex from, Vertex to, int distance) {
+    public void addUndirectedEdge(T from, T to, int distance) {
         vertexesByName.put(from.getName(), from);
         vertexesByName.put(to.getName(), to);
-        edges.add(new Edge(from, to, distance));
-        edges.add(new Edge(to, from, distance));
+        edges.add(new Edge<>(from, to, distance));
+        edges.add(new Edge<>(to, from, distance));
     }
 
     @Override
-    public List<Edge<Vertex>> edgesFrom(Vertex from) {
+    public List<Edge<T>> edgesFrom(T from) {
         return edges.stream().filter(e -> e.getFrom().equals(from)).collect(Collectors.toList());
     }
 
-    public Vertex getVertex(String name) {
+    public T getVertex(String name) {
         return vertexesByName.get(name);
     }
 }

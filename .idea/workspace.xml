@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day11/DumboOctopus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day11/OctopusChar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day11_input.txt" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2021 day 12">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day12/Cave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day12/PassagePathing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day12_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/SimpleGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/graph/SimpleGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day11/DumboOctopus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day11/DumboOctopus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,20 +100,33 @@
       <recent name="be.rouget.puzzles.adventofcode.year2021.day7" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day12" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day10" />
       <recent name="be.rouget.puzzles.adventofcode" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day8" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day7" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DumboOctopus">
+  <component name="RunManager" selected="Application.PassagePathing">
     <configuration name="DumboOctopus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day11.DumboOctopus" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PassagePathing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day12.PassagePathing" />
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,22 +160,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmokeBasinTest.testSolutions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day9" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day9.SmokeBasinTest" />
-      <option name="METHOD_NAME" value="testSolutions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SyntaxScoringTest.firstInvalidCharacter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
@@ -179,18 +178,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.SmokeBasin" />
-      <item itemvalue="JUnit.SmokeBasinTest.testSolutions" />
       <item itemvalue="Application.SyntaxScoring" />
       <item itemvalue="JUnit.SyntaxScoringTest.firstInvalidCharacter" />
       <item itemvalue="Application.DumboOctopus" />
+      <item itemvalue="Application.PassagePathing" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PassagePathing" />
         <item itemvalue="Application.DumboOctopus" />
         <item itemvalue="Application.SyntaxScoring" />
         <item itemvalue="JUnit.SyntaxScoringTest.firstInvalidCharacter" />
         <item itemvalue="Application.SmokeBasin" />
-        <item itemvalue="JUnit.SmokeBasinTest.testSolutions" />
       </list>
     </recent_temporary>
   </component>
@@ -202,13 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Solution day 23">
-      <created>1611427523918</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1611427523918</updated>
     </task>
     <task id="LOCAL-00010" summary="First solution day 24">
       <created>1611498656238</created>
@@ -546,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639778461557</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Solution 2021 day 11">
+      <created>1639831204101</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1639831204101</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -560,8 +559,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2016 day 2: improved solution by re-using RectangleMap" />
-    <MESSAGE value="Final solution 2016 day 3" />
     <MESSAGE value="Final solution 2016 day 4" />
     <MESSAGE value="Final solution 2016 day 5" />
     <MESSAGE value="Final solution 2016 day 5 (cleanup)" />
@@ -585,7 +582,9 @@
     <MESSAGE value="Solution 2021 day 7 and 8" />
     <MESSAGE value="Solution 2021 day 9" />
     <MESSAGE value="Solution 2021 day 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 10" />
+    <MESSAGE value="Solution 2021 day 11" />
+    <MESSAGE value="Solution 2021 day 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
