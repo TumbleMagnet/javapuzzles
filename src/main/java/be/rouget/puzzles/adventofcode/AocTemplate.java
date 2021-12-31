@@ -1,6 +1,6 @@
 package be.rouget.puzzles.adventofcode;
 
-import be.rouget.puzzles.adventofcode.util.ResourceUtils;
+import be.rouget.puzzles.adventofcode.util.SolverUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -8,13 +8,10 @@ import java.util.List;
 
 public class AocTemplate {
 
-    private static final String YEAR = "2021";
-    private static final String DAY = "XX";
-
     private static final Logger LOG = LogManager.getLogger(AocTemplate.class);
 
     public static void main(String[] args) {
-        List<String> input = ResourceUtils.readLines(YEAR + "/aoc_" + YEAR + "_day" + DAY + "_input.txt");
+        List<String> input = SolverUtils.readInput(AocTemplate.class);
         AocTemplate aoc = new AocTemplate(input);
         LOG.info("Result for part 1 is: " + aoc.computeResultForPart1());
         LOG.info("Result for part 2 is: " + aoc.computeResultForPart2());

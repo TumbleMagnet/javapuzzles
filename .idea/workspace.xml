@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day15/Chiton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day15/ChitonCave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day15/ExtendedChitonCave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day15/RiskLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day15_input.txt" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2021 day 16">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/SolverUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day16/OperatorPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day16/Packet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day16/PacketDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day16/PacketHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day16/PacketType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day16/ValuePacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day16_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day16/PacketDecoderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/AocStringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/AocStringUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -65,6 +71,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day16" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day15" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day10" />
@@ -81,6 +88,7 @@
       <recent name="" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.util.SolverUtils" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day11.State" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -95,27 +103,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day16" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day9" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day8" />
-      <recent name="be.rouget.puzzles.adventofcode.util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day16" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day15" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day12" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day11" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Chiton">
-    <configuration name="Chiton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day15.Chiton" />
+  <component name="RunManager" selected="Application.PacketDecoder">
+    <configuration name="PacketDecoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day16.PacketDecoder" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day15.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,80 +131,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtendedPolymerization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day14.ExtendedPolymerization" />
+    <configuration name="PacketDecoderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day14.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExtendedPolymerizationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day14" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day14.ExtendedPolymerizationTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day16" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day16.PacketDecoderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtendedPolymerizationTest.testOnePair02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PacketDecoderTest.testOperatorPacket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day14.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day14" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day14.ExtendedPolymerizationTest" />
-      <option name="METHOD_NAME" value="testOnePair02" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day16" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day16.PacketDecoderTest" />
+      <option name="METHOD_NAME" value="testOperatorPacket" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtendedPolymerizationTest.testTwoSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PacketDecoderTest.testOperatorPacketVariableLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day14.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day14" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day14.ExtendedPolymerizationTest" />
-      <option name="METHOD_NAME" value="testTwoSteps" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day16" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day16.PacketDecoderTest" />
+      <option name="METHOD_NAME" value="testOperatorPacketVariableLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PacketDecoderTest.testOperators" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day16" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day16.PacketDecoderTest" />
+      <option name="METHOD_NAME" value="testOperators" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ExtendedPolymerization" />
-      <item itemvalue="JUnit.ExtendedPolymerizationTest.testTwoSteps" />
-      <item itemvalue="JUnit.ExtendedPolymerizationTest" />
-      <item itemvalue="JUnit.ExtendedPolymerizationTest.testOnePair02" />
-      <item itemvalue="Application.Chiton" />
+      <item itemvalue="Application.PacketDecoder" />
+      <item itemvalue="JUnit.PacketDecoderTest.testOperatorPacket" />
+      <item itemvalue="JUnit.PacketDecoderTest.testOperatorPacketVariableLength" />
+      <item itemvalue="JUnit.PacketDecoderTest" />
+      <item itemvalue="JUnit.PacketDecoderTest.testOperators" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Chiton" />
-        <item itemvalue="Application.ExtendedPolymerization" />
-        <item itemvalue="JUnit.ExtendedPolymerizationTest" />
-        <item itemvalue="JUnit.ExtendedPolymerizationTest.testTwoSteps" />
-        <item itemvalue="JUnit.ExtendedPolymerizationTest.testOnePair02" />
+        <item itemvalue="Application.PacketDecoder" />
+        <item itemvalue="JUnit.PacketDecoderTest" />
+        <item itemvalue="JUnit.PacketDecoderTest.testOperators" />
+        <item itemvalue="JUnit.PacketDecoderTest.testOperatorPacketVariableLength" />
+        <item itemvalue="JUnit.PacketDecoderTest.testOperatorPacket" />
       </list>
     </recent_temporary>
   </component>
@@ -208,13 +219,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Final solution 2015 day 7 and 8">
-      <created>1613924376189</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1613924376189</updated>
     </task>
     <task id="LOCAL-00014" summary="Final solution 2015 day 9">
       <created>1614426253712</created>
@@ -552,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639939051292</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Solution 2021 day 15">
+      <created>1640456611584</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1640456611585</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -566,8 +577,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final solution 2016 day 5 (cleanup)" />
-    <MESSAGE value="Final solution 2016 day 6" />
     <MESSAGE value="Solution 2016 day 7" />
     <MESSAGE value="Solution 2016 day 8" />
     <MESSAGE value="Solution 2016 day 9" />
@@ -591,7 +600,9 @@
     <MESSAGE value="Solution 2021 day 12" />
     <MESSAGE value="Solution 2021 day 13" />
     <MESSAGE value="Solution 2021 day 14" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 14" />
+    <MESSAGE value="Solution 2021 day 15" />
+    <MESSAGE value="Solution 2021 day 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -616,6 +627,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day14/Reindeer.java</url>
           <line>29</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day16/OperatorPacket.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

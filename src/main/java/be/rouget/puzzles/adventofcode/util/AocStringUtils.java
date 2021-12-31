@@ -6,11 +6,11 @@ import java.util.List;
 public class AocStringUtils {
     public static List<String> extractCharacterList(String line) {
         String[] lineChars = splitCharacters(line);
-        List<String> collection = Arrays.asList(lineChars);
-        return collection;
+        return Arrays.asList(lineChars);
     }
 
     public static String[] splitCharacters(String line) {
         return line.split("(?!^)");
     }
+
 }
