@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day19/BeaconMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day19/BeaconScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day19/Coordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day19/FacingDirection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day19/LocalizedScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day19/Rotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day19/Scanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day19_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day19_test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day19/CoordinatesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day19/ScannerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/SolverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/SolverUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day19/BeaconMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day19/BeaconMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day19/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day19/Scanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day19/ScannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day19/ScannerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,10 +196,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BeaconScanner" />
+        <item itemvalue="JUnit.ScannerTest" />
         <item itemvalue="JUnit.CoordinatesTest.testDistance" />
         <item itemvalue="JUnit.ScannerTest.testPairing" />
         <item itemvalue="JUnit.ScannerTest.testMatchingBeacons" />
-        <item itemvalue="JUnit.ScannerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -220,13 +211,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Final solution 2015 day 14">
-      <created>1615113300297</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1615113300297</updated>
     </task>
     <task id="LOCAL-00019" summary="Final solution 2015 day 15">
       <created>1615124475869</created>
@@ -564,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642244778492</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Solution 2021 day 19: not optimized.">
+      <created>1642263899770</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1642263899771</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -578,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2016 day 10" />
     <MESSAGE value="Solution 2016 day 11 : slow solution" />
     <MESSAGE value="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet." />
     <MESSAGE value="Solution 2016 day 12." />
@@ -603,7 +593,8 @@
     <MESSAGE value="Solution 2021 day 17" />
     <MESSAGE value="Solution 2021 day 18" />
     <MESSAGE value="Updated log4j" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated log4j" />
+    <MESSAGE value="Solution 2021 day 19: not optimized." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 19: not optimized." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

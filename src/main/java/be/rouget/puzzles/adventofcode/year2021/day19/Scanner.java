@@ -18,13 +18,33 @@ import java.util.stream.Collectors;
 public class Scanner {
 
     private static final Logger LOG = LogManager.getLogger(Scanner.class);
+    public static final int BEACON_MATCH_MIN = 12;
+    public static final int DISTANCE_MATCH_MIN = BEACON_MATCH_MIN * (BEACON_MATCH_MIN -1) / 2;
 
     String name;
     List<Coordinates> beacons;
+    List<Integer> distances;
 
-    public Optional<LocalizedScanner> checkPairingAndReturnCoordinates(Scanner other) {
+    public Scanner(String name, List<Coordinates> beacons) {
+        this.name = name;
+        this.beacons = beacons;
+        this.distances = Lists.newArrayList();
+        for (int i = 0; i < this.beacons.size()-1; i++) {
+            for (int j = 1; j < this.beacons.size(); j++) {
+                this.distances.add(beacons.get(i).distanceFrom(beacons.get(j)));
+            }
+        }
+    }
+
+    public Optional<LocalizedScanner> checkPairing(Scanner other) {
         LOG.debug("Trying to to pair {} with {}", getName(), other.getName());
 
+        // Optimization: check that enough beacon distances match before actually trying to pair both scanners
+        if (!distancesMatch(other)) {
+            return Optional.empty();
+        }
+
+        // Try actual pairing
         for (Scanner orientedOther : other.listOrientations()) {
             for (Coordinates otherBeacon : orientedOther.getBeacons()) {
                 for (Coordinates thisBeacon : this.getBeacons()) {
@@ -33,6 +53,8 @@ public class Scanner {
                     Coordinates translation = otherBeacon.minus(thisBeacon);
                     Scanner translatedOrientedOther = orientedOther.translate(translation);
                     if (this.matches(translatedOrientedOther)) {
+
+                        // This orientation of the other scanner matches this scanner
                         return Optional.of(new LocalizedScanner(translation.inverse(), orientedOther));
                     }
                 }
@@ -43,11 +65,17 @@ public class Scanner {
         return Optional.empty();
     }
 
+    private boolean distancesMatch(Scanner other) {
+        Set<Integer> intersection = Sets.newHashSet(this.distances);
+        intersection.retainAll(other.getDistances());
+        return intersection.size() > DISTANCE_MATCH_MIN;
+    }
+
     public boolean matches(Scanner other) {
         // This scanner "matches" this other scanner if at least 12 beacons match
         Set<Coordinates> intersection = Sets.newHashSet(this.getBeacons());
         intersection.retainAll(other.getBeacons());
-        return intersection.size() >= 12;
+        return intersection.size() >= BEACON_MATCH_MIN;
     }
 
     public Scanner changeOrientation(FacingDirection newDirection, Rotation rotation) {

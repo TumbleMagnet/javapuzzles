@@ -79,8 +79,8 @@ class ScannerTest {
     void testPairing() {
         List<Scanner> scanners = Scanner.parseScanners(SolverUtils.readTest(BeaconScanner.class));
 
-        assertThat(scanners.get(0).checkPairingAndReturnCoordinates(scanners.get(1))).isPresent();
-        assertThat(scanners.get(1).checkPairingAndReturnCoordinates(scanners.get(4))).isPresent();
+        assertThat(scanners.get(0).checkPairing(scanners.get(1))).isPresent();
+        assertThat(scanners.get(1).checkPairing(scanners.get(4))).isPresent();
     }
 
     @Test

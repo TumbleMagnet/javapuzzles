@@ -32,18 +32,13 @@ public class BeaconMap {
 
         // Try to find an existing scanner with 12 matching beacons
         for (LocalizedScanner localizedScanner: scanners) {
-            ScannerMatch newMatch = new ScannerMatch(localizedScanner.getScanner(), scanner);
-            if (!failedMatches.contains(newMatch)) {
-                Optional<LocalizedScanner> optionalLocalizedScanner = localizedScanner.getScanner().checkPairingAndReturnCoordinates(scanner);
-                if (optionalLocalizedScanner.isPresent()) {
-                    LocalizedScanner newLocalizedScanner = optionalLocalizedScanner.get();
-                    Coordinates relativeLocation = newLocalizedScanner.getLocation();
-                    Coordinates scannerLocation = relativeLocation.add(localizedScanner.getLocation());
-                    addScanner(new LocalizedScanner(scannerLocation, newLocalizedScanner.getScanner()));
-                    return true;
-                } else {
-                    failedMatches.add(newMatch);
-                }
+            Optional<LocalizedScanner> optionalLocalizedScanner = localizedScanner.getScanner().checkPairing(scanner);
+            if (optionalLocalizedScanner.isPresent()) {
+                LocalizedScanner newLocalizedScanner = optionalLocalizedScanner.get();
+                Coordinates relativeLocation = newLocalizedScanner.getLocation();
+                Coordinates scannerLocation = relativeLocation.add(localizedScanner.getLocation());
+                addScanner(new LocalizedScanner(scannerLocation, newLocalizedScanner.getScanner()));
+                return true;
             }
         }
 
