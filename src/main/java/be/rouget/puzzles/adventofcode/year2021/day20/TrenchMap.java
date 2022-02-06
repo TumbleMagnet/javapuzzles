@@ -35,7 +35,7 @@ public class TrenchMap {
         TrenchImage trenchImage = TrenchImage.parse(input);
         for (int i = 0; i < numberOfEnhancements; i++) {
             trenchImage = trenchImage.enhance();
-            LOG.info("After enchancement #{}, map contains {} pixels", i+1, trenchImage.getPixels().size());
+            LOG.info("After enhancement #{}, map contains {} pixels", i+1, trenchImage.getPixels().size());
         }
         return trenchImage.getPixels().size();
     }

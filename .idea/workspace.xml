@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day20/ImagePixel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day20/TrenchImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day20/TrenchMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day20_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day20_test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day20/TrenchMapTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Solution 2021 day 21">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day21/DeterministicDice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day21/DiracDice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day21/DiracDiceGameState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day21/PlayerState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day21/PlayerVictories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day21/DiracDiceGameStateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day21/DiracDiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day20/TrenchMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day20/TrenchMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,27 +100,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day20" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day17" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day16" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day20" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day17" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day16" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TrenchMap">
-    <configuration name="BeaconScanner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day19.BeaconScanner" />
+  <component name="RunManager" selected="JUnit.DiracDiceGameStateTest">
+    <configuration name="DiracDice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day21.DiracDice" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day19.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,80 +128,82 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrenchMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day20.TrenchMap" />
+    <configuration name="DiracDiceGameStateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day20.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CoordinatesTest.testDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day19.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day19" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day19.CoordinatesTest" />
-      <option name="METHOD_NAME" value="testDistance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScannerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day19.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day19" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day19.ScannerTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day21" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day21.DiracDiceGameStateTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrenchMapTest.solveTestInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiracDiceGameStateTest.testNextTurn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day20.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day20" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day20.TrenchMapTest" />
-      <option name="METHOD_NAME" value="solveTestInput" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day21" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day21.DiracDiceGameStateTest" />
+      <option name="METHOD_NAME" value="testNextTurn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiracDiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day21.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day21" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day21.DiracDiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiracDiceTest.computeResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day21.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day21" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day21.DiracDiceTest" />
+      <option name="METHOD_NAME" value="computeResults" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BeaconScanner" />
-      <item itemvalue="Application.TrenchMap" />
-      <item itemvalue="JUnit.ScannerTest" />
-      <item itemvalue="JUnit.CoordinatesTest.testDistance" />
-      <item itemvalue="JUnit.TrenchMapTest.solveTestInput" />
+      <item itemvalue="JUnit.DiracDiceGameStateTest" />
+      <item itemvalue="JUnit.DiracDiceGameStateTest.testNextTurn" />
+      <item itemvalue="Application.DiracDice" />
+      <item itemvalue="JUnit.DiracDiceTest.computeResults" />
+      <item itemvalue="JUnit.DiracDiceTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TrenchMap" />
-        <item itemvalue="JUnit.TrenchMapTest.solveTestInput" />
-        <item itemvalue="Application.BeaconScanner" />
-        <item itemvalue="JUnit.ScannerTest" />
-        <item itemvalue="JUnit.CoordinatesTest.testDistance" />
+        <item itemvalue="JUnit.DiracDiceGameStateTest" />
+        <item itemvalue="JUnit.DiracDiceTest.computeResults" />
+        <item itemvalue="Application.DiracDice" />
+        <item itemvalue="JUnit.DiracDiceTest" />
+        <item itemvalue="JUnit.DiracDiceGameStateTest.testNextTurn" />
       </list>
     </recent_temporary>
   </component>
@@ -211,13 +215,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Final solution 2015 day 16">
-      <created>1615128121865</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1615128121865</updated>
     </task>
     <task id="LOCAL-00021" summary="Final solution 2015 day 17">
       <created>1615635402696</created>
@@ -555,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642329135069</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Solution 2021 day 20">
+      <created>1642340900588</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1642340900588</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -569,8 +573,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet." />
-    <MESSAGE value="Solution 2016 day 12." />
     <MESSAGE value="Solution 2016 day 13." />
     <MESSAGE value="Solution 2016 day 13: cleanup" />
     <MESSAGE value="Solution 2016 day 14" />
@@ -594,7 +596,9 @@
     <MESSAGE value="Updated log4j" />
     <MESSAGE value="Solution 2021 day 19: not optimized." />
     <MESSAGE value="Solution 2021 day 19: optimized by using distances between beacons to reject impossible scanner pairing faster." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 19: optimized by using distances between beacons to reject impossible scanner pairing faster." />
+    <MESSAGE value="Solution 2021 day 20" />
+    <MESSAGE value="Solution 2021 day 21" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 21" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -640,6 +644,12 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/javapuzzles$SegmentTest_testIntersection.ic" NAME="SegmentTest.testIntersection Coverage Results" MODIFIED="1618313878311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>be.rouget.puzzles.adventofcode.year2016.day1.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/javapuzzles$DiracDiceGameStateTest_testGetOptionalVictory.ic" NAME="DiracDiceGameStateTest.testGetOptionalVictory Coverage Results" MODIFIED="1644148808761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>be.rouget.puzzles.adventofcode.year2021.day21.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/javapuzzles$DiracDiceGameStateTest.ic" NAME="DiracDiceGameStateTest Coverage Results" MODIFIED="1644149608923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>be.rouget.puzzles.adventofcode.year2021.day21.*</FILTER>
     </SUITE>
   </component>
 </project>
