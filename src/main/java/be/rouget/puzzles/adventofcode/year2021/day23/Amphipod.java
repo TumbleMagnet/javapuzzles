@@ -1,6 +1,7 @@
 package be.rouget.puzzles.adventofcode.year2021.day23;
 
 import be.rouget.puzzles.adventofcode.util.SolverUtils;
+import be.rouget.puzzles.adventofcode.util.graph.Dijkstra;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,9 +23,12 @@ public class Amphipod {
     }
 
     public long computeResultForPart1() {
-        return -1;
+        AmphipodMap.setRoomSize(2);
+        return Dijkstra.shortestDistance(new AmphipodGraph(), AmphipodMap.initialMapForPart1(), AmphipodMap::isTarget);
     }
+
     public long computeResultForPart2() {
-        return -1;
+        AmphipodMap.setRoomSize(4);
+        return Dijkstra.shortestDistance(new AmphipodGraph(), AmphipodMap.initialMapForPart2(), AmphipodMap::isTarget);
     }
 }
