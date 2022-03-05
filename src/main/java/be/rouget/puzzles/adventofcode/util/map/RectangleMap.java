@@ -96,7 +96,9 @@ public class RectangleMap<E extends MapCharacter> {
             for (int x = 0; x < width; x++) {
                 sb.append(getElementAt(new Position(x, y)).getMapChar());
             }
-            sb.append("\n");
+            if (y < height - 1) {
+                sb.append("\n");
+            }
         }
         return sb.toString();
     }

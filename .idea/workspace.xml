@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day24/ALUProcessingUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day24/ArithmeticLogicUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day24/Instruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day24/InstructionCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day24_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day24/ALUProcessingUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day25/CucumberMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day25/CucumberMapSquare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2021/day25/SeaCucumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2021/aoc_2021_day25_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2021/day25/CucumberMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/RectangleMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/RectangleMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -99,27 +99,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day25" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day24" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day23" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day22" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day21" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day20" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2021.day25" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day24" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day23" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day22" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day21" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day20" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArithmeticLogicUnit">
-    <configuration name="ArithmeticLogicUnit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day24.ArithmeticLogicUnit" />
+  <component name="RunManager" selected="Application.SeaCucumber">
+    <configuration name="SeaCucumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day25.SeaCucumber" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day24.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day25.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,83 +127,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ALUProcessingUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CucumberMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day24.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day25.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day24" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day24.ALUProcessingUnitTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day25" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day25.CucumberMapTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ALUProcessingUnitTest.testBinaryProgram" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CucumberMapTest.testManySteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day24.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day25.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day24" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day24.ALUProcessingUnitTest" />
-      <option name="METHOD_NAME" value="testBinaryProgram" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day25" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day25.CucumberMapTest" />
+      <option name="METHOD_NAME" value="testManySteps" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ALUProcessingUnitTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CucumberMapTest.testStep2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day24.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day25.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day24" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day24.ALUProcessingUnitTest" />
-      <option name="METHOD_NAME" value="testEquals" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day25" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day25.CucumberMapTest" />
+      <option name="METHOD_NAME" value="testStep2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ALUProcessingUnitTest.testModulo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CucumberMapTest.testStep3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day24.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2021.day25.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day24" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day24.ALUProcessingUnitTest" />
-      <option name="METHOD_NAME" value="testModulo" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2021.day25" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2021.day25.CucumberMapTest" />
+      <option name="METHOD_NAME" value="testStep3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ArithmeticLogicUnit" />
-      <item itemvalue="JUnit.ALUProcessingUnitTest.testModulo" />
-      <item itemvalue="JUnit.ALUProcessingUnitTest.testEquals" />
-      <item itemvalue="JUnit.ALUProcessingUnitTest.testBinaryProgram" />
-      <item itemvalue="JUnit.ALUProcessingUnitTest" />
+      <item itemvalue="JUnit.CucumberMapTest.testStep2" />
+      <item itemvalue="JUnit.CucumberMapTest" />
+      <item itemvalue="JUnit.CucumberMapTest.testStep3" />
+      <item itemvalue="JUnit.CucumberMapTest.testManySteps" />
+      <item itemvalue="Application.SeaCucumber" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ArithmeticLogicUnit" />
-        <item itemvalue="JUnit.ALUProcessingUnitTest" />
-        <item itemvalue="JUnit.ALUProcessingUnitTest.testBinaryProgram" />
-        <item itemvalue="JUnit.ALUProcessingUnitTest.testEquals" />
-        <item itemvalue="JUnit.ALUProcessingUnitTest.testModulo" />
+        <item itemvalue="Application.SeaCucumber" />
+        <item itemvalue="JUnit.CucumberMapTest.testManySteps" />
+        <item itemvalue="JUnit.CucumberMapTest.testStep3" />
+        <item itemvalue="JUnit.CucumberMapTest.testStep2" />
+        <item itemvalue="JUnit.CucumberMapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,13 +215,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Final solution 2015 day 21">
-      <created>1616343036534</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1616343036534</updated>
     </task>
     <task id="LOCAL-00026" summary="Final solution 2015 day 22">
       <created>1617460747006</created>
@@ -559,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645269302064</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Solution 2021 day 24">
+      <created>1646481238970</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1646481238971</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -584,7 +584,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2016 day 15" />
     <MESSAGE value="Solution 2021 day 1 and 2" />
     <MESSAGE value="Solution 2021 day 3 and 4" />
     <MESSAGE value="Solution 2021 day 5" />
@@ -609,7 +608,8 @@
     <MESSAGE value="Solution 2021 day 22" />
     <MESSAGE value="Solution 2021 day 23 - start" />
     <MESSAGE value="Solution 2021 day 23 - end" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 23 - end" />
+    <MESSAGE value="Solution 2021 day 24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2021 day 24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
