@@ -8,8 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day19/AnElephantNamedJoseph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day19/AnElephantNamedJosephTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day19/AnElephantNamedJoseph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day19/AnElephantNamedJoseph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,11 +98,11 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day17" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day25" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day24" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day23" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="be.rouget.puzzles.adventofcode.year2016.day19" />
@@ -111,7 +112,7 @@
       <recent name="be.rouget.puzzles.adventofcode.year2021.day24" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AnElephantNamedJoseph">
+  <component name="RunManager" selected="JUnit.AnElephantNamedJosephTest">
     <configuration name="AnElephantNamedJoseph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19.AnElephantNamedJoseph" />
       <module name="javapuzzles" />
@@ -125,77 +126,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LikeARogue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day18.LikeARogue" />
+    <configuration name="AnElephantNamedJosephTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day18.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TwoStepsForward" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day17.TwoStepsForward" />
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LikeARogueTest.testComputeNextTile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day18.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day18" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day18.LikeARogueTest" />
-      <option name="METHOD_NAME" value="testComputeNextTile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TwoStepsForwardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day17" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day17.TwoStepsForwardTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19.AnElephantNamedJosephTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AnElephantNamedJosephTest.testNext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19.AnElephantNamedJosephTest" />
+      <option name="METHOD_NAME" value="testNext" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnElephantNamedJosephTest.testSolvePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19.AnElephantNamedJosephTest" />
+      <option name="METHOD_NAME" value="testSolvePart2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnElephantNamedJosephTest.testSolvePart2Manually" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19.AnElephantNamedJosephTest" />
+      <option name="METHOD_NAME" value="testSolvePart2Manually" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.TwoStepsForward" />
-      <item itemvalue="JUnit.TwoStepsForwardTest" />
-      <item itemvalue="Application.LikeARogue" />
-      <item itemvalue="JUnit.LikeARogueTest.testComputeNextTile" />
       <item itemvalue="Application.AnElephantNamedJoseph" />
+      <item itemvalue="JUnit.AnElephantNamedJosephTest.testSolvePart2Manually" />
+      <item itemvalue="JUnit.AnElephantNamedJosephTest" />
+      <item itemvalue="JUnit.AnElephantNamedJosephTest.testNext" />
+      <item itemvalue="JUnit.AnElephantNamedJosephTest.testSolvePart2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AnElephantNamedJosephTest" />
         <item itemvalue="Application.AnElephantNamedJoseph" />
-        <item itemvalue="Application.LikeARogue" />
-        <item itemvalue="JUnit.LikeARogueTest.testComputeNextTile" />
-        <item itemvalue="Application.TwoStepsForward" />
-        <item itemvalue="JUnit.TwoStepsForwardTest" />
+        <item itemvalue="JUnit.AnElephantNamedJosephTest.testSolvePart2" />
+        <item itemvalue="JUnit.AnElephantNamedJosephTest.testNext" />
+        <item itemvalue="JUnit.AnElephantNamedJosephTest.testSolvePart2Manually" />
       </list>
     </recent_temporary>
   </component>
@@ -207,13 +214,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Final solution 2015 day 25">
-      <created>1618308897240</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1618308897240</updated>
     </task>
     <task id="LOCAL-00030" summary="Final solution 2016 day 1">
       <created>1618315069786</created>
@@ -551,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646584655186</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Solution 2016 day 19 part 1">
+      <created>1646587872492</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1646587872492</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -576,7 +583,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2016 day 16" />
     <MESSAGE value="Solution 2021 day 6" />
     <MESSAGE value="Solution 2021 day 7 and 8" />
     <MESSAGE value="Solution 2021 day 9" />
@@ -601,7 +607,8 @@
     <MESSAGE value="Solution 2021 day 25" />
     <MESSAGE value="Solution 2016 day 17" />
     <MESSAGE value="Solution 2016 day 18" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 18" />
+    <MESSAGE value="Solution 2016 day 19 part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 19 part 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
