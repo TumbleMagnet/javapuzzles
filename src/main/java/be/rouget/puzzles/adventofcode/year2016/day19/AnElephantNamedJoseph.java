@@ -1,17 +1,15 @@
 package be.rouget.puzzles.adventofcode.year2016.day19;
 
-import com.google.common.collect.Lists;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 public class AnElephantNamedJoseph {
 
     private static final Logger LOG = LogManager.getLogger(AnElephantNamedJoseph.class);
-    private static final int STARTING_COUNT = 3018458;
+    public static final int STARTING_COUNT = 3018458;
 
     public static void main(String[] args) {
         AnElephantNamedJoseph aoc = new AnElephantNamedJoseph();
@@ -20,10 +18,10 @@ public class AnElephantNamedJoseph {
     }
 
     public long computeResultForPart1() {
-        return solvePart1(STARTING_COUNT);
+        return solvePart1Recursively(STARTING_COUNT);
     }
 
-    public static int solvePart1(int count) {
+    public static int solvePart1Recursively(int count) {
         if (count == 1) {
             return 1;
         }
@@ -34,17 +32,40 @@ public class AnElephantNamedJoseph {
         // So if we know how to solve the smaller list for 1, 2, .., n we just need to translate that answer
         // to the original indexes in the initial circle.
         if (count % 2 == 0) {
-            return 2 * solvePart1(count/2) -1;
+            return 2 * solvePart1Recursively(count/2) -1;
         } else {
-            return 2 * solvePart1((count-1)/2) +1;
+            return 2 * solvePart1Recursively((count-1)/2) +1;
         }
     }
 
-    public long computeResultForPart2() {
-        return solvePart2(STARTING_COUNT);
+    public static int solvePart1WithSimulation(int count) {
+
+        // Build a linked list with the elves
+        LinkedList<Integer> elves = new LinkedList<>();
+        for(int i = 1; i<=count; i++) {
+            elves.addLast(i);
+        }
+
+        // Run simulation
+        boolean take = false;
+        while (elves.size() != 1) {
+            Iterator<Integer> itr = elves.iterator();
+            while (itr.hasNext()) {
+                itr.next();
+                if (take) {
+                    itr.remove();
+                }
+                take = !take;
+            }
+        }
+        return elves.pollFirst();
     }
 
-    public static int solvePart2(int x) {
+    public long computeResultForPart2() {
+        return solvePart2Analytically(STARTING_COUNT);
+    }
+
+    public static int solvePart2Analytically(int x) {
         // Derived from looking at output from solving manually for small values.
         // Find n such that n <= x <= 3n-3 then:
         // - for the first half of the interval: values are 1, 2, ..., n-1
@@ -61,28 +82,40 @@ public class AnElephantNamedJoseph {
         }
     }
 
+    public static int solvePart2WithSimulation(int size) {
 
-    public static int solvePart2Manually(int count) {
-        return solvePart2Manually(IntStream.rangeClosed(1, count).boxed().collect(Collectors.toList()));
-    }
-
-    public static int solvePart2Manually(List<Integer> input) {
-        if (input.size() <= 2) {
-            return input.get(0);
-        }
-        int indexToRemove = input.size() / 2;
-        List<Integer> result = Lists.newArrayList();
-
-        // Skip first, copy elements with index to remove
-        for (int i = 1; i < input.size(); i++) {
-            if (i != indexToRemove) {
-                result.add(input.get(i));
+        // Split elves in two lists of same length
+        LinkedList<Integer> que1 = new LinkedList<>();
+        LinkedList<Integer> que2 = new LinkedList<>();
+        for (int i = 1; i <= size; i++) {
+            if (i <= size / 2) {
+                que1.addLast(i);
+            }
+            else {
+                que2.addLast(i);
             }
         }
-        // Add first at the end
-        result.add(input.get(0));
 
-        // Solve resulting list
-        return solvePart2Manually(result);
+        // Run simulation
+        while(que1.size() + que2.size() != 1) {
+
+            // x is current elf
+            int x = que1.pollFirst();
+
+            // Remove target elf
+            if (que1.size() == que2.size()) {
+                que1.pollLast();
+            } else {
+                que2.pollFirst();
+            }
+
+            // Add current elf to the end
+            que2.addLast(x);
+
+            // Re-balance lists (also make sure that last element is in queue 1)
+            int a = que2.pollFirst();
+            que1.addLast(a);
+        }
+        return que1.pollFirst();
     }
 }
