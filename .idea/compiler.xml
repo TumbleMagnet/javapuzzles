@@ -14,7 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="javapuzzles" target="1.11" />
+      <module name="javapuzzles" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

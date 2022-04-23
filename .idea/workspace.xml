@@ -8,10 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day20/FirewallRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day20/IpRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day20_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day21/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day21/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day21/Reverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day21/Rotate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day21/RotateBasedOnLetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day21/ScrambledLettersAndHash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day21/ScramblingFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day21/SwapLetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day21/SwapPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day21_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day21/MoveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day21/ReverseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day21/RotateBasedOnLetterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day21/RotateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day21/ScrambledLettersAndHashTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day21/SwapLetterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day21/SwapPositionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/AocStringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/AocStringUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +39,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -51,27 +67,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last.edited.regexp" value="&quot;on x=-33391..-25134,y=-28005..-19241,z=51281..71668&quot;" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/2016" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.21609196" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/programming/projects/javapuzzles/src/main/resources/2016",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "inlay.hints"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day24" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day23" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day16" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day15" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day13" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2016" />
@@ -93,33 +104,34 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day21" />
       <recent name="be.rouget.puzzles.adventofcode.util" />
     </key>
     <key name="MoveInnerDialog.RECENTS_KEY">
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day17" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day25" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day24" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day20" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day17" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day25" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FirewallRules">
-    <configuration name="FirewallRules" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day20.FirewallRules" />
+  <component name="RunManager" selected="Application.ScrambledLettersAndHash">
+    <configuration name="ScrambledLettersAndHash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21.ScrambledLettersAndHash" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day20.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,83 +139,82 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnElephantNamedJosephTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReverseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day19.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19.AnElephantNamedJosephTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21.ReverseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnElephantNamedJosephTest.testSolvePart1WithSimulation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ScrambledLettersAndHashTest.testParts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day19.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19.AnElephantNamedJosephTest" />
-      <option name="METHOD_NAME" value="testSolvePart1WithSimulation" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21.ScrambledLettersAndHashTest" />
+      <option name="METHOD_NAME" value="testParts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnElephantNamedJosephTest.testSolvePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwapLetterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day19.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19.AnElephantNamedJosephTest" />
-      <option name="METHOD_NAME" value="testSolvePart2" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21.SwapLetterTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnElephantNamedJosephTest.testSolvePart2WithSimulation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwapPositionTest.testUnScramble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day19.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day19.AnElephantNamedJosephTest" />
-      <option name="METHOD_NAME" value="testSolvePart2WithSimulation" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21.SwapPositionTest" />
+      <option name="METHOD_NAME" value="testUnScramble" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AnElephantNamedJosephTest" />
-      <item itemvalue="JUnit.AnElephantNamedJosephTest.testSolvePart1WithSimulation" />
-      <item itemvalue="JUnit.AnElephantNamedJosephTest.testSolvePart2WithSimulation" />
-      <item itemvalue="JUnit.AnElephantNamedJosephTest.testSolvePart2" />
-      <item itemvalue="Application.FirewallRules" />
+      <item itemvalue="Application.ScrambledLettersAndHash" />
+      <item itemvalue="JUnit.ReverseTest" />
+      <item itemvalue="JUnit.ScrambledLettersAndHashTest.testParts" />
+      <item itemvalue="JUnit.SwapLetterTest" />
+      <item itemvalue="JUnit.SwapPositionTest.testUnScramble" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FirewallRules" />
-        <item itemvalue="JUnit.AnElephantNamedJosephTest" />
-        <item itemvalue="JUnit.AnElephantNamedJosephTest.testSolvePart2WithSimulation" />
-        <item itemvalue="JUnit.AnElephantNamedJosephTest.testSolvePart2" />
-        <item itemvalue="JUnit.AnElephantNamedJosephTest.testSolvePart1WithSimulation" />
+        <item itemvalue="Application.ScrambledLettersAndHash" />
+        <item itemvalue="JUnit.ScrambledLettersAndHashTest.testParts" />
+        <item itemvalue="JUnit.SwapPositionTest.testUnScramble" />
+        <item itemvalue="JUnit.SwapLetterTest" />
+        <item itemvalue="JUnit.ReverseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,13 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Final solution 2016 day 2">
-      <created>1618411916111</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1618411916111</updated>
     </task>
     <task id="LOCAL-00033" summary="Final solution 2016 day 2: improved solution by re-using RectangleMap">
       <created>1618419922521</created>
@@ -559,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647173493003</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Solution 2016 day 20">
+      <created>1647695583153</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1647695583153</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -584,7 +595,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2021 day 9" />
     <MESSAGE value="Solution 2021 day 10" />
     <MESSAGE value="Solution 2021 day 11" />
     <MESSAGE value="Solution 2021 day 12" />
@@ -609,7 +619,8 @@
     <MESSAGE value="Solution 2016 day 19 part 1" />
     <MESSAGE value="Solution 2016 day 19 part 2" />
     <MESSAGE value="Solution 2016 day 19: re-implemented &quot;brute-force&quot; simulation so that it is efficient enough to solve the problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 19: re-implemented &quot;brute-force&quot; simulation so that it is efficient enough to solve the problem" />
+    <MESSAGE value="Solution 2016 day 20" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 20" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -658,20 +669,20 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/javapuzzles$AmphipodMapTest.ic" NAME="AmphipodMapTest Coverage Results" MODIFIED="1644775900964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>be.rouget.puzzles.adventofcode.year2021.day23.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/javapuzzles$SegmentTest_testIntersection.ic" NAME="SegmentTest.testIntersection Coverage Results" MODIFIED="1618313878311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>be.rouget.puzzles.adventofcode.year2016.day1.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/javapuzzles$DiracDiceGameStateTest_testGetOptionalVictory.ic" NAME="DiracDiceGameStateTest.testGetOptionalVictory Coverage Results" MODIFIED="1644148808761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>be.rouget.puzzles.adventofcode.year2021.day21.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/javapuzzles$DiracDiceGameStateTest.ic" NAME="DiracDiceGameStateTest Coverage Results" MODIFIED="1644149608923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>be.rouget.puzzles.adventofcode.year2021.day21.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/javapuzzles$ArithmeticLogicUnit.ic" NAME="ArithmeticLogicUnit Coverage Results" MODIFIED="1645376846263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>be.rouget.puzzles.adventofcode.year2021.day24.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/javapuzzles$AmphipodMapTest.ic" NAME="AmphipodMapTest Coverage Results" MODIFIED="1644775900964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>be.rouget.puzzles.adventofcode.year2021.day23.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/javapuzzles$DiracDiceGameStateTest.ic" NAME="DiracDiceGameStateTest Coverage Results" MODIFIED="1644149608923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>be.rouget.puzzles.adventofcode.year2021.day21.*</FILTER>
     </SUITE>
   </component>
 </project>

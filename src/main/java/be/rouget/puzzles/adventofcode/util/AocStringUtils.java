@@ -1,6 +1,7 @@
 package be.rouget.puzzles.adventofcode.util;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 public class AocStringUtils {
@@ -13,4 +14,7 @@ public class AocStringUtils {
         return line.split("(?!^)");
     }
 
+    public static String join(Collection<String> parts) {
+        return String.join("", parts);
+    }
 }
