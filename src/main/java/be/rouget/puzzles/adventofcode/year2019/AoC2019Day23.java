@@ -98,8 +98,8 @@ public class AoC2019Day23 {
             List<Long> inputData = Lists.newArrayList();
             while (!inputQueue.isEmpty()) {
                 Packet packet = inputQueue.remove();
-                inputData.add(new Long(packet.getX()));
-                inputData.add(new Long(packet.getY()));
+                inputData.add(Long.valueOf(packet.getX()));
+                inputData.add(Long.valueOf(packet.getY()));
             }
             return inputData.stream().mapToLong(Long::longValue).toArray();
         }

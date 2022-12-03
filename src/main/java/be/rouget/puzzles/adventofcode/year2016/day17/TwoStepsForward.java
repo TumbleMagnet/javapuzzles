@@ -3,10 +3,10 @@ package be.rouget.puzzles.adventofcode.year2016.day17;
 import be.rouget.puzzles.adventofcode.util.map.Position;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;
+import jakarta.xml.bind.DatatypeConverter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.xml.bind.DatatypeConverter;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayDeque;

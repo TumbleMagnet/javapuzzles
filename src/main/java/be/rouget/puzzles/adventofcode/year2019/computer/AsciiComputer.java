@@ -64,7 +64,7 @@ public class AsciiComputer {
         List<Long> asciiCodes = Lists.newArrayList();
         char[] chars = line.toCharArray();
         for (char c: line.toCharArray()) {
-            asciiCodes.add(new Long((int) c));
+            asciiCodes.add(Long.valueOf((int) c));
         }
         asciiCodes.add(LINE_FEED);
         return asciiCodes;

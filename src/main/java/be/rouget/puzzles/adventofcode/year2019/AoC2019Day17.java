@@ -78,7 +78,7 @@ public class AoC2019Day17 {
         List<Long> asciiCodes = Lists.newArrayList();
         char[] chars = line.toCharArray();
         for (char c: line.toCharArray()) {
-            asciiCodes.add(new Long((int) c));
+            asciiCodes.add(Long.valueOf((int) c));
         }
         asciiCodes.add(10L);
         return asciiCodes;

@@ -31,7 +31,7 @@ public class AoC2019Day03 {
         for (String nextPath: path1) {
             List<GridPoint> points = position.connectPath(new Path(nextPath));
             for (GridPoint newPoint: points) {
-                wire1Points.put(newPoint, new Integer(step));
+                wire1Points.put(newPoint, Integer.valueOf(step));
                 position = newPoint;
                 step++;
             }

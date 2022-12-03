@@ -21,4 +21,9 @@ public class Position {
         }
         return neighbours;
     }
+
+    public int computeManhattanDistance(Position another) {
+        return Math.abs(this.getX() - another.getX())
+                + Math.abs(this.getY() - another.getY());
+    }
 }
