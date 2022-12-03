@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
+
 public class AocTemplate {
 
     private static final Logger LOG = LogManager.getLogger(AocTemplate.class);
