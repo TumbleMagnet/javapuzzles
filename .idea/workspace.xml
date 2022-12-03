@@ -8,8 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="Test commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day22/GridComputing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day22/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day22/SearchGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day22/SearchState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2016/aoc_2016_day22_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2016/day22/NodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javapuzzles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javapuzzles.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day1to5/AdventOfCode2015Day04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2015/day1to5/AdventOfCode2015Day04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day14/OneTimePad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day14/OneTimePad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day17/TwoStepsForward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day17/TwoStepsForward.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day5/HowAboutANiceGameOfChess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2016/day5/HowAboutANiceGameOfChess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/AoC2019Day03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/AoC2019Day03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/AoC2019Day17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/AoC2019Day17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/AoC2019Day23.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/AoC2019Day23.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/computer/AsciiComputer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2019/computer/AsciiComputer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day12/InstructionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2020/day12/InstructionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +39,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +56,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="8a9347d5-df02-4588-bfbf-634862ddb533" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -51,11 +72,17 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/programming/projects/javapuzzles/src/main/resources/2016&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/programming/bpost&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -93,27 +120,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day22" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day18" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day17" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day25" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day22" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day20" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day19" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day18" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day17" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ScrambledLettersAndHash">
-    <configuration name="ScrambledLettersAndHash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21.ScrambledLettersAndHash" />
+  <component name="RunManager" selected="Application.GridComputing">
+    <configuration name="GridComputing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day22.GridComputing" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day21.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day22.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,82 +148,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day21.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day22.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21.ReverseTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day22" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day22.NodeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScrambledLettersAndHashTest.testParts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NodeTest.testDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day21.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day22.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21.ScrambledLettersAndHashTest" />
-      <option name="METHOD_NAME" value="testParts" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day22" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day22.NodeTest" />
+      <option name="METHOD_NAME" value="testDistance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwapLetterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NodeTest.testIsConnectedTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day21.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day22.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21.SwapLetterTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day22" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day22.NodeTest" />
+      <option name="METHOD_NAME" value="testIsConnectedTo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwapPositionTest.testUnScramble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NodeTest.testParse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day21.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2016.day22.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day21.SwapPositionTest" />
-      <option name="METHOD_NAME" value="testUnScramble" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2016.day22" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2016.day22.NodeTest" />
+      <option name="METHOD_NAME" value="testParse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ScrambledLettersAndHash" />
-      <item itemvalue="JUnit.ReverseTest" />
-      <item itemvalue="JUnit.ScrambledLettersAndHashTest.testParts" />
-      <item itemvalue="JUnit.SwapLetterTest" />
-      <item itemvalue="JUnit.SwapPositionTest.testUnScramble" />
+      <item itemvalue="Application.GridComputing" />
+      <item itemvalue="JUnit.NodeTest" />
+      <item itemvalue="JUnit.NodeTest.testDistance" />
+      <item itemvalue="JUnit.NodeTest.testIsConnectedTo" />
+      <item itemvalue="JUnit.NodeTest.testParse" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ScrambledLettersAndHash" />
-        <item itemvalue="JUnit.ScrambledLettersAndHashTest.testParts" />
-        <item itemvalue="JUnit.SwapPositionTest.testUnScramble" />
-        <item itemvalue="JUnit.SwapLetterTest" />
-        <item itemvalue="JUnit.ReverseTest" />
+        <item itemvalue="Application.GridComputing" />
+        <item itemvalue="JUnit.NodeTest" />
+        <item itemvalue="JUnit.NodeTest.testIsConnectedTo" />
+        <item itemvalue="JUnit.NodeTest.testDistance" />
+        <item itemvalue="JUnit.NodeTest.testParse" />
       </list>
     </recent_temporary>
   </component>
@@ -208,13 +236,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Final solution 2016 day 2: improved solution by re-using RectangleMap">
-      <created>1618419922521</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1618419922521</updated>
     </task>
     <task id="LOCAL-00034" summary="Final solution 2016 day 3">
       <created>1618478561209</created>
@@ -552,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647695583153</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Solution 2016 day 21">
+      <created>1650730029753</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1650730029754</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -568,6 +596,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="09c210c6-0141-491f-a1ed-da1934c2c186">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -575,10 +628,23 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2021 day 10" />
-    <MESSAGE value="Solution 2021 day 11" />
     <MESSAGE value="Solution 2021 day 12" />
     <MESSAGE value="Solution 2021 day 13" />
     <MESSAGE value="Solution 2021 day 14" />
@@ -602,7 +668,9 @@
     <MESSAGE value="Solution 2016 day 19 part 2" />
     <MESSAGE value="Solution 2016 day 19: re-implemented &quot;brute-force&quot; simulation so that it is efficient enough to solve the problem" />
     <MESSAGE value="Solution 2016 day 20" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution 2016 day 20" />
+    <MESSAGE value="Solution 2016 day 21" />
+    <MESSAGE value="Upgrade to Java 19 and update dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade to Java 19 and update dependencies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
