@@ -14,8 +14,8 @@ public class AocTemplate {
     public static void main(String[] args) {
         List<String> input = SolverUtils.readInput(AocTemplate.class);
         AocTemplate aoc = new AocTemplate(input);
-        LOG.info("Result for part 1 is: " + aoc.computeResultForPart1());
-        LOG.info("Result for part 2 is: " + aoc.computeResultForPart2());
+        LOG.info("Result for part 1 is: {}", aoc.computeResultForPart1());
+        LOG.info("Result for part 2 is: {}", aoc.computeResultForPart2());
     }
 
     public AocTemplate(List<String> input) {
