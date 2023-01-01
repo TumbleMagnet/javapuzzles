@@ -7,14 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 7">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day08/Tree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day08/TreeMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day08/TreetopTreeHouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day08_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day08/TreeMapTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 8">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day09/Instruction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day09/Rope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day09/RopeBridge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day09_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day09/RopeBridgeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day09/RopeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/Position.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +26,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Record" />
         <option value="Class" />
+        <option value="Record" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -65,13 +65,13 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last.edited.regexp": "$ cd abc",
+    "last.edited.regexp": "D 13",
     "last_opened_file_path": "C:/programming/projects/javapuzzles/src/main/resources/2022",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.editor"
+    "settings.editor.selected.configurable": "fileTemplates"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -109,27 +109,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day09" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day08" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day06" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day05" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day03" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day09" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day08" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day06" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day05" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day04" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TreetopTreeHouse">
-    <configuration name="NoSpaceLeftOnDevice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day07.NoSpaceLeftOnDevice" />
+  <component name="RunManager" selected="Application.RopeBridge">
+    <configuration name="RopeBridge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09.RopeBridge" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day07.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,68 +150,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoSpaceLeftOnDeviceTest.buildFileSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RopeBridgeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day07.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day07" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day07.NoSpaceLeftOnDeviceTest" />
-      <option name="METHOD_NAME" value="buildFileSystem" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09.RopeBridgeTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeMapTest.countVisibleTrees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RopeBridgeTest.testExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day08.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day08" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day08.TreeMapTest" />
-      <option name="METHOD_NAME" value="countVisibleTrees" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TreeMapTest.testExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day08" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day08.TreeMapTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09.RopeBridgeTest" />
       <option name="METHOD_NAME" value="testExample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RopeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day09.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09.RopeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.NoSpaceLeftOnDevice" />
+      <item itemvalue="Application.RopeBridge" />
       <item itemvalue="Application.TreetopTreeHouse" />
-      <item itemvalue="JUnit.NoSpaceLeftOnDeviceTest.buildFileSystem" />
-      <item itemvalue="JUnit.TreeMapTest.countVisibleTrees" />
-      <item itemvalue="JUnit.TreeMapTest.testExample" />
+      <item itemvalue="JUnit.RopeBridgeTest" />
+      <item itemvalue="JUnit.RopeBridgeTest.testExample" />
+      <item itemvalue="JUnit.RopeTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RopeBridge" />
+        <item itemvalue="JUnit.RopeBridgeTest" />
+        <item itemvalue="JUnit.RopeBridgeTest.testExample" />
+        <item itemvalue="JUnit.RopeTest" />
         <item itemvalue="Application.TreetopTreeHouse" />
-        <item itemvalue="JUnit.TreeMapTest.testExample" />
-        <item itemvalue="JUnit.TreeMapTest.countVisibleTrees" />
-        <item itemvalue="Application.NoSpaceLeftOnDevice" />
-        <item itemvalue="JUnit.NoSpaceLeftOnDeviceTest.buildFileSystem" />
       </list>
     </recent_temporary>
   </component>
@@ -223,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Solution 2016 day 11 : slow solution">
-      <created>1625912424878</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1625912424879</updated>
     </task>
     <task id="LOCAL-00044" summary="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet.">
       <created>1625917397183</created>
@@ -567,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672586297306</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="AOC 2022 day 8">
+      <created>1672589731560</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1672589731560</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -632,7 +630,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2021 day 18" />
     <MESSAGE value="Updated log4j" />
     <MESSAGE value="Solution 2021 day 19: not optimized." />
     <MESSAGE value="Solution 2021 day 19: optimized by using distances between beacons to reject impossible scanner pairing faster." />
@@ -657,7 +654,8 @@
     <MESSAGE value="AOC 2022 day5" />
     <MESSAGE value="AOC 2022 day 6" />
     <MESSAGE value="AOC 2022 day 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 7" />
+    <MESSAGE value="AOC 2022 day 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
