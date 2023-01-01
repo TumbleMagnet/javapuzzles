@@ -8,14 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 7">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day07/DiskDirectory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day07/DiskFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day07/DiskItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day07/FileSystemParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day07/NoSpaceLeftOnDevice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day07_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day07/NoSpaceLeftOnDeviceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day08/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day08/TreeMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day08/TreetopTreeHouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day08_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day08/TreeMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/map/Position.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +25,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Record" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
+        <option value="Record" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -110,21 +109,21 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day08" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day06" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day05" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day03" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day22" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day08" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day06" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day05" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day04" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day03" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NoSpaceLeftOnDevice">
+  <component name="RunManager" selected="Application.TreetopTreeHouse">
     <configuration name="NoSpaceLeftOnDevice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day07.NoSpaceLeftOnDevice" />
       <module name="javapuzzles" />
@@ -138,30 +137,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TuningTrouble" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day06.TuningTrouble" />
+    <configuration name="TreetopTreeHouse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day08.TreetopTreeHouse" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day06.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NoSpaceLeftOnDeviceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day07.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day07" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day07.NoSpaceLeftOnDeviceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -182,17 +166,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TuningTroubleTest.testFindStartOfPacketMarker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TreeMapTest.countVisibleTrees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day06.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day06" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day06.TuningTroubleTest" />
-      <option name="METHOD_NAME" value="testFindStartOfPacketMarker" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day08" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day08.TreeMapTest" />
+      <option name="METHOD_NAME" value="countVisibleTrees" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeMapTest.testExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day08.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day08" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day08.TreeMapTest" />
+      <option name="METHOD_NAME" value="testExample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -200,18 +200,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.NoSpaceLeftOnDevice" />
-      <item itemvalue="Application.TuningTrouble" />
-      <item itemvalue="JUnit.NoSpaceLeftOnDeviceTest" />
+      <item itemvalue="Application.TreetopTreeHouse" />
       <item itemvalue="JUnit.NoSpaceLeftOnDeviceTest.buildFileSystem" />
-      <item itemvalue="JUnit.TuningTroubleTest.testFindStartOfPacketMarker" />
+      <item itemvalue="JUnit.TreeMapTest.countVisibleTrees" />
+      <item itemvalue="JUnit.TreeMapTest.testExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreetopTreeHouse" />
+        <item itemvalue="JUnit.TreeMapTest.testExample" />
+        <item itemvalue="JUnit.TreeMapTest.countVisibleTrees" />
         <item itemvalue="Application.NoSpaceLeftOnDevice" />
         <item itemvalue="JUnit.NoSpaceLeftOnDeviceTest.buildFileSystem" />
-        <item itemvalue="JUnit.NoSpaceLeftOnDeviceTest" />
-        <item itemvalue="Application.TuningTrouble" />
-        <item itemvalue="JUnit.TuningTroubleTest.testFindStartOfPacketMarker" />
       </list>
     </recent_temporary>
   </component>
@@ -223,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Solution 2016 day 10">
-      <created>1624190004958</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1624190004958</updated>
     </task>
     <task id="LOCAL-00043" summary="Solution 2016 day 11 : slow solution">
       <created>1625912424878</created>
@@ -567,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672574287479</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="AOC 2022 day 7">
+      <created>1672586297306</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1672586297306</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

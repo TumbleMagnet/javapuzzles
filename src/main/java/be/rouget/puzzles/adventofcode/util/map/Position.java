@@ -26,4 +26,13 @@ public class Position {
         return Math.abs(this.getX() - another.getX())
                 + Math.abs(this.getY() - another.getY());
     }
+
+    public Position getNeighbour(Direction direction) {
+        return switch (direction) {
+            case UP -> new Position(this.x, this.y - 1);
+            case DOWN -> new Position(this.x, this.y + 1);
+            case LEFT -> new Position(this.x - 1, this.y);
+            case RIGHT -> new Position(this.x + 1, this.y);
+        };
+    }
 }
