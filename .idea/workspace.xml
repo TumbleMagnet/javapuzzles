@@ -7,10 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day06/TuningTrouble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day06_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day06/TuningTroubleTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 7">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day07/DiskDirectory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day07/DiskFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day07/DiskItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day07/FileSystemParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day07/NoSpaceLeftOnDevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day07_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day07/NoSpaceLeftOnDeviceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +25,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,7 +66,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last.edited.regexp": "12-15,16-18",
+    "last.edited.regexp": "$ cd abc",
     "last_opened_file_path": "C:/programming/projects/javapuzzles/src/main/resources/2022",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -106,27 +110,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day06" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day05" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day03" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day22" />
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day21" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day06" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day05" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day04" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day03" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TuningTrouble">
-    <configuration name="SupplyStacks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day05.SupplyStacks" />
+  <component name="RunManager" selected="Application.NoSpaceLeftOnDevice">
+    <configuration name="NoSpaceLeftOnDevice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day07.NoSpaceLeftOnDevice" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day05.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day07.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,32 +151,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupplyStacksTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoSpaceLeftOnDeviceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day05.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day07.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day05" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day05.SupplyStacksTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day07" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day07.NoSpaceLeftOnDeviceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupplyStacksTest.testParseStacks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoSpaceLeftOnDeviceTest.buildFileSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day05.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day07.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day05" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day05.SupplyStacksTest" />
-      <option name="METHOD_NAME" value="testParseStacks" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day07" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day07.NoSpaceLeftOnDeviceTest" />
+      <option name="METHOD_NAME" value="buildFileSystem" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -195,19 +199,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SupplyStacks" />
+      <item itemvalue="Application.NoSpaceLeftOnDevice" />
       <item itemvalue="Application.TuningTrouble" />
-      <item itemvalue="JUnit.SupplyStacksTest" />
-      <item itemvalue="JUnit.SupplyStacksTest.testParseStacks" />
+      <item itemvalue="JUnit.NoSpaceLeftOnDeviceTest" />
+      <item itemvalue="JUnit.NoSpaceLeftOnDeviceTest.buildFileSystem" />
       <item itemvalue="JUnit.TuningTroubleTest.testFindStartOfPacketMarker" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NoSpaceLeftOnDevice" />
+        <item itemvalue="JUnit.NoSpaceLeftOnDeviceTest.buildFileSystem" />
+        <item itemvalue="JUnit.NoSpaceLeftOnDeviceTest" />
         <item itemvalue="Application.TuningTrouble" />
         <item itemvalue="JUnit.TuningTroubleTest.testFindStartOfPacketMarker" />
-        <item itemvalue="Application.SupplyStacks" />
-        <item itemvalue="JUnit.SupplyStacksTest.testParseStacks" />
-        <item itemvalue="JUnit.SupplyStacksTest" />
       </list>
     </recent_temporary>
   </component>
@@ -219,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Solution 2016 day 9">
-      <created>1624104446644</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1624104446644</updated>
     </task>
     <task id="LOCAL-00042" summary="Solution 2016 day 10">
       <created>1624190004958</created>
@@ -563,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672572172055</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="AOC 2022 day 6">
+      <created>1672574287479</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1672574287479</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -628,8 +632,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2021 day 16" />
-    <MESSAGE value="Solution 2021 day 17" />
     <MESSAGE value="Solution 2021 day 18" />
     <MESSAGE value="Updated log4j" />
     <MESSAGE value="Solution 2021 day 19: not optimized." />
@@ -653,7 +655,9 @@
     <MESSAGE value="AOC 2022 day3" />
     <MESSAGE value="AOC 2022 day4" />
     <MESSAGE value="AOC 2022 day5" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day5" />
+    <MESSAGE value="AOC 2022 day 6" />
+    <MESSAGE value="AOC 2022 day 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
