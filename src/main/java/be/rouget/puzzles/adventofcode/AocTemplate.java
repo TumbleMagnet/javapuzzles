@@ -11,6 +11,7 @@ public class AocTemplate {
 
     private static final Logger LOG = LogManager.getLogger(AocTemplate.class);
 
+    @SuppressWarnings("java:S2629")
     public static void main(String[] args) {
         List<String> input = SolverUtils.readInput(AocTemplate.class);
         AocTemplate aoc = new AocTemplate(input);
