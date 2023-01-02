@@ -48,13 +48,12 @@ public class CathodeRayTube {
         RectangleMap<Pixel> screen = new RectangleMap<>(40, 6, Pixel.NONE);
         VideoCpu cpu = new VideoCpu(instructions);
         do {
-            int duringCycle =  cpu.getExecutedCycles() + 1;
-            int pixelX = (duringCycle - 1) % screen.getWidth();
-            int pixelY = (duringCycle - 1) / screen.getWidth();
+            int pixelX = cpu.getExecutedCycles() % screen.getWidth();
+            int pixelY = cpu.getExecutedCycles() / screen.getWidth();
             Position positionOnScreen = new Position(pixelX, pixelY);
             Pixel pixel = Math.abs(cpu.getRegisterX()-pixelX) <= 1 ? Pixel.LIT : Pixel.DARK;
             screen.setElementAt(positionOnScreen, pixel);
-            LOG.info("Cycle: {} - Register value: {} - Position: {} - Pixel: {}", duringCycle, cpu.getRegisterX(), positionOnScreen, pixel);
+            LOG.info("Cycle: {} - Register value: {} - Position: {} - Pixel: {}", cpu.getExecutedCycles(), cpu.getRegisterX(), positionOnScreen, pixel);
         }
         while (cpu.executeCycle());
         LOG.info("Screen: ----\n{}\n----", screen);
