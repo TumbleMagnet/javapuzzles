@@ -7,14 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 8">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day09/Instruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day09/Rope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day09/RopeBridge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day09_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day09/RopeBridgeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day09/RopeTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 10">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day10/CathodeRayTube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day10/Instruction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day10/InstructionCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day10/Pixel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day10/VideoCpu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day10_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day10/CathodeRayTubeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/AocTemplate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +26,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
         <option value="Record" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -109,21 +111,34 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day09" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day08" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day06" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day05" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day09" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day08" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day06" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day05" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RopeBridge">
+  <component name="RunManager" selected="Application.CathodeRayTube">
+    <configuration name="CathodeRayTube" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day10.CathodeRayTube" />
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RopeBridge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09.RopeBridge" />
       <module name="javapuzzles" />
@@ -137,15 +152,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreetopTreeHouse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day08.TreetopTreeHouse" />
+    <configuration name="CathodeRayTubeTest.testExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day08.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day10" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day10.CathodeRayTubeTest" />
+      <option name="METHOD_NAME" value="testExample" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,35 +199,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RopeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day09.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09.RopeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.CathodeRayTube" />
       <item itemvalue="Application.RopeBridge" />
-      <item itemvalue="Application.TreetopTreeHouse" />
+      <item itemvalue="JUnit.CathodeRayTubeTest.testExample" />
       <item itemvalue="JUnit.RopeBridgeTest" />
       <item itemvalue="JUnit.RopeBridgeTest.testExample" />
-      <item itemvalue="JUnit.RopeTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CathodeRayTube" />
+        <item itemvalue="JUnit.CathodeRayTubeTest.testExample" />
         <item itemvalue="Application.RopeBridge" />
         <item itemvalue="JUnit.RopeBridgeTest" />
         <item itemvalue="JUnit.RopeBridgeTest.testExample" />
-        <item itemvalue="JUnit.RopeTest" />
-        <item itemvalue="Application.TreetopTreeHouse" />
       </list>
     </recent_temporary>
   </component>
@@ -221,13 +224,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Solution 2016 day 11 : faster solution by re-implementing State with EnumSet.">
-      <created>1625917397183</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1625917397183</updated>
     </task>
     <task id="LOCAL-00045" summary="Solution 2016 day 12.">
       <created>1625930387207</created>
@@ -565,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672589731560</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="AOC 2022 day 9">
+      <created>1672607143301</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1672607143302</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -630,8 +633,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated log4j" />
-    <MESSAGE value="Solution 2021 day 19: not optimized." />
     <MESSAGE value="Solution 2021 day 19: optimized by using distances between beacons to reject impossible scanner pairing faster." />
     <MESSAGE value="Solution 2021 day 20" />
     <MESSAGE value="Solution 2021 day 21" />
@@ -655,7 +656,9 @@
     <MESSAGE value="AOC 2022 day 6" />
     <MESSAGE value="AOC 2022 day 7" />
     <MESSAGE value="AOC 2022 day 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 8" />
+    <MESSAGE value="AOC 2022 day 9" />
+    <MESSAGE value="AOC 2022 day 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
