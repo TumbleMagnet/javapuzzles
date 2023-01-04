@@ -8,8 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 10">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day11/Monkey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day11/MonkeyInTheMiddle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day11/ThrownItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day11_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day11/MonkeyInTheMiddleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day10/CathodeRayTube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day10/CathodeRayTube.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javapuzzles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javapuzzles.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +25,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="Record" />
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Record" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -60,7 +66,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last.edited.regexp": "D 13",
+    "last.edited.regexp": "  Operation: new = old * 13",
     "last_opened_file_path": "C:/programming/projects/javapuzzles/src/main/resources/2022",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -71,11 +77,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2016.day21" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day24" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day23" />
       <recent name="be.rouget.puzzles.adventofcode.year2021.day16" />
-      <recent name="be.rouget.puzzles.adventofcode.year2021.day15" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\programming\projects\javapuzzles\src\main\resources\2022" />
@@ -104,21 +110,21 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day09" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day08" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day06" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day09" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day08" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day06" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CathodeRayTube">
+  <component name="RunManager" selected="Application.MonkeyInTheMiddle">
     <configuration name="CathodeRayTube" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day10.CathodeRayTube" />
       <module name="javapuzzles" />
@@ -132,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RopeBridge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09.RopeBridge" />
+    <configuration name="MonkeyInTheMiddle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day11.MonkeyInTheMiddle" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day09.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,31 +167,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RopeBridgeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MonkeyInTheMiddleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day09.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09.RopeBridgeTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day11" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day11.MonkeyInTheMiddleTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RopeBridgeTest.testExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MonkeyInTheMiddleTest.testExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day09.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day09.RopeBridgeTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day11" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day11.MonkeyInTheMiddleTest" />
       <option name="METHOD_NAME" value="testExample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -193,19 +199,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MonkeyInTheMiddle" />
       <item itemvalue="Application.CathodeRayTube" />
-      <item itemvalue="Application.RopeBridge" />
+      <item itemvalue="JUnit.MonkeyInTheMiddleTest" />
+      <item itemvalue="JUnit.MonkeyInTheMiddleTest.testExample" />
       <item itemvalue="JUnit.CathodeRayTubeTest.testExample" />
-      <item itemvalue="JUnit.RopeBridgeTest" />
-      <item itemvalue="JUnit.RopeBridgeTest.testExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MonkeyInTheMiddle" />
+        <item itemvalue="JUnit.MonkeyInTheMiddleTest.testExample" />
+        <item itemvalue="JUnit.MonkeyInTheMiddleTest" />
         <item itemvalue="Application.CathodeRayTube" />
         <item itemvalue="JUnit.CathodeRayTubeTest.testExample" />
-        <item itemvalue="Application.RopeBridge" />
-        <item itemvalue="JUnit.RopeBridgeTest" />
-        <item itemvalue="JUnit.RopeBridgeTest.testExample" />
       </list>
     </recent_temporary>
   </component>
@@ -217,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Solution 2016 day 13.">
-      <created>1626005016091</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1626005016091</updated>
     </task>
     <task id="LOCAL-00047" summary="Solution 2016 day 13: cleanup">
       <created>1626005385177</created>
@@ -561,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672671744934</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="AOC 2022 day 10">
+      <created>1672672357391</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1672672357391</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
