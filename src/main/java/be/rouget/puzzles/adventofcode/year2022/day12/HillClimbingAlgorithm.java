@@ -7,8 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.function.Predicate;
 
 
 public class HillClimbingAlgorithm {
@@ -33,30 +32,18 @@ public class HillClimbingAlgorithm {
     }
 
     public long computeResultForPart1() {
-        return getShortestDistanceToEnd(elevationMap.getStart()).orElseThrow();
-    }
-
-    private Optional<Integer> getShortestDistanceToEnd(Position start) {
-        try {
-            return Optional.of(Dijkstra.shortestDistance(elevationMap, start, position -> elevationMap.getElementAt(position).isEnd()));
-        } catch (IllegalStateException e) {
-            // No path to destination was found
-            return Optional.empty();
-        }
+        ElevationGraph graph = new ElevationGraph(elevationMap, MoveDirection.FORWARD);
+        Position startPosition = elevationMap.getStart();
+        Predicate<Position> endPredicate = position -> elevationMap.getElementAt(position).isEnd();
+        return Dijkstra.shortestDistance(graph, startPosition, endPredicate);
     }
 
     public long computeResultForPart2() {
-
-        List<Position> startingPositions = elevationMap.getElements().stream()
-                .filter(element -> element.getValue().getElevation() == MapHeight.MIN_ELEVATION)
-                .map(Map.Entry::getKey)
-                .toList();
-        LOG.info("Found {} possible starting points...", startingPositions.size());
-
-        return startingPositions.stream()
-                .map(this::getShortestDistanceToEnd)
-                .filter(Optional::isPresent)
-                .mapToInt(Optional::get)
-                .min().orElseThrow();
+        // Start from end and find the best starting point (the first point with minimal elevation)
+        ElevationGraph graph = new ElevationGraph(elevationMap, MoveDirection.BACKWARD);
+        Position startPosition = elevationMap.getEnd();
+        Predicate<Position> endPredicate = position -> elevationMap.getElementAt(position).getElevation() == MapHeight.MIN_ELEVATION;
+        return Dijkstra.shortestDistance(graph, startPosition, endPredicate);
     }
+    
 }
