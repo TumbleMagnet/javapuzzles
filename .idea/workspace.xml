@@ -7,15 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 10">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day11/Monkey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day11/MonkeyInTheMiddle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day11/ThrownItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day11_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day11/MonkeyInTheMiddleTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 12">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day12/ElevationMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day12/HillClimbingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day12/MapHeight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day12_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day12/MapHeightTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javapuzzles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javapuzzles.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +26,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Record" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -110,27 +108,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day12" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day09" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day08" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day12" />
+      <recent name="be.rouget.puzzles.adventofcode.year2022" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day09" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day08" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day07" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MonkeyInTheMiddle">
-    <configuration name="CathodeRayTube" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day10.CathodeRayTube" />
+  <component name="RunManager" selected="Application.be.rouget.puzzles.adventofcode.year2022.day12.HillClimbingAlgorithm">
+    <configuration name="HillClimbingAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.HillClimbingAlgorithm" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day10.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,33 +149,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CathodeRayTubeTest.testExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="be.rouget.puzzles.adventofcode.year2022.day12.HillClimbingAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day12.HillClimbingAlgorithm" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day10.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day10" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day10.CathodeRayTubeTest" />
-      <option name="METHOD_NAME" value="testExample" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MonkeyInTheMiddleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MapHeightTest.getElevation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day11.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day11" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day11.MonkeyInTheMiddleTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day12" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day12.MapHeightTest" />
+      <option name="METHOD_NAME" value="getElevation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -199,19 +195,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.HillClimbingAlgorithm" />
       <item itemvalue="Application.MonkeyInTheMiddle" />
-      <item itemvalue="Application.CathodeRayTube" />
-      <item itemvalue="JUnit.MonkeyInTheMiddleTest" />
+      <item itemvalue="Application.be.rouget.puzzles.adventofcode.year2022.day12.HillClimbingAlgorithm" />
+      <item itemvalue="JUnit.MapHeightTest.getElevation" />
       <item itemvalue="JUnit.MonkeyInTheMiddleTest.testExample" />
-      <item itemvalue="JUnit.CathodeRayTubeTest.testExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.be.rouget.puzzles.adventofcode.year2022.day12.HillClimbingAlgorithm" />
+        <item itemvalue="JUnit.MapHeightTest.getElevation" />
+        <item itemvalue="Application.HillClimbingAlgorithm" />
         <item itemvalue="Application.MonkeyInTheMiddle" />
         <item itemvalue="JUnit.MonkeyInTheMiddleTest.testExample" />
-        <item itemvalue="JUnit.MonkeyInTheMiddleTest" />
-        <item itemvalue="Application.CathodeRayTube" />
-        <item itemvalue="JUnit.CathodeRayTubeTest.testExample" />
       </list>
     </recent_temporary>
   </component>
@@ -223,13 +219,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Solution 2016 day 13: cleanup">
-      <created>1626005385177</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1626005385177</updated>
     </task>
     <task id="LOCAL-00048" summary="Solution 2016 day 14">
       <created>1633274887580</created>
@@ -567,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672672357391</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="AOC 2022 day 11">
+      <created>1672856541814</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1672856541815</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -632,8 +628,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2021 day 19: optimized by using distances between beacons to reject impossible scanner pairing faster." />
-    <MESSAGE value="Solution 2021 day 20" />
     <MESSAGE value="Solution 2021 day 21" />
     <MESSAGE value="Solution 2021 day 22" />
     <MESSAGE value="Solution 2021 day 23 - start" />
@@ -657,7 +651,9 @@
     <MESSAGE value="AOC 2022 day 8" />
     <MESSAGE value="AOC 2022 day 9" />
     <MESSAGE value="AOC 2022 day 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 10" />
+    <MESSAGE value="AOC 2022 day 11" />
+    <MESSAGE value="AOC 2022 day 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
