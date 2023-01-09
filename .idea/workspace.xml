@@ -8,11 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 12 (optimization for part 2)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day12/ElevationGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day12/MoveDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day13/DistressSignal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day13/IntegerElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day13/ListElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day13/PacketComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day13/PacketElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day13/PacketPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day13_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day13/DistressSignalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day13/PacketComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day13/PacketPairTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day12/ElevationMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day12/ElevationMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day12/HillClimbingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day12/HillClimbingAlgorithm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +28,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Record" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -108,29 +114,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day12" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day10" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day09" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day08" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day12" />
       <recent name="be.rouget.puzzles.adventofcode.year2022" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day11" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day10" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day09" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HillClimbingAlgorithm">
-    <configuration name="HillClimbingAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="temurin-19 (2)" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day12.HillClimbingAlgorithm" />
+  <component name="RunManager" selected="JUnit.be.rouget.puzzles.adventofcode.year2022.day13 in javapuzzles">
+    <configuration name="DistressSignal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13.DistressSignal" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day12.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,48 +142,82 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapHeightTest.getElevation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DistressSignalTest.testExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day12.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day12" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day12.MapHeightTest" />
-      <option name="METHOD_NAME" value="getElevation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MonkeyInTheMiddleTest.testExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day11" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day11.MonkeyInTheMiddleTest" />
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13.DistressSignalTest" />
       <option name="METHOD_NAME" value="testExample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PacketPairTest.testInInRightOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13.PacketPairTest" />
+      <option name="METHOD_NAME" value="testInInRightOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PacketPairTest.testParsePacket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13" />
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13.PacketPairTest" />
+      <option name="METHOD_NAME" value="testParsePacket" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="be.rouget.puzzles.adventofcode.year2022.day13 in javapuzzles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.HillClimbingAlgorithm" />
-      <item itemvalue="JUnit.MapHeightTest.getElevation" />
-      <item itemvalue="JUnit.MonkeyInTheMiddleTest.testExample" />
+      <item itemvalue="Application.DistressSignal" />
+      <item itemvalue="JUnit.DistressSignalTest.testExample" />
+      <item itemvalue="JUnit.PacketPairTest.testInInRightOrder" />
+      <item itemvalue="JUnit.PacketPairTest.testParsePacket" />
+      <item itemvalue="JUnit.be.rouget.puzzles.adventofcode.year2022.day13 in javapuzzles" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HillClimbingAlgorithm" />
-        <item itemvalue="JUnit.MapHeightTest.getElevation" />
-        <item itemvalue="JUnit.MonkeyInTheMiddleTest.testExample" />
+        <item itemvalue="JUnit.be.rouget.puzzles.adventofcode.year2022.day13 in javapuzzles" />
+        <item itemvalue="Application.DistressSignal" />
+        <item itemvalue="JUnit.DistressSignalTest.testExample" />
+        <item itemvalue="JUnit.PacketPairTest.testInInRightOrder" />
+        <item itemvalue="JUnit.PacketPairTest.testParsePacket" />
       </list>
     </recent_temporary>
   </component>
@@ -191,13 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Solution 2016 day 15">
-      <created>1637699983154</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1637699983154</updated>
     </task>
     <task id="LOCAL-00050" summary="Solution 2021 day 1 and 2">
       <created>1638621226282</created>
@@ -535,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673183802675</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="AOC 2022 day 12 (optimization for part 2)">
+      <created>1673197137978</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1673197137978</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -688,6 +726,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/javapuzzles$DiracDiceGameStateTest.ic" NAME="DiracDiceGameStateTest Coverage Results" MODIFIED="1644149608923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>be.rouget.puzzles.adventofcode.year2021.day21.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/javapuzzles$PacketPairTest_testInInRightOrder.ic" NAME="PacketPairTest.testInInRightOrder Coverage Results" MODIFIED="1673267776584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>be.rouget.puzzles.adventofcode.year2022.day13.*</FILTER>
     </SUITE>
   </component>
 </project>
