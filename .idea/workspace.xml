@@ -7,14 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 13">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day14/RegolithReservoir.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day14/ReservoirItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day14/ReservoirMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day14/RockPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day14_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/be/rouget/puzzles/adventofcode/year2022/day14/RockPathTest.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 14">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day14/ReservoirMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day14/ReservoirMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,13 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Solution 2021 day 3 and 4">
-      <created>1638644703747</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1638644703747</updated>
     </task>
     <task id="LOCAL-00052" summary="Solution 2021 day 5">
       <created>1638704156850</created>
@@ -566,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673270427711</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="AOC 2022 day 14">
+      <created>1673701979378</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1673701979378</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -631,7 +626,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2021 day 23 - start" />
     <MESSAGE value="Solution 2021 day 23 - end" />
     <MESSAGE value="Solution 2021 day 24" />
     <MESSAGE value="Solution 2021 day 25" />
@@ -656,7 +650,8 @@
     <MESSAGE value="AOC 2022 day 12" />
     <MESSAGE value="AOC 2022 day 12 (optimization for part 2)" />
     <MESSAGE value="AOC 2022 day 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 13" />
+    <MESSAGE value="AOC 2022 day 14" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 14" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

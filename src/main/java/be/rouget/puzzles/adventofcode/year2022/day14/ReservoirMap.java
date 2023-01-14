@@ -5,6 +5,7 @@ import com.google.common.collect.Maps;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.IntStream;
 
 public class ReservoirMap {
     
@@ -109,17 +110,13 @@ public class ReservoirMap {
     }
 
     private boolean isFallingForEver(Position position) {
-        // Position is falling forever if below the last rock
+        // Position is falling forever if there is no floor and it is already below the last rock
         return !hasFloor && position.getY() > this.maxRockY;
     }
 
     private Position moveSand(Position currentPosition) {
-        List<Position> candidatePositions = List.of(
-                new Position(currentPosition.getX(), currentPosition.getY() + 1),        // Down one step
-                new Position(currentPosition.getX() - 1, currentPosition.getY() + 1), // Left diagonal
-                new Position(currentPosition.getX() + 1, currentPosition.getY() + 1)  // Right diagonal
-        );
-        return candidatePositions.stream()
+        return IntStream.of(0, -1, 1)
+                .mapToObj(deltaX -> new Position(currentPosition.getX() + deltaX, currentPosition.getY() + 1))
                 .filter(candidate -> getElementAt(candidate) == ReservoirItem.AIR)
                 .findFirst()
                 .orElse(currentPosition);
