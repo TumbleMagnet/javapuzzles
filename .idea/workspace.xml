@@ -8,8 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 14">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/Range.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day15/BeaconExclusionZone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day15/SensorReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day15_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day14/ReservoirMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day14/ReservoirMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +24,9 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Record" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -98,8 +101,8 @@
       <recent name="be.rouget.puzzles.adventofcode.year2020.day17" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="be.rouget.puzzles.adventofcode.year2016.day21" />
       <recent name="be.rouget.puzzles.adventofcode.util" />
+      <recent name="be.rouget.puzzles.adventofcode.year2016.day21" />
     </key>
     <key name="MoveInnerDialog.RECENTS_KEY">
       <recent name="be.rouget.puzzles.adventofcode.year2016.day2" />
@@ -112,14 +115,27 @@
       <recent name="be.rouget.puzzles.adventofcode.year2022.day10" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day15" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day12" />
       <recent name="be.rouget.puzzles.adventofcode.year2022" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022.day11" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RegolithReservoir">
+  <component name="RunManager" selected="Application.BeaconExclusionZone">
+    <configuration name="BeaconExclusionZone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day15.BeaconExclusionZone" />
+      <module name="javapuzzles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DistressSignal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13.DistressSignal" />
       <module name="javapuzzles" />
@@ -142,22 +158,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DistressSignalTest.testExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javapuzzles" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day13.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13" />
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13.DistressSignalTest" />
-      <option name="METHOD_NAME" value="testExample" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,19 +193,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.BeaconExclusionZone" />
       <item itemvalue="Application.RegolithReservoir" />
       <item itemvalue="Application.DistressSignal" />
       <item itemvalue="JUnit.RockPathTest.parse" />
-      <item itemvalue="JUnit.DistressSignalTest.testExample" />
       <item itemvalue="JUnit.be.rouget.puzzles.adventofcode.year2022.day13 in javapuzzles" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BeaconExclusionZone" />
         <item itemvalue="Application.RegolithReservoir" />
         <item itemvalue="JUnit.RockPathTest.parse" />
         <item itemvalue="JUnit.be.rouget.puzzles.adventofcode.year2022.day13 in javapuzzles" />
         <item itemvalue="Application.DistressSignal" />
-        <item itemvalue="JUnit.DistressSignalTest.testExample" />
       </list>
     </recent_temporary>
   </component>
@@ -217,13 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Solution 2021 day 5">
-      <created>1638704156850</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1638704156850</updated>
     </task>
     <task id="LOCAL-00053" summary="Solution 2016 day 16">
       <created>1638717404125</created>
@@ -561,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673701979378</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="AOC 2022 day 14">
+      <created>1673702345341</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1673702345341</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
