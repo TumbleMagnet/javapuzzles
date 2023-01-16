@@ -7,12 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 14">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/util/Range.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day15/BeaconExclusionZone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day15/SensorReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day15_input.txt" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 15 - optimize part 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day15/BeaconExclusionZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day15/BeaconExclusionZone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,13 +214,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Solution 2016 day 16">
-      <created>1638717404125</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1638717404125</updated>
     </task>
     <task id="LOCAL-00054" summary="Solution 2021 day 6">
       <created>1638909343948</created>
@@ -561,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673702345341</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="AOC 2022 day 15 - first try">
+      <created>1673895793725</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1673895793726</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -626,8 +623,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2021 day 23 - end" />
-    <MESSAGE value="Solution 2021 day 24" />
     <MESSAGE value="Solution 2021 day 25" />
     <MESSAGE value="Solution 2016 day 17" />
     <MESSAGE value="Solution 2016 day 18" />
@@ -651,7 +646,9 @@
     <MESSAGE value="AOC 2022 day 12 (optimization for part 2)" />
     <MESSAGE value="AOC 2022 day 13" />
     <MESSAGE value="AOC 2022 day 14" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 14" />
+    <MESSAGE value="AOC 2022 day 15 - first try" />
+    <MESSAGE value="AOC 2022 day 15 - optimize part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 15 - optimize part 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
