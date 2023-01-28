@@ -7,9 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 15 - optimize part 2">
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 16 - part 1 (brute force in 2m40s)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/ProboscideaVolcanium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/Valve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/Valves.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/VolcanoState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day16_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day15/BeaconExclusionZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day15/BeaconExclusionZone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +24,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,23 +57,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;public&quot;,
-    &quot;last.edited.regexp&quot;: &quot;  Operation: new = old * 13&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/programming/projects/javapuzzles/src/main/resources/2022&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "extract.method.default.visibility": "public",
+    "last.edited.regexp": "Valve YS has flow rate=24; tunnel leads to valve EP",
+    "last_opened_file_path": "C:/programming/projects/javapuzzles/src/main/resources/2022",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "fileTemplates"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="be.rouget.puzzles.adventofcode.year2022.day12" />
@@ -112,14 +116,14 @@
       <recent name="be.rouget.puzzles.adventofcode.year2022.day10" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.rouget.puzzles.adventofcode.year2022.day16" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day15" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day14" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day13" />
       <recent name="be.rouget.puzzles.adventofcode.year2022.day12" />
-      <recent name="be.rouget.puzzles.adventofcode.year2022" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BeaconExclusionZone">
+  <component name="RunManager" selected="Application.ProboscideaVolcanium">
     <configuration name="BeaconExclusionZone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day15.BeaconExclusionZone" />
       <module name="javapuzzles" />
@@ -133,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DistressSignal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day13.DistressSignal" />
+    <configuration name="ProboscideaVolcanium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.rouget.puzzles.adventofcode.year2022.day16.ProboscideaVolcanium" />
       <module name="javapuzzles" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day13.*" />
+          <option name="PATTERN" value="be.rouget.puzzles.adventofcode.year2022.day16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,19 +194,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ProboscideaVolcanium" />
       <item itemvalue="Application.BeaconExclusionZone" />
       <item itemvalue="Application.RegolithReservoir" />
-      <item itemvalue="Application.DistressSignal" />
       <item itemvalue="JUnit.RockPathTest.parse" />
       <item itemvalue="JUnit.be.rouget.puzzles.adventofcode.year2022.day13 in javapuzzles" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProboscideaVolcanium" />
         <item itemvalue="Application.BeaconExclusionZone" />
         <item itemvalue="Application.RegolithReservoir" />
         <item itemvalue="JUnit.RockPathTest.parse" />
         <item itemvalue="JUnit.be.rouget.puzzles.adventofcode.year2022.day13 in javapuzzles" />
-        <item itemvalue="Application.DistressSignal" />
       </list>
     </recent_temporary>
   </component>
@@ -214,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Solution 2021 day 6">
-      <created>1638909343948</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1638909343948</updated>
     </task>
     <task id="LOCAL-00055" summary="Solution 2021 day 7 and 8">
       <created>1639514086287</created>
@@ -558,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673895793726</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="AOC 2022 day 15 - optimize part 2">
+      <created>1673898052207</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1673898052207</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -623,7 +627,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2021 day 25" />
     <MESSAGE value="Solution 2016 day 17" />
     <MESSAGE value="Solution 2016 day 18" />
     <MESSAGE value="Solution 2016 day 19 part 1" />
@@ -648,7 +651,8 @@
     <MESSAGE value="AOC 2022 day 14" />
     <MESSAGE value="AOC 2022 day 15 - first try" />
     <MESSAGE value="AOC 2022 day 15 - optimize part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 15 - optimize part 2" />
+    <MESSAGE value="AOC 2022 day 16 - part 1 (brute force in 2m40s)" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 16 - part 1 (brute force in 2m40s)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
