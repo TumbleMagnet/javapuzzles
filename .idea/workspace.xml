@@ -8,12 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 16 - part 1 (brute force in 2m40s)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/ProboscideaVolcanium.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/Valve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/Valves.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/VolcanoState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/2022/aoc_2022_day16_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/PressureLossGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/PressureLossState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/ProboscideaVolcanium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/ProboscideaVolcanium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/Valves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/Valves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/VolcanoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/VolcanoBfsState.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +25,9 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Record" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -218,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Solution 2021 day 7 and 8">
-      <created>1639514086287</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1639514086288</updated>
     </task>
     <task id="LOCAL-00056" summary="Solution 2021 day 9">
       <created>1639773199236</created>
@@ -562,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673898052207</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="AOC 2022 day 16 - part 1 (brute force in 2m40s)">
+      <created>1674918860845</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1674918860845</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

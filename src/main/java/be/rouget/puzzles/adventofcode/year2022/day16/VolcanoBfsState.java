@@ -6,13 +6,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public record VolcanoState(Valve currentPosition, Set<Valve> openValves, int pressureReleased) {
+public record VolcanoBfsState(Valve currentPosition, Set<Valve> openValves, int pressureReleased) {
 
-    public static VolcanoState initialState(String nameOfStartingPosition) {
-        return new VolcanoState(Valves.findValve(nameOfStartingPosition), Sets.newHashSet(), 0);
+    public static VolcanoBfsState initialState(String nameOfStartingPosition) {
+        return new VolcanoBfsState(Valves.findValve(nameOfStartingPosition), Sets.newHashSet(), 0);
     }
     
-    public Set<VolcanoState> possibleStates() {
+    public Set<VolcanoBfsState> possibleStates() {
         int nextPressureReleased = pressureReleased + openValves.stream().mapToInt(Valve::flowRate).sum();
         
         // If all productive valves have been opened, just do nothing
@@ -21,23 +21,23 @@ public record VolcanoState(Valve currentPosition, Set<Valve> openValves, int pre
                 .filter(v -> !openValves.contains(v))
                 .toList();
         if (valvesLeftToOpen.isEmpty()) {
-            return Sets.newHashSet(new VolcanoState(currentPosition, openValves, nextPressureReleased));
+            return Sets.newHashSet(new VolcanoBfsState(currentPosition, openValves, nextPressureReleased));
         }
 
         // Else explore all possibilities
-        Set<VolcanoState> nextStates = Sets.newHashSet();
+        Set<VolcanoBfsState> nextStates = Sets.newHashSet();
         
         // If current valve is not open and has a flow rate > 0, open it
         if (!openValves.contains(currentPosition) && currentPosition.flowRate() > 0) {
             HashSet<Valve> nextOpenValves = Sets.newHashSet(openValves);
             nextOpenValves.add(currentPosition);
-            nextStates.add(new VolcanoState(currentPosition, nextOpenValves, nextPressureReleased));
+            nextStates.add(new VolcanoBfsState(currentPosition, nextOpenValves, nextPressureReleased));
         }
         
         // Otherwise travel to possible other valves
-        List<VolcanoState> possibleStatesAfterMoving = currentPosition.neighbours().stream()
+        List<VolcanoBfsState> possibleStatesAfterMoving = currentPosition.neighbours().stream()
                 .map(Valves::findValve)
-                .map(destinationValve -> new VolcanoState(destinationValve, openValves, nextPressureReleased))
+                .map(destinationValve -> new VolcanoBfsState(destinationValve, openValves, nextPressureReleased))
                 .toList();
         nextStates.addAll(possibleStatesAfterMoving);
         
