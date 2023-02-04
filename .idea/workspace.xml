@@ -7,13 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 16 - part 1 (brute force in 2m40s)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/PressureLossGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/PressureLossState.java" afterDir="false" />
+    <list default="true" id="6c050d17-cf8c-4c15-b2d7-f2d2ddc63834" name="Default Changelist" comment="AOC 2022 day 16 - part 2 (runs in about 2 minutes)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/PressureLossGraphPart2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/PressureLossStatePart2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/ProboscideaVolcanium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/ProboscideaVolcanium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/Valves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/Valves.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/VolcanoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/VolcanoBfsState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/VolcanoBfsState.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609500424771</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Solution 2021 day 9">
-      <created>1639773199236</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1639773199236</updated>
     </task>
     <task id="LOCAL-00057" summary="Solution 2021 day 10">
       <created>1639778461557</created>
@@ -562,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674918860845</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="AOC 2022 day 16 - part 1 (optimized in 800ms)">
+      <created>1674994671990</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1674994671990</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -627,8 +627,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solution 2016 day 17" />
-    <MESSAGE value="Solution 2016 day 18" />
     <MESSAGE value="Solution 2016 day 19 part 1" />
     <MESSAGE value="Solution 2016 day 19 part 2" />
     <MESSAGE value="Solution 2016 day 19: re-implemented &quot;brute-force&quot; simulation so that it is efficient enough to solve the problem" />
@@ -652,7 +650,9 @@
     <MESSAGE value="AOC 2022 day 15 - first try" />
     <MESSAGE value="AOC 2022 day 15 - optimize part 2" />
     <MESSAGE value="AOC 2022 day 16 - part 1 (brute force in 2m40s)" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 16 - part 1 (brute force in 2m40s)" />
+    <MESSAGE value="AOC 2022 day 16 - part 1 (optimized in 800ms)" />
+    <MESSAGE value="AOC 2022 day 16 - part 2 (runs in about 2 minutes)" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOC 2022 day 16 - part 2 (runs in about 2 minutes)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -688,6 +688,11 @@
           <line>41</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/be/rouget/puzzles/adventofcode/year2022/day16/PressureLossGraphPart2.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -695,6 +700,15 @@
         <PinnedItemInfo parentTag="be.rouget.puzzles.adventofcode.year2020.day20.Image" memberName="tiles" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="from.currentFlowRate()" language="JAVA" />
+        <watch expression="from.firstPosition()" language="JAVA" />
+        <watch expression="from.secondPosition()" language="JAVA" />
+        <watch expression="from.time()" language="JAVA" />
+        <watch expression="from.closedValves().size()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

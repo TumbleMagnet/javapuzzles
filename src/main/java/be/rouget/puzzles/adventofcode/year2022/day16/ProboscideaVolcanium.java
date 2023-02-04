@@ -2,28 +2,25 @@ package be.rouget.puzzles.adventofcode.year2022.day16;
 
 import be.rouget.puzzles.adventofcode.util.SolverUtils;
 import be.rouget.puzzles.adventofcode.util.graph.Dijkstra;
-import com.google.common.collect.Sets;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.Collection;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 
 public class ProboscideaVolcanium {
 
     public static final int MAX_TIME = 30;
-    private static final Logger LOG = LogManager.getLogger(ProboscideaVolcanium.class);
+    public static final int MAX_TIME_PART2 = MAX_TIME - 4;
     public static final String NAME_OF_STARTING_POSITION = "AA";
+
+    private static final Logger LOG = LogManager.getLogger(ProboscideaVolcanium.class);
 
     @SuppressWarnings("java:S2629")
     public static void main(String[] args) {
         List<String> input = SolverUtils.readInput(ProboscideaVolcanium.class);
         ProboscideaVolcanium aoc = new ProboscideaVolcanium(input);
         LOG.info("Result for part 1 is: {}", aoc.computeResultForPart1());
-//        LOG.info("Result for part 1 is: {}", aoc.computeResultForPart1Bfs());
         LOG.info("Result for part 2 is: {}", aoc.computeResultForPart2());
     }
 
@@ -35,27 +32,6 @@ public class ProboscideaVolcanium {
         Valves.initialize(valves);
     }
 
-    public long computeResultForPart1Bfs() {
-
-        VolcanoBfsState start = VolcanoBfsState.initialState(NAME_OF_STARTING_POSITION);
-        Set<VolcanoBfsState> states = Sets.newHashSet(start);
-        
-        // Explore all possibilities for 30 steps
-        for (int i = 1; i <= 30; i++) {
-            states = states.stream()
-                    .map(VolcanoBfsState::possibleStates)
-                    .flatMap(Collection::stream)
-                    .collect(Collectors.toSet());
-            LOG.info("After step {}, number of states: {}", i, states.size());
-        }
-        
-        // Keep best state
-        return states.stream()
-                .mapToInt(VolcanoBfsState::pressureReleased)
-                .max()
-                .orElseThrow();
-    }
-
     public long computeResultForPart1() {
 
         // Computing the maximum pressure that can be released in 30 seconds is equivalent to find the moves which
@@ -65,19 +41,37 @@ public class ProboscideaVolcanium {
         // This can be modelled as the shortest path in a graph for which:
         // - nodes are the state after some moves
         // - the distance between nodes is the loss that happens during that move
-        PressureLossGraph lossGraph = new PressureLossGraph();
-        int minimalLoss = Dijkstra.shortestDistance(lossGraph, lossGraph.getStartState(NAME_OF_STARTING_POSITION), state -> isStateFinal(state));
-        
+        PressureLossGraph graph = new PressureLossGraph();
+        PressureLossState startState = graph.getStartState(NAME_OF_STARTING_POSITION);
+        int minimalLoss = Dijkstra.shortestDistance(graph, startState, state -> isStateFinal(state, MAX_TIME));
+
         // Best pressure release is ideal release minus minimal loss
         return Long.valueOf(MAX_TIME) * Valves.maxFlowRate() - minimalLoss;
     }
 
-    private static boolean isStateFinal(PressureLossState state) {
-        // State is a final state when either time is up or all valves are open 
-        return state.time() >= MAX_TIME || state.currentFlowRate() == Valves.maxFlowRate();
+    public long computeResultForPart2() {
+        
+        // TODO This currently runs in about a little more than 2 minutes.
+        // Try reducing the search graph by collapsing paths including valves that cannot be opened and pre-computing
+        // distances from a valve to any other valve (include the cost of opening the target valve).
+        
+        // TODO Try sharing more code between part 1 and part2
+        
+        PressureLossGraphPart2 graph = new PressureLossGraphPart2();
+        PressureLossStatePart2 startState = graph.getStartState(NAME_OF_STARTING_POSITION);
+        int minimalLoss = Dijkstra.shortestDistance(graph, startState, state -> isStateFinal(state, MAX_TIME_PART2));
+
+        // Best pressure release is ideal release minus minimal loss
+        return Long.valueOf(MAX_TIME_PART2) * Valves.maxFlowRate() - minimalLoss;
     }
 
-    public long computeResultForPart2() {
-        return -1;
+    private static boolean isStateFinal(PressureLossState state, int maxTime) {
+        // State is a final state when either time is up or all valves are open 
+        return state.time() >= maxTime || state.closedValves().isEmpty();
+    }
+
+    private static boolean isStateFinal(PressureLossStatePart2 state, int maxTime) {
+        // State is a final state when either time is up or all valves are open 
+        return state.time() >= maxTime || state.closedValves().isEmpty();
     }
 }
