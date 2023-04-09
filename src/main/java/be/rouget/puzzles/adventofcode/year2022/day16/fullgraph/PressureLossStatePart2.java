@@ -16,7 +16,7 @@ public record PressureLossStatePart2(int time, Valve firstPosition, Valve second
         // States with swapped positions are considered the same.
         // Implement this by sorting positions by name so that permutations end up creating the same record
         List<Valve> positions = Lists.newArrayList(firstPosition, secondPosition);
-        Collections.sort(positions, Comparator.comparing(Valve::name));
+        positions.sort(Comparator.comparing(Valve::name));
         this.firstPosition = positions.get(0);
         this.secondPosition = positions.get(1);
     }

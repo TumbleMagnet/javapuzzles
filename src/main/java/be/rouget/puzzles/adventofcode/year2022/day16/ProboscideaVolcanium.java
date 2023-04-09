@@ -47,23 +47,16 @@ public class ProboscideaVolcanium {
         int minimalLoss = Dijkstra.shortestDistance(graph, startState, state -> isStateFinal(state, MAX_TIME));
 
         // Best pressure release is ideal release minus minimal loss
-        return Long.valueOf(MAX_TIME) * Valves.maxFlowRate() - minimalLoss;
+        return (long) MAX_TIME * Valves.maxFlowRate() - minimalLoss;
     }
 
     public long computeResultForPart2() {
-        
-        // TODO This currently runs in about a little more than 2 minutes.
-        // Try reducing the search graph by collapsing paths including valves that cannot be opened and pre-computing
-        // distances from a valve to any other valve (include the cost of opening the target valve).
-        
-        // TODO Try sharing more code between part 1 and part2
-        
         PressureLossGraphPart2 graph = new PressureLossGraphPart2();
         PressureLossStatePart2 startState = graph.getStartState(NAME_OF_STARTING_POSITION);
         int minimalLoss = Dijkstra.shortestDistance(graph, startState, state -> isStateFinal(state, MAX_TIME_PART2));
 
         // Best pressure release is ideal release minus minimal loss
-        return Long.valueOf(MAX_TIME_PART2) * Valves.maxFlowRate() - minimalLoss;
+        return (long) MAX_TIME_PART2 * Valves.maxFlowRate() - minimalLoss;
     }
 
     private static boolean isStateFinal(PressureLossState state, int maxTime) {
