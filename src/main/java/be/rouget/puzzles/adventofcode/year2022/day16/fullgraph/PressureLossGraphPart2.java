@@ -1,8 +1,10 @@
 package be.rouget.puzzles.adventofcode.year2022.day16.fullgraph;
 
+import be.rouget.puzzles.adventofcode.util.graph.Dijkstra;
 import be.rouget.puzzles.adventofcode.util.graph.Edge;
 import be.rouget.puzzles.adventofcode.util.graph.Graph;
 import be.rouget.puzzles.adventofcode.year2022.day16.Valve;
+import be.rouget.puzzles.adventofcode.year2022.day16.Valves;
 import com.google.common.collect.Lists;
 
 import java.util.List;
@@ -11,11 +13,24 @@ import java.util.stream.Collectors;
 
 public class PressureLossGraphPart2 implements Graph<PressureLossStatePart2> {
 
+    public static long computeResultForPart2(int maxTime, String nameOfStartingPosition) {
+        PressureLossGraphPart2 graph = new PressureLossGraphPart2();
+        PressureLossStatePart2 startState = graph.getStartState(nameOfStartingPosition);
+        int minimalLoss = Dijkstra.shortestDistance(graph, startState, state -> isStateFinal(state, maxTime));
+
+        // Best pressure release is ideal release minus minimal loss
+        return (long) maxTime * Valves.maxFlowRate() - minimalLoss;
+    }
+
+    private static boolean isStateFinal(PressureLossStatePart2 state, int maxTime) {
+        // State is a final state when either time is up or all valves are open 
+        return state.time() >= maxTime || state.closedValves().isEmpty();
+    }
+
     @Override
     public List<Edge<PressureLossStatePart2>> edgesFrom(PressureLossStatePart2 from) {
 
         // If all productive valves have been opened, just stay at current position
-        // TODO Is this really needed
         if (from.closedValves().isEmpty()) {
             PressureLossStatePart2 to = new PressureLossStatePart2(from.time() + 1, from.firstPosition(), from.secondPosition(), from.closedValves(), from.currentFlowRate());
             return List.of(edge(from, to));

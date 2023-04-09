@@ -1,6 +1,4 @@
-package be.rouget.puzzles.adventofcode.year2022.day16.fullgraph;
-
-import be.rouget.puzzles.adventofcode.year2022.day16.Valve;
+package be.rouget.puzzles.adventofcode.year2022.day16;
 
 import java.util.Collection;
 import java.util.List;
@@ -14,11 +12,18 @@ public class Valves {
 
     private Valves() {
     }
-    
-    public static void initialize(List<Valve> valves) {
+
+    public static void initializeValves(List<String> input) {
+        
+        // Parse input
+        List<Valve> valves = input.stream()
+                .map(Valve::parse)
+                .toList();
+        
+        // Initialize cache
         valvesByName = valves.stream().collect(Collectors.toMap(Valve::name, Function.identity()));
     }
-    
+
     public static Valve findValve(String name) {
         Valve valve = valvesByName.get(name);
         if (valve == null) {

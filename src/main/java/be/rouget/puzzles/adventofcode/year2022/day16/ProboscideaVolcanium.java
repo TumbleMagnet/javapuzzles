@@ -1,12 +1,14 @@
 package be.rouget.puzzles.adventofcode.year2022.day16;
 
 import be.rouget.puzzles.adventofcode.util.SolverUtils;
-import be.rouget.puzzles.adventofcode.util.graph.Dijkstra;
 import be.rouget.puzzles.adventofcode.year2022.day16.fullgraph.*;
+import be.rouget.puzzles.adventofcode.year2022.day16.reducedgraph.ReducedGraph;
+import com.google.common.base.Stopwatch;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 
 public class ProboscideaVolcanium {
@@ -27,45 +29,20 @@ public class ProboscideaVolcanium {
 
     public ProboscideaVolcanium(List<String> input) {
         LOG.info("Input has {} lines...", input.size());
-        List<Valve> valves = input.stream()
-                .map(Valve::parse)
-                .toList();
-        Valves.initialize(valves);
+        Valves.initializeValves(input);
     }
 
     public long computeResultForPart1() {
-
-        // Computing the maximum pressure that can be released in 30 seconds is equivalent to find the moves which
-        // amount to the minimum total loss, where the loss at a given moment is defined as the difference between
-        // the ideal maximum flow rate (all valves are open) and the current flow rate.
-        
-        // This can be modelled as the shortest path in a graph for which:
-        // - nodes are the state after some moves
-        // - the distance between nodes is the loss that happens during that move
-        PressureLossGraph graph = new PressureLossGraph();
-        PressureLossState startState = graph.getStartState(NAME_OF_STARTING_POSITION);
-        int minimalLoss = Dijkstra.shortestDistance(graph, startState, state -> isStateFinal(state, MAX_TIME));
-
-        // Best pressure release is ideal release minus minimal loss
-        return (long) MAX_TIME * Valves.maxFlowRate() - minimalLoss;
+        Stopwatch stopwatch = Stopwatch.createStarted();
+        long result1 = PressureLossGraph.computeResultForPart1(MAX_TIME, NAME_OF_STARTING_POSITION);
+        LOG.info("Got result {} with complete graph and dijkstra in {} ms", result1, stopwatch.elapsed(TimeUnit.MILLISECONDS));
+        stopwatch.stop().reset().start();
+        long result2 = ReducedGraph.computeResultForPart1(MAX_TIME, NAME_OF_STARTING_POSITION);
+        LOG.info("Got result {} with reduced graph in {} ms", result2, stopwatch.elapsed(TimeUnit.MILLISECONDS));
+        return result2;
     }
 
     public long computeResultForPart2() {
-        PressureLossGraphPart2 graph = new PressureLossGraphPart2();
-        PressureLossStatePart2 startState = graph.getStartState(NAME_OF_STARTING_POSITION);
-        int minimalLoss = Dijkstra.shortestDistance(graph, startState, state -> isStateFinal(state, MAX_TIME_PART2));
-
-        // Best pressure release is ideal release minus minimal loss
-        return (long) MAX_TIME_PART2 * Valves.maxFlowRate() - minimalLoss;
-    }
-
-    private static boolean isStateFinal(PressureLossState state, int maxTime) {
-        // State is a final state when either time is up or all valves are open 
-        return state.time() >= maxTime || state.closedValves().isEmpty();
-    }
-
-    private static boolean isStateFinal(PressureLossStatePart2 state, int maxTime) {
-        // State is a final state when either time is up or all valves are open 
-        return state.time() >= maxTime || state.closedValves().isEmpty();
+        return PressureLossGraphPart2.computeResultForPart2(MAX_TIME_PART2, NAME_OF_STARTING_POSITION);
     }
 }
