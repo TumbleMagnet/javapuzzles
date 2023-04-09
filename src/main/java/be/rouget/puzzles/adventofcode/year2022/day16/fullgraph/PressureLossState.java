@@ -1,5 +1,6 @@
-package be.rouget.puzzles.adventofcode.year2022.day16;
+package be.rouget.puzzles.adventofcode.year2022.day16.fullgraph;
 
+import be.rouget.puzzles.adventofcode.year2022.day16.Valve;
 import com.google.common.base.Objects;
 
 import java.util.Set;

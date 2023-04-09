@@ -2,6 +2,7 @@ package be.rouget.puzzles.adventofcode.year2022.day16;
 
 import be.rouget.puzzles.adventofcode.util.SolverUtils;
 import be.rouget.puzzles.adventofcode.util.graph.Dijkstra;
+import be.rouget.puzzles.adventofcode.year2022.day16.fullgraph.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

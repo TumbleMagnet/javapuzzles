@@ -1,7 +1,8 @@
-package be.rouget.puzzles.adventofcode.year2022.day16;
+package be.rouget.puzzles.adventofcode.year2022.day16.fullgraph;
 
 import be.rouget.puzzles.adventofcode.util.graph.Edge;
 import be.rouget.puzzles.adventofcode.util.graph.Graph;
+import be.rouget.puzzles.adventofcode.year2022.day16.Valve;
 import com.google.common.collect.Lists;
 
 import java.util.List;
