@@ -1,20 +1,26 @@
 package be.rouget.puzzles.adventofcode.year2022.day16.reducedgraph;
 
+import be.rouget.puzzles.adventofcode.year2022.day16.ProboscideaVolcanium;
 import be.rouget.puzzles.adventofcode.year2022.day16.Valve;
 import be.rouget.puzzles.adventofcode.year2022.day16.Valves;
+import com.google.common.base.Stopwatch;
 import com.google.common.collect.Maps;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 public class ReducedGraph {
 
+    private static final Logger LOG = LogManager.getLogger(ProboscideaVolcanium.class);
+    private static final Map<StatePart1, Long> MAX_PRESSURES = Maps.newHashMap();
+
     private ReducedGraph() {
     }
-
-    private static final Map<StatePart1, Long> MAX_PRESSURES = Maps.newHashMap();
     
     public static long computeResultForPart1(int maxTime, String nameOfStartingPosition) {
 
@@ -71,6 +77,8 @@ public class ReducedGraph {
     @SuppressWarnings("java:S3776") // Accept a complexity slightly higher than normal
     public static Map<Travel, Integer> computeDistances(Collection<Valve> allValves) {
 
+        Stopwatch stopwatch = Stopwatch.createStarted();
+        
         // Distance map: no entry means that the distance is "unknown".
         Map<Travel, Integer> distances = Maps.newHashMap();
         
@@ -104,6 +112,7 @@ public class ReducedGraph {
             }
         }
         
+        LOG.info("Computed distances in {} ms", stopwatch.elapsed(TimeUnit.MILLISECONDS));
         return distances;
     }
 }
