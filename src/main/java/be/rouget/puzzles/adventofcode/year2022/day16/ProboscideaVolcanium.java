@@ -1,7 +1,6 @@
 package be.rouget.puzzles.adventofcode.year2022.day16;
 
 import be.rouget.puzzles.adventofcode.util.SolverUtils;
-import be.rouget.puzzles.adventofcode.year2022.day16.fullgraph.*;
 import be.rouget.puzzles.adventofcode.year2022.day16.reducedgraph.ReducedGraph;
 import com.google.common.base.Stopwatch;
 import org.apache.logging.log4j.LogManager;
@@ -18,6 +17,7 @@ public class ProboscideaVolcanium {
     public static final String NAME_OF_STARTING_POSITION = "AA";
 
     private static final Logger LOG = LogManager.getLogger(ProboscideaVolcanium.class);
+    private final ReducedGraph reducedGraph;
 
     @SuppressWarnings("java:S2629")
     public static void main(String[] args) {
@@ -29,20 +29,20 @@ public class ProboscideaVolcanium {
 
     public ProboscideaVolcanium(List<String> input) {
         LOG.info("Input has {} lines...", input.size());
-        Valves.initializeValves(input);
+        reducedGraph = new ReducedGraph(input, NAME_OF_STARTING_POSITION);
     }
 
     public long computeResultForPart1() {
         Stopwatch stopwatch = Stopwatch.createStarted();
-        long result1 = PressureLossGraph.computeResultForPart1(MAX_TIME, NAME_OF_STARTING_POSITION);
-        LOG.info("Got result {} with complete graph and dijkstra in {} ms", result1, stopwatch.elapsed(TimeUnit.MILLISECONDS));
-        stopwatch.stop().reset().start();
-        long result2 = ReducedGraph.computeResultForPart1(MAX_TIME, NAME_OF_STARTING_POSITION);
-        LOG.info("Got result {} with reduced graph in {} ms", result2, stopwatch.elapsed(TimeUnit.MILLISECONDS));
-        return result2;
+        long result = reducedGraph.computeResultForPart1(MAX_TIME);
+        LOG.info("Got result {} in {} ms", result, stopwatch.elapsed(TimeUnit.MILLISECONDS));
+        return result;
     }
 
     public long computeResultForPart2() {
-        return PressureLossGraphPart2.computeResultForPart2(MAX_TIME_PART2, NAME_OF_STARTING_POSITION);
+        Stopwatch stopwatch = Stopwatch.createStarted();
+        long result = reducedGraph.computeResultForPart2(MAX_TIME_PART2);
+        LOG.info("Part 2: got result {} in {} ms", result, stopwatch.elapsed(TimeUnit.MILLISECONDS));
+        return result;
     }
 }

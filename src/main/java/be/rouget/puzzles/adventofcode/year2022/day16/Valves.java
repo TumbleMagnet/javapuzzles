@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
 
 public class Valves {
     private static Map<String, Valve> valvesByName;
-    private static Integer maxFlowRate = null;
 
     private Valves() {
     }
@@ -34,14 +33,5 @@ public class Valves {
     
     public static Collection<Valve> allValves() {
         return valvesByName.values();
-    }
-    
-    public static int maxFlowRate() {
-        if (maxFlowRate == null) {
-            maxFlowRate = allValves().stream()
-                    .mapToInt(Valve::flowRate)
-                    .sum();
-        }
-        return maxFlowRate;
     }
 }

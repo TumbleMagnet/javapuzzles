@@ -1,14 +1,15 @@
 package be.rouget.puzzles.adventofcode.year2022.day16.reducedgraph;
 
-import be.rouget.puzzles.adventofcode.year2022.day16.ProboscideaVolcanium;
 import be.rouget.puzzles.adventofcode.year2022.day16.Valve;
 import be.rouget.puzzles.adventofcode.year2022.day16.Valves;
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -16,60 +17,81 @@ import java.util.stream.Collectors;
 
 public class ReducedGraph {
 
-    private static final Logger LOG = LogManager.getLogger(ProboscideaVolcanium.class);
-    private static final Map<StatePart1, Long> MAX_PRESSURES = Maps.newHashMap();
+    private static final Logger LOG = LogManager.getLogger(ReducedGraph.class);
 
-    private ReducedGraph() {
-    }
-    
-    public static long computeResultForPart1(int maxTime, String nameOfStartingPosition) {
+    private final Valve startValve;
+    private final Set<Valve> allValvesToOpen;
+    private final Map<Travel, Integer> distances;
+    private final Map<SearchState, Long> resultCache;
 
-        Map<Travel, Integer> distances = computeDistances(Valves.allValves());
-
-        Set<Valve> valvesToOpen = Valves.allValves().stream()
+    public ReducedGraph(List<String> input, String nameOfStartingPosition) {
+        Valves.initializeValves(input);
+        startValve = Valves.findValve(nameOfStartingPosition);
+        allValvesToOpen = Valves.allValves().stream()
                 .filter(valve -> valve.flowRate() > 0)
                 .collect(Collectors.toSet());
-
-        Valve startValve = Valves.findValve(nameOfStartingPosition);
-
-        return maxPressure(startValve, maxTime, valvesToOpen, distances);
+        LOG.info("Found {} valves to open...", allValvesToOpen.size());
+        distances = computeDistances(Valves.allValves());
+        resultCache = Maps.newHashMap();
     }
     
-    public static long maxPressure(Valve currentPosition, int timeLeft, Set<Valve> valvesToOpen, Map<Travel, Integer> distances) {
-        StatePart1 state = new StatePart1(currentPosition, timeLeft, valvesToOpen);
-        
-        // Check if answer is already known
-        Long existingResult = MAX_PRESSURES.get(state);
-        if (existingResult != null) {
-            return existingResult;
+    public long computeResultForPart1(int maxTime) {
+        return maxAdditionalPressure(new SearchState(startValve, maxTime, allValvesToOpen));
+    }
+    
+    private long maxAdditionalPressure(SearchState state) {
+
+        // First check if this result is known already
+        Long existingAdditionalPressure = resultCache.get(state);
+        if (existingAdditionalPressure != null) {
+            return existingAdditionalPressure;
         }
         
-        // Compute base pressure that can be released without opening any additional valve.
-        int currentFlowRate = Valves.maxFlowRate() - valvesToOpen.stream().mapToInt(Valve::flowRate).sum();
-        long maxPressure = (long) currentFlowRate * timeLeft;
-        
         // Compute answer by considering opening valves that are still closed and within reach
-        for (Valve valveToOpen : valvesToOpen) {
-            int timeToOpen = distances.get(new Travel(currentPosition, valveToOpen)) + 1; // Takes 1 addition step to open once reached
-            if (timeToOpen < timeLeft) {
+        long maxPressure = 0L;
+        for (Valve valveToOpen : state.valvesToOpen()) {
+            int timeToOpen = distances.get(new Travel(state.currentPosition(), valveToOpen)) + 1; // Takes 1 addition step to open once reached
+            if (timeToOpen < state.timeLeft()) {
                 // Result of opening targetValve is sum of:
-                // - current flow rate * time to open
-                // - the maxPressure that can be release when at new valve with remaining time and valves to open
-                Set<Valve> valvesLeftToOpen = valvesToOpen.stream()
+                // - flow rate of opened valve * time remaining after opening it
+                // - the additional pressure that can be released when at new valve with remaining time and valves to open
+                Set<Valve> valvesLeftToOpen = state.valvesToOpen().stream()
                         .filter(valve -> valve != valveToOpen)
                         .collect(Collectors.toSet());
-                long pressure = (long) currentFlowRate * timeToOpen +  maxPressure(valveToOpen, timeLeft - timeToOpen, valvesLeftToOpen, distances);
+                int timeRemainingAfterOpening = state.timeLeft() - timeToOpen;
+                SearchState newState = new SearchState(valveToOpen, timeRemainingAfterOpening, valvesLeftToOpen);
+                long pressure = (long) valveToOpen.flowRate() * timeRemainingAfterOpening +  maxAdditionalPressure(newState);
                 maxPressure = Math.max(maxPressure, pressure);
             }
         }
 
-        MAX_PRESSURES.put(state, maxPressure);
-        
+        resultCache.put(state, maxPressure);
         return maxPressure;
     }
-    
+
+    public long computeResultForPart2(int maxTime) {
+        
+        // Iterate all different possibilities of splitting valves to open between actor1 and actor2 and then,
+        // for each split, compute best result for each actor.
+        // Although the number of combinations is large (about 32,000), the caching in the search function keeps the
+        // overall execution time acceptable.
+        Set<Set<Valve>> subsets = Sets.powerSet(allValvesToOpen);
+        LOG.info("Found {} subsets of the valves to open...", subsets.size());
+
+        long maxPressure = 0L;
+        for (Set<Valve> subset : subsets) {
+            Set<Valve> complement = Sets.difference(allValvesToOpen, subset);
+
+            long pressure1 = maxAdditionalPressure(new SearchState(startValve, maxTime, subset));
+            long pressure2 = maxAdditionalPressure(new SearchState(startValve, maxTime, complement));
+            long totalPressure = pressure1 + pressure2;
+            maxPressure = Math.max(totalPressure, maxPressure);
+        }
+        return maxPressure;
+    }
+
     /**
-     * Returns the distances from any valve to any other valve.
+     * Returns the distances from any valve to any other valve (Floyd-Warshall algorithm)
      *
      * @param allValves the valves
      * @return a distance map
