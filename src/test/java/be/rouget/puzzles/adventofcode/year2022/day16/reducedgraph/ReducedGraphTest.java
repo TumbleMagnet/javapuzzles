@@ -1,6 +1,7 @@
 package be.rouget.puzzles.adventofcode.year2022.day16.reducedgraph;
 
 import be.rouget.puzzles.adventofcode.year2022.day16.ProboscideaVolcaniumTest;
+import be.rouget.puzzles.adventofcode.year2022.day16.Travel;
 import be.rouget.puzzles.adventofcode.year2022.day16.Valves;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

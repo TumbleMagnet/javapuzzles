@@ -1,14 +1,22 @@
 package be.rouget.puzzles.adventofcode.year2022.day16;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import be.rouget.puzzles.adventofcode.year2022.day16.bitset.BitSetReducedGraph;
+import com.google.common.collect.Maps;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Valves {
-    private static Map<String, Valve> valvesByName;
 
+    private static final Logger LOG = LogManager.getLogger(BitSetReducedGraph.class);
+    
+    private static Map<String, Valve> valvesByName;
+    private static Map<Integer, Valve> valvesToOpenByIndex = Maps.newHashMap();
+    private static Map<Valve, Integer> indexesOfValvesToOpen = Maps.newHashMap();
+    
     private Valves() {
     }
 
@@ -33,5 +41,43 @@ public class Valves {
     
     public static Collection<Valve> allValves() {
         return valvesByName.values();
+    }
+    
+    public static BitSet getValvesToOpenAsBitSet() {
+        List<Valve> valvesToOpen = getAllValvesToOpen().stream()
+                .sorted(Comparator.comparing(Valve::name))
+                .toList();
+        LOG.info("Found {} valves to open...", valvesToOpen.size());
+        BitSet toOpenBitSet = new BitSet(valvesToOpen.size());
+        for (int i = 0; i < valvesToOpen.size(); i++) {
+            toOpenBitSet.set(i, true);
+            valvesToOpenByIndex.put(i, valvesToOpen.get(i));
+            indexesOfValvesToOpen.put(valvesToOpen.get(i), i);
+        }
+        return toOpenBitSet;
+    }
+
+    public static Set<Valve> getAllValvesToOpen() {
+        return allValves().stream()
+                .filter(valve -> valve.flowRate() > 0)
+                .collect(Collectors.toSet());
+    }
+
+    public static Valve getValveToOpen(int index) {
+        return valvesToOpenByIndex.get(index);
+    }
+
+    public static BitSet removeValve(BitSet bitSet, Valve valveToRemove) {
+        BitSet result = (BitSet) bitSet.clone();
+        result.clear(indexesOfValvesToOpen.get(valveToRemove));
+        return result;
+    }
+
+    public static BitSet toBitSet(Set<Valve> valvesToOpen) {
+        BitSet result = new BitSet();
+        for (Valve valveToOpen : valvesToOpen) {
+            result.set(indexesOfValvesToOpen.get(valveToOpen), true);
+        }
+        return result;
     }
 }

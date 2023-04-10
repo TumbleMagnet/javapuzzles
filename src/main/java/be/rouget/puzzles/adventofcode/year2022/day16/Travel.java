@@ -1,4 +1,4 @@
-package be.rouget.puzzles.adventofcode.year2022.day16.reducedgraph;
+package be.rouget.puzzles.adventofcode.year2022.day16;
 
 import be.rouget.puzzles.adventofcode.year2022.day16.Valve;
 

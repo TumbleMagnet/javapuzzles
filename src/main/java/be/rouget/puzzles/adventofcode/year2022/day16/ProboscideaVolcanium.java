@@ -1,7 +1,7 @@
 package be.rouget.puzzles.adventofcode.year2022.day16;
 
 import be.rouget.puzzles.adventofcode.util.SolverUtils;
-import be.rouget.puzzles.adventofcode.year2022.day16.reducedgraph.ReducedGraph;
+import be.rouget.puzzles.adventofcode.year2022.day16.bitset.BitSetReducedGraph;
 import com.google.common.base.Stopwatch;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,7 +17,7 @@ public class ProboscideaVolcanium {
     public static final String NAME_OF_STARTING_POSITION = "AA";
 
     private static final Logger LOG = LogManager.getLogger(ProboscideaVolcanium.class);
-    private final ReducedGraph reducedGraph;
+    private final BitSetReducedGraph reducedGraph;
 
     @SuppressWarnings("java:S2629")
     public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class ProboscideaVolcanium {
 
     public ProboscideaVolcanium(List<String> input) {
         LOG.info("Input has {} lines...", input.size());
-        reducedGraph = new ReducedGraph(input, NAME_OF_STARTING_POSITION);
+        reducedGraph = new BitSetReducedGraph(input, NAME_OF_STARTING_POSITION);
     }
 
     public long computeResultForPart1() {
