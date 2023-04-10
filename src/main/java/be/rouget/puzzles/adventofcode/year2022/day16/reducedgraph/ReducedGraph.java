@@ -50,7 +50,7 @@ public class ReducedGraph {
         // Compute answer by considering opening valves that are still closed and within reach
         long maxPressure = 0L;
         for (Valve valveToOpen : state.valvesToOpen()) {
-            int timeToOpen = distances.get(new Travel(state.currentPosition(), valveToOpen)) + 1; // Takes 1 addition step to open once reached
+            int timeToOpen = distances.get(new Travel(state.currentPosition(), valveToOpen)) + 1; // It takes 1 additional step to open once reached
             if (timeToOpen < state.timeLeft()) {
                 // Result of opening targetValve is sum of:
                 // - flow rate of opened valve * time remaining after opening it
