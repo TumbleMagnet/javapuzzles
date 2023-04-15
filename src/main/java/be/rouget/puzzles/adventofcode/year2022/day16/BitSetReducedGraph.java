@@ -1,37 +1,26 @@
-package be.rouget.puzzles.adventofcode.year2022.day16.reducedgraph;
+package be.rouget.puzzles.adventofcode.year2022.day16;
 
-import be.rouget.puzzles.adventofcode.year2022.day16.Travel;
-import be.rouget.puzzles.adventofcode.year2022.day16.Valve;
-import be.rouget.puzzles.adventofcode.year2022.day16.Valves;
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
 
-public class ReducedGraph {
+public class BitSetReducedGraph {
 
-    private static final Logger LOG = LogManager.getLogger(ReducedGraph.class);
+    private static final Logger LOG = LogManager.getLogger(BitSetReducedGraph.class);
 
     private final Valve startValve;
-    private final Set<Valve> allValvesToOpen;
+    private final BitSet allValvesToOpen;
     private final Map<Travel, Integer> distances;
     private final Map<SearchState, Long> resultCache;
 
-    public ReducedGraph(List<String> input, String nameOfStartingPosition) {
+    public BitSetReducedGraph(List<String> input, String nameOfStartingPosition) {
         Valves.initializeValves(input);
         startValve = Valves.findValve(nameOfStartingPosition);
-        allValvesToOpen = Valves.allValves().stream()
-                .filter(valve -> valve.flowRate() > 0)
-                .collect(Collectors.toSet());
-        LOG.info("Found {} valves to open...", allValvesToOpen.size());
+        allValvesToOpen = Valves.getValvesToOpenAsBitSet();
         distances = computeDistances(Valves.allValves());
         resultCache = Maps.newHashMap();
     }
@@ -39,7 +28,14 @@ public class ReducedGraph {
     public long computeResultForPart1(int maxTime) {
         return maxAdditionalPressure(new SearchState(startValve, maxTime, allValvesToOpen));
     }
-    
+
+    /**
+     * Computes the maximum pressure that can be released by opening some of the remaining valves in the allocated time.
+     * Valves which can be open are stored as a BitSet for better performance.
+     * 
+     * @param state the current position, the remaining time and the valves that are still closed
+     * @return the maximum pressure that can be released
+     */
     private long maxAdditionalPressure(SearchState state) {
 
         // First check if this result is known already
@@ -48,17 +44,17 @@ public class ReducedGraph {
             return existingAdditionalPressure;
         }
         
-        // Compute answer by considering opening valves that are still closed and within reach
+        // Compute answer recursively by considering opening valves that are still closed and within reach
         long maxPressure = 0L;
-        for (Valve valveToOpen : state.valvesToOpen()) {
+        BitSet toOpenBitSet = state.valvesToOpen();
+        for (int i = toOpenBitSet.nextSetBit(0); i >= 0; i = toOpenBitSet.nextSetBit(i+1)) { // Iterate over set bits on the bitset
+            Valve valveToOpen = Valves.getValveToOpen(i);
             int timeToOpen = distances.get(new Travel(state.currentPosition(), valveToOpen)) + 1; // It takes 1 additional step to open once reached
             if (timeToOpen < state.timeLeft()) {
                 // Result of opening targetValve is sum of:
                 // - flow rate of opened valve * time remaining after opening it
-                // - the additional pressure that can be released when at new valve with remaining time and valves to open
-                Set<Valve> valvesLeftToOpen = state.valvesToOpen().stream()
-                        .filter(valve -> valve != valveToOpen)
-                        .collect(Collectors.toSet());
+                // - the additional pressure that can be released when at new valve with remaining time and valves left to open
+                BitSet valvesLeftToOpen = Valves.removeValve(toOpenBitSet, valveToOpen);
                 int timeRemainingAfterOpening = state.timeLeft() - timeToOpen;
                 SearchState newState = new SearchState(valveToOpen, timeRemainingAfterOpening, valvesLeftToOpen);
                 long pressure = (long) valveToOpen.flowRate() * timeRemainingAfterOpening +  maxAdditionalPressure(newState);
@@ -70,21 +66,36 @@ public class ReducedGraph {
         return maxPressure;
     }
 
+    public static BitSet intToBitSet(int value) {
+        BitSet bits = new BitSet();
+        int index = 0;
+        while (value != 0) {
+            if (value % 2 != 0) {
+                bits.set(index);
+            }
+            ++index;
+            value = value >>> 1;
+        }
+        return bits;
+    }    
     public long computeResultForPart2(int maxTime) {
         
         // Iterate all different possibilities of splitting valves to open between actor1 and actor2 and then,
         // for each split, compute best result for each actor.
         // Although the number of combinations is large (about 32,000), the caching in the search function keeps the
-        // overall execution time acceptable.
-        Set<Set<Valve>> subsets = Sets.powerSet(allValvesToOpen);
-        LOG.info("Found {} subsets of the valves to open...", subsets.size());
-
+        // overall execution time acceptable (< 20 seconds)
         long maxPressure = 0L;
-        for (Set<Valve> subset : subsets) {
-            Set<Valve> complement = Sets.difference(allValvesToOpen, subset);
 
-            long pressure1 = maxAdditionalPressure(new SearchState(startValve, maxTime, subset));
-            long pressure2 = maxAdditionalPressure(new SearchState(startValve, maxTime, complement));
+        Set<Valve> allValvesToOpenAsSet = Valves.getAllValvesToOpen();
+        int numberOfValvesToOpen = allValvesToOpenAsSet.size();
+        int maxIndex = (1 << numberOfValvesToOpen) -1;
+        for (int i = 0; i <= maxIndex; i++) {
+            BitSet bitSet1 = intToBitSet(i);
+            BitSet bitSet2 = (BitSet) bitSet1.clone();
+            bitSet2.flip(0, numberOfValvesToOpen);
+
+            long pressure1 = maxAdditionalPressure(new SearchState(startValve, maxTime, bitSet1));
+            long pressure2 = maxAdditionalPressure(new SearchState(startValve, maxTime, bitSet2));
             long totalPressure = pressure1 + pressure2;
             maxPressure = Math.max(totalPressure, maxPressure);
         }

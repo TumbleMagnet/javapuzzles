@@ -1,7 +1,6 @@
 package be.rouget.puzzles.adventofcode.year2022.day16;
 
 import be.rouget.puzzles.adventofcode.util.SolverUtils;
-import be.rouget.puzzles.adventofcode.year2022.day16.bitset.BitSetReducedGraph;
 import com.google.common.base.Stopwatch;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

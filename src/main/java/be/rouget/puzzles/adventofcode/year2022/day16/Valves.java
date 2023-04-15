@@ -1,6 +1,5 @@
 package be.rouget.puzzles.adventofcode.year2022.day16;
 
-import be.rouget.puzzles.adventofcode.year2022.day16.bitset.BitSetReducedGraph;
 import com.google.common.collect.Maps;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class Valves {
 
-    private static final Logger LOG = LogManager.getLogger(BitSetReducedGraph.class);
+    private static final Logger LOG = LogManager.getLogger(Valves.class);
     
     private static Map<String, Valve> valvesByName;
     private static Map<Integer, Valve> valvesToOpenByIndex = Maps.newHashMap();
@@ -70,14 +69,6 @@ public class Valves {
     public static BitSet removeValve(BitSet bitSet, Valve valveToRemove) {
         BitSet result = (BitSet) bitSet.clone();
         result.clear(indexesOfValvesToOpen.get(valveToRemove));
-        return result;
-    }
-
-    public static BitSet toBitSet(Set<Valve> valvesToOpen) {
-        BitSet result = new BitSet();
-        for (Valve valveToOpen : valvesToOpen) {
-            result.set(indexesOfValvesToOpen.get(valveToOpen), true);
-        }
         return result;
     }
 }
