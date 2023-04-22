@@ -4,6 +4,7 @@ import be.rouget.puzzles.adventofcode.util.AocStringUtils;
 import be.rouget.puzzles.adventofcode.util.SolverUtils;
 import be.rouget.puzzles.adventofcode.util.map.Direction;
 import be.rouget.puzzles.adventofcode.util.map.Position;
+import com.google.common.collect.Lists;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -35,20 +36,77 @@ public class PyroclasticFlow {
     }
 
     public long computeResultForPart2() {
-        // Inspecting the function "numberOfRocks => height" every time the jetIndex cycles shows that it is cyclic:
-        // 1695 rocks always produce a height of 2610
-        long cycleLength =  1695L;
-        long cycleHeight = 2610L;
-
+        RockCycle rockCycle = detectCycle();
         long numberOfRocks = 1000000000000L;
-        long numberOfCycles = numberOfRocks / cycleLength;
-        long remainder = numberOfRocks % cycleLength;
+        long numberOfCycles = numberOfRocks / rockCycle.length();
+        long remainder = numberOfRocks % rockCycle.length();
         int remainderHeight = computeHeight(Math.toIntExact(remainder));
+        return numberOfCycles * rockCycle.height() + remainderHeight;
+    }
 
-        return numberOfCycles * cycleHeight + remainderHeight;
+    private RockCycle detectCycle() {
+        
+        // Record states for a large number of rocks and use the data to find the cycle
+        List<RockState> states = Lists.newArrayList();
+        computeHeight(5000, states);
+        
+        // Floyd's cycle-finding algorithm: tortoise and hare
+
+        // Main phase of algorithm: finding a repetition x_i = x_2i.
+        // The hare moves twice as quickly as the tortoise and
+        // the distance between them increases by 1 at each step.
+        // Eventually they will both be inside the cycle and then,
+        // at some point, the distance between them will be
+        // divisible by the period λ.
+        int tortoise = 1;
+        int hare = 2;
+        while (!states.get(tortoise).equals(states.get(hare))) {
+            tortoise = tortoise + 1;
+            hare = hare + 2;
+        }
+        LOG.info("First meeting: turtoise: {} - hare: {}", tortoise, hare);
+
+        // At this point the tortoise position, ν, which is also equal
+        // to the distance between hare and tortoise, is divisible by
+        // the period λ. So hare moving in cycle one step at a time, 
+        // and tortoise (reset to x0) moving towards the cycle, will 
+        // intersect at the beginning of the cycle. Because the 
+        // distance between them is constant at 2ν, a multiple of λ,
+        // they will agree as soon as the tortoise reaches index μ.
+        
+        // Find the position μ of first repetition.
+        int mu = 0;
+        tortoise = 0;
+        while (!states.get(tortoise).equals(states.get(hare))) {
+            tortoise = tortoise + 1;
+            hare = hare + 1; // # Hare and tortoise move at same speed
+            mu++;
+        }
+        LOG.info("mu: {}", mu);
+        
+        // Find the length of the shortest cycle starting from x_μ
+        // The hare moves one step at a time while tortoise is still.
+        // lam is incremented until λ is found.
+        int lambda = 1;
+        hare = tortoise + 1;
+        while (!states.get(tortoise).equals(states.get(hare))) {
+            hare +=1;
+            lambda +=1;
+        }
+        LOG.info("Cycle length: {}", lambda);
+        
+        // Now that the length of the cycle is known, compute its height
+        int cycleHeight = computeHeight(mu+lambda) - computeHeight(mu);
+        LOG.info("Cycle length: {} - height: {}", lambda, cycleHeight);
+        
+        return new RockCycle(lambda, cycleHeight);
     }
 
     private int computeHeight(int numberOfRocks) {
+        return computeHeight(numberOfRocks, null);
+    }
+
+    private int computeHeight(int numberOfRocks, List<RockState> states) {
         Chamber chamber = new Chamber(7);
         Shape currentShape = null;
         int jetIndex = 0;
@@ -57,8 +115,10 @@ public class PyroclasticFlow {
             Position bottomLeftPositionOfNextRock = chamber.bottomLeftPositionOfNextRock();
             Position topLeftPositionOfNextRock = new Position(bottomLeftPositionOfNextRock.getX(), bottomLeftPositionOfNextRock.getY()-currentShape.getHeight()+1);
             Rock rock = new Rock(topLeftPositionOfNextRock, currentShape);
+            int jetIndexAtSpawn = jetIndex;
             while (true) {
-                Rock movedByJet = rock.move(getJetDirection(jetIndex++));
+                Rock movedByJet = rock.move(getJetDirection(jetIndex));
+                jetIndex = (jetIndex + 1) % jetPatterns.size();
                 if (chamber.doesRockFit(movedByJet)) {
                     rock = movedByJet;
                 }
@@ -66,6 +126,12 @@ public class PyroclasticFlow {
                 if (chamber.doesRockFit(movedDown)) {
                     rock = movedDown;
                 } else {
+                    if (states != null) {
+                        // Record state for that rock
+                        Position move = new Position(rock.position().getX() - topLeftPositionOfNextRock.getX(), rock.position().getY() - topLeftPositionOfNextRock.getY());
+                        RockState rockState = new RockState(currentShape, jetIndexAtSpawn, move);
+                        states.add(rockState);
+                    }
                     break;
                 }
             }
@@ -75,7 +141,7 @@ public class PyroclasticFlow {
     }
 
     private Direction getJetDirection(int jetIndex) {
-        return jetPatterns.get(jetIndex % jetPatterns.size());
+        return jetPatterns.get(jetIndex);
     }
 
     private static List<Direction> parseJetPatterns(String input) {
