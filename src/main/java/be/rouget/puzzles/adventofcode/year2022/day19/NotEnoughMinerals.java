@@ -10,6 +10,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.function.LongSupplier;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
@@ -27,9 +28,9 @@ public class NotEnoughMinerals {
         timeAndVerify(2, aoc::computeResultForPart2, 13340);
     }
     
-    private static void timeAndVerify(int partIndex, Supplier<Long> resultSupplier, long expectedResult) {
+    private static void timeAndVerify(int partIndex, LongSupplier resultSupplier, long expectedResult) {
         Stopwatch sw = Stopwatch.createStarted();
-        long result = resultSupplier.get();
+        long result = resultSupplier.getAsLong();
         long durationInMills = sw.elapsed(TimeUnit.MILLISECONDS);
         String formattedDuration = DurationFormatUtils.formatDuration(durationInMills, "H:mm:ss.SSS", true);
         LOG.info("[{}] Result for part {} is: {}", formattedDuration, partIndex, result);
@@ -58,8 +59,19 @@ public class NotEnoughMinerals {
             states = states.stream()
                     .flatMap(state -> state.newStates(stepIndex, numberOfSteps).stream())
                     .collect(Collectors.toSet());
-            
-            
+
+            int remainingSteps = numberOfSteps - i - 1;
+
+            // Compute the guaranteed best number of geodes and filter out the states which cannot possibly reach it
+            int minimumBest = states.stream()
+                    .mapToInt(state -> start.computeMinimumNumberOfGeodes(remainingSteps))
+                    .max().orElse(0);
+            if (minimumBest > 0) {
+                states = states.stream()
+                        .filter(state -> state.computeMaximumPossibleNumberOfGeodes(remainingSteps) > minimumBest)
+                        .collect(Collectors.toSet());
+            }
+
         }
         return states.stream()
                 .mapToInt(state -> state.getQuantityForMineral(Mineral.GEODE))
@@ -76,9 +88,4 @@ public class NotEnoughMinerals {
                 .mapToLong(blueprint -> maxNumberOfGeodes(blueprint, 32))
                 .reduce(1, (a, b) -> a * b);
     }
-
-//    private long maxGeodes(SearchState state, int currentStep, int totalNumberOfSteps) {
-//        int currentNumberOfGeodes = state.getQuantityForMineral(Mineral.GEODE);
-//        
-//    }
 }

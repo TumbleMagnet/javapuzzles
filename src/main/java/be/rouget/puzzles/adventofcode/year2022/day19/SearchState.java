@@ -48,19 +48,19 @@ public record SearchState(Quantity robots, Quantity minerals, Blueprint blueprin
         return newStates;
     }
     
-//    public int computeMaximumPossibleNumberOfGeodes(int numberOfStepsRemaining) {
-//
-//        int max = computeMinimumNumberOfGeodes(numberOfStepsRemaining);
-//        
-//        // Assume one additional robot per remaining turn so 0 + 1 + 2 + 3, etc
-//        if (numberOfStepsRemaining > 1) {
-//            max += (numberOfStepsRemaining * (numberOfStepsRemaining - 1)) / 2;
-//        }
-//        return max;
-//    }
-//
-//    private int computeMinimumNumberOfGeodes(int numberOfStepsRemaining) {
-//        // For sure: geode already produced plus production of geode robots
-//        return getQuantityForMineral(Mineral.GEODE) + numberOfStepsRemaining * robots.getQuantityForMineral(Mineral.GEODE);
-//    }
+    public int computeMaximumPossibleNumberOfGeodes(int numberOfStepsRemaining) {
+
+        int max = computeMinimumNumberOfGeodes(numberOfStepsRemaining);
+
+        // Assume one additional robot per remaining turn so 0 + 1 + 2 + 3, etc
+        if (numberOfStepsRemaining > 1) {
+            max += (numberOfStepsRemaining * (numberOfStepsRemaining - 1)) / 2;
+        }
+        return max;
+    }
+
+    public int computeMinimumNumberOfGeodes(int numberOfStepsRemaining) {
+        // For sure: geode already produced plus production of geode robots
+        return getQuantityForMineral(Mineral.GEODE) + numberOfStepsRemaining * robots.getQuantityForMineral(Mineral.GEODE);
+    }
 }
