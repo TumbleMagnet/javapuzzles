@@ -25,9 +25,9 @@ public record SearchState(Quantity robots, Quantity minerals, Blueprint blueprin
             for (Mineral targetMineral : Mineral.values()) {
                 if (robotsToSkip== null || !robotsToSkip.contains(targetMineral)) {
                     Quantity robotCost = blueprint.costForRobot(targetMineral);
-                    Quantity mineralsAfterBuyingRobot = minerals.add(robotCost);
+                    Quantity mineralsAfterBuyingRobot = minerals.minus(robotCost);
                     if (!mineralsAfterBuyingRobot.isNegative()
-                            && blueprint.isOneAdditionalRobotUseful(robots, targetMineral)) { // Optimization: do not build robot for resources we already produce enough of
+                            && blueprint.isOneAdditionalRobotUseful(robots, targetMineral, numberOfSteps-stepIndex-1)) { // Optimization: do not build robot for resources we already produce enough of
                         newStates.add(new SearchState(robots.add(1, targetMineral), mineralsAfterBuyingRobot.add(robots), blueprint, null));
                         possibleRobots.add(targetMineral);
                     }
@@ -35,13 +35,32 @@ public record SearchState(Quantity robots, Quantity minerals, Blueprint blueprin
             }
         }
 
-        // Additional state: produce no robot
-        // Optimization: if we decide not to produce a robot that was possible now, it does not make sense
-        // to produce that same robot first in future steps (result cannot be better).
-        EnumSet<Mineral> newRobotsToSkip = robotsToSkip == null ? EnumSet.noneOf(Mineral.class) : EnumSet.copyOf(robotsToSkip);
-        newRobotsToSkip.addAll(possibleRobots);
-        newStates.add(new SearchState(robots, minerals.add(robots), blueprint, newRobotsToSkip.isEmpty() ? null : newRobotsToSkip));
+        // Additional state: produce no robot.
+        // Optimizations:
+        // - if we can produce all the robots when produce one
+        // - if we decide not to produce a robot that was possible now, it does not make sense to produce that same robot first in future steps (result cannot be better).
+        if (!EnumSet.complementOf(possibleRobots).isEmpty()) {
+            EnumSet<Mineral> newRobotsToSkip = robotsToSkip == null ? EnumSet.noneOf(Mineral.class) : EnumSet.copyOf(robotsToSkip);
+            newRobotsToSkip.addAll(possibleRobots);
+            newStates.add(new SearchState(robots, minerals.add(robots), blueprint, newRobotsToSkip.isEmpty() ? null : newRobotsToSkip));
+        }
 
         return newStates;
     }
+    
+//    public int computeMaximumPossibleNumberOfGeodes(int numberOfStepsRemaining) {
+//
+//        int max = computeMinimumNumberOfGeodes(numberOfStepsRemaining);
+//        
+//        // Assume one additional robot per remaining turn so 0 + 1 + 2 + 3, etc
+//        if (numberOfStepsRemaining > 1) {
+//            max += (numberOfStepsRemaining * (numberOfStepsRemaining - 1)) / 2;
+//        }
+//        return max;
+//    }
+//
+//    private int computeMinimumNumberOfGeodes(int numberOfStepsRemaining) {
+//        // For sure: geode already produced plus production of geode robots
+//        return getQuantityForMineral(Mineral.GEODE) + numberOfStepsRemaining * robots.getQuantityForMineral(Mineral.GEODE);
+//    }
 }

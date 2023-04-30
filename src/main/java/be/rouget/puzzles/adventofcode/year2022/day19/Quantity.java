@@ -9,6 +9,10 @@ public record Quantity(int ore, int clay, int obsidian, int geode) {
     public Quantity inverse() {
         return new Quantity(-ore, -clay, -obsidian, -geode);
     }
+
+    public Quantity minus(Quantity other) {
+        return new Quantity(ore - other.ore, clay - other.clay, obsidian - other.obsidian, geode - other.geode);
+    }
     
     public boolean isNegative() {
         return ore < 0 || clay < 0 || obsidian < 0 || geode < 0;

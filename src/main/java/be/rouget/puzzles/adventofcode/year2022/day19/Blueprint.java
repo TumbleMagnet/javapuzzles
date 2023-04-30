@@ -15,11 +15,16 @@ public record Blueprint(int index, Quantity oreRobotCost, Quantity clayRobotCost
         };
     }
     
-    public boolean isOneAdditionalRobotUseful(Quantity robots, Mineral mineral) {
+    public boolean isOneAdditionalRobotUseful(Quantity robots, Mineral mineral, int numberOfStepsRemaining) {
         
         // Always useful to build a geode robot
         if (mineral == Mineral.GEODE) {
             return true;
+        }
+        
+        // Only produce an ORE robot is there is enough time to break-even
+        if (mineral == Mineral.ORE && numberOfStepsRemaining <= oreRobotCost.getQuantityForMineral(Mineral.ORE)) {
+            return false;
         }
         
         // Other minerals can only be used to build robots and we can only build one robot per turn.
@@ -47,10 +52,10 @@ public record Blueprint(int index, Quantity oreRobotCost, Quantity clayRobotCost
         Quantity geodeRobotQuantity1 = quantity(matcher.group(6));
         Quantity geodeRobotQuantity2 = quantity(matcher.group(7));
         return new Blueprint(index,
-                oreRobotQuantity.inverse(),
-                clayRobotQuantity.inverse(),
-                obsidianRobotQuantity1.add(obsidianRobotQuantity2).inverse(),
-                geodeRobotQuantity1.add(geodeRobotQuantity2).inverse()
+                oreRobotQuantity,
+                clayRobotQuantity,
+                obsidianRobotQuantity1.add(obsidianRobotQuantity2),
+                geodeRobotQuantity1.add(geodeRobotQuantity2)
         );
     }
     
