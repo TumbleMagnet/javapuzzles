@@ -1,7 +1,6 @@
 package be.rouget.puzzles.adventofcode.year2016.day18;
 
 import be.rouget.puzzles.adventofcode.util.map.MapCharacter;
-import be.rouget.puzzles.adventofcode.year2021.day25.CucumberMapSquare;
 
 import java.util.Arrays;
 

@@ -50,7 +50,7 @@ public class GearRatios {
             Position position = new Position(x, y);
             EngineCharacter currentChar = engineSchematics.getElementAt(position);
             if (currentChar.isDigit()) {
-                currentPart.addDigit(currentChar.mapChar(), position);
+                currentPart.addDigit(currentChar.getMapChar(), position);
             } else {
                 // Terminate possible part number
                 if (!currentPart.isEmpty()) {
@@ -83,7 +83,7 @@ public class GearRatios {
     
     public long computeResultForPart2() {
         return engineSchematics.getElements().stream()
-                .filter(entry -> entry.getValue().mapChar().equals("*"))
+                .filter(entry -> entry.getValue().getMapChar().equals("*"))
                 .map(Map.Entry::getKey)
                 .map(this::getAdjacentParts)
                 .filter(list -> list.size() == 2)

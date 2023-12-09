@@ -5,6 +5,11 @@ import org.apache.commons.lang3.StringUtils;
 
 public record EngineCharacter(String mapChar) implements MapCharacter {
 
+    @Override
+    public String getMapChar() {
+        return mapChar;
+    }
+
     public boolean isDigit() {
         return StringUtils.isNumeric(mapChar);
     }
