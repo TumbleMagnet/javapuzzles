@@ -65,7 +65,7 @@ public class HauntedWasteland {
                 .toList();
 
         // Assuming that the cycles are "aligned", the min number of steps is the LCM of the cycle lengths
-        return AocMathUtils.lcmOfList(steps.toArray(new Long[0]));
+        return AocMathUtils.lcmOfList(steps);
     }
     
     private String doStep(String current, Instruction instruction) {
