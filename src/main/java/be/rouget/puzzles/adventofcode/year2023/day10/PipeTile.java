@@ -5,6 +5,7 @@ import be.rouget.puzzles.adventofcode.util.map.MapCharacter;
 
 import java.util.Arrays;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import static be.rouget.puzzles.adventofcode.util.map.Direction.*;
 
@@ -27,13 +28,18 @@ public enum PipeTile implements MapCharacter {
         this.connections = connections;
     }
 
-    @Override
-    public String getMapChar() {
-        return mapChar;
+    public Set<Direction> getIntersectingDirections(Direction targetDirection) {
+        return connections.stream()
+                .filter(connection -> !connection.equals(targetDirection))
+                .filter(connection -> !connection.reverse().equals(targetDirection))
+                .collect(Collectors.toSet());
     }
 
-    public Set<Direction> getConnections() {
-        return connections;
+    public static PipeTile fromConnections(Set<Direction> targetConnections) {
+        return Arrays.stream(PipeTile.values())
+                .filter(title -> title.getConnections().equals(targetConnections))
+                .findFirst()
+                .orElseThrow(() -> new IllegalArgumentException("Cannot find tile for connections: " + targetConnections));
     }
     
     public static PipeTile parse(String mapChar) {
@@ -41,5 +47,14 @@ public enum PipeTile implements MapCharacter {
                 .filter(t -> t.getMapChar().equals(mapChar))
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Cannot find tile for character: " + mapChar));
+    }
+
+    @Override
+    public String getMapChar() {
+        return mapChar;
+    }
+    
+    public Set<Direction> getConnections() {
+        return connections;
     }
 }
