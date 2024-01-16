@@ -39,6 +39,10 @@ public class AocStringUtils {
         return paragraphs;
     }
 
+    public static List<String> readLines(String input) {
+        return Arrays.asList(input.split("\\R"));
+    }
+
     private AocStringUtils() {
     }
 }

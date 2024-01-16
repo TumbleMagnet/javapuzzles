@@ -1,9 +1,7 @@
 package be.rouget.puzzles.adventofcode.year2023.day10;
 
+import be.rouget.puzzles.adventofcode.util.AocStringUtils;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -64,11 +62,7 @@ class PipeMazeTest {
     }
 
     private static void solvePart2(String input, long expectedResult) {
-        PipeMaze solver = new PipeMaze(readLines(input));
+        PipeMaze solver = new PipeMaze(AocStringUtils.readLines(input));
         assertThat(solver.computeResultForPart2()).isEqualTo(expectedResult);
     }
-
-    private static List<String> readLines(String input) {
-        return Arrays.asList(input.split("\\R"));
-    } 
 }
