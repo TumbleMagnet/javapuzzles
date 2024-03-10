@@ -32,7 +32,7 @@ public record RunningDamagedSpringGroup(boolean inGroup, Integer groupIndex, int
         }
     }
 
-    public boolean isCompatibleWith(List<Integer> damagedSprings, List<SpringCondition> newRemainingSprings, int targetTotal) {
+    public boolean isCompatibleWith(List<Integer> damagedSprings) {
         if (groupIndex == null) {
             // Not seen any damaged spring yet
             return true;
@@ -53,25 +53,6 @@ public record RunningDamagedSpringGroup(boolean inGroup, Integer groupIndex, int
             return false;
         }
 
-        if (damagedCount > targetTotal) {
-            return false;
-        }
-        
-        // Try to detect that target is not possible based on total number of damaged springs in target
-        if (damagedCount + newRemainingSprings.size() < targetTotal) {
-            // Not possible to reach target number of damaged spring
-            return false;
-        }
-
-        // Too slow
-//        long maxRemainingPossible = newRemainingSprings.stream()
-//                .filter(sc -> sc != SpringCondition.OPERATIONAL)
-//                .count();
-//        if (damagedCount + maxRemainingPossible < targetTotal) {
-//            // Not possible to reach target number of damaged spring
-//            return false;
-//        }
-        
         // Looks ok
         return true;
     }
@@ -79,7 +60,7 @@ public record RunningDamagedSpringGroup(boolean inGroup, Integer groupIndex, int
     public boolean matchesExactly(List<Integer> damagedSprings) {
 
         if (groupIndex == null) {
-            return damagedSprings.size() == 0;
+            return damagedSprings.isEmpty();
         }
 
         if (groupIndex.intValue() + 1 != damagedSprings.size()) {

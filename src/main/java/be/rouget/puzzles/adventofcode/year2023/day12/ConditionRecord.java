@@ -1,15 +1,13 @@
 package be.rouget.puzzles.adventofcode.year2023.day12;
 
 import com.google.common.collect.Lists;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.google.common.collect.Maps;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 public record ConditionRecord(String springs, List<Integer> damagedSprings) {
-    private static final Logger LOG = LogManager.getLogger(ConditionRecord.class);
     
     public ConditionRecord {
         damagedSprings = List.copyOf(damagedSprings);
@@ -28,15 +26,16 @@ public record ConditionRecord(String springs, List<Integer> damagedSprings) {
 
     public long countValidArrangements() {
         List<SpringCondition> springConditions = SpringCondition.fromSpringConditions(springs);
-        int targetTotal = damagedSprings.stream()
-                .mapToInt(Integer::intValue)
-                .sum();
-        long result = countValidArrangements(RunningDamagedSpringGroup.emptyAtStart(), springConditions, targetTotal);
-        LOG.info("Found {} arrangements for sequence {} - {}", result, springs, StringUtils.join(damagedSprings, ","));
-        return result;
+        return countValidArrangements(Maps.newHashMap(), RunningDamagedSpringGroup.emptyAtStart(), springConditions);
     }
 
-    private long countValidArrangements(RunningDamagedSpringGroup runningDamagedGroup, List<SpringCondition> remainingSprings, int targetTotal) {
+    private long countValidArrangements(Map<SpringSearchState, Long> searchCache, RunningDamagedSpringGroup runningDamagedGroup, List<SpringCondition> remainingSprings) {
+
+        SpringSearchState searchKey = new SpringSearchState(runningDamagedGroup, remainingSprings);
+        Long possibleResult = searchCache.get(searchKey);
+        if (possibleResult != null) {
+            return possibleResult;
+        }
 
         if (remainingSprings.isEmpty()) {
             return runningDamagedGroup.matchesExactly(damagedSprings) ? 1L : 0L;
@@ -48,10 +47,12 @@ public record ConditionRecord(String springs, List<Integer> damagedSprings) {
         long validCount = 0;
         for (SpringCondition sc : currentSpring.getPossibleConditions()) {
             RunningDamagedSpringGroup newRunningDamagedGroup = runningDamagedGroup.addSpring(sc);
-            if (newRunningDamagedGroup.isCompatibleWith(damagedSprings, newRemainingSprings, targetTotal)) {
-                validCount += countValidArrangements(newRunningDamagedGroup, newRemainingSprings, targetTotal);
+            if (newRunningDamagedGroup.isCompatibleWith(damagedSprings)) {
+                validCount += countValidArrangements(searchCache, newRunningDamagedGroup, newRemainingSprings);
             }
         }
+
+        searchCache.put(searchKey, validCount);
         return validCount;
     }
 
