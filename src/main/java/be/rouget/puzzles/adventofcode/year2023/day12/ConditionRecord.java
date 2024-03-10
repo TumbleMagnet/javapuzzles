@@ -37,6 +37,10 @@ public record ConditionRecord(String springs, List<Integer> damagedSprings) {
             return possibleResult;
         }
 
+        if (!runningDamagedGroup.isCompatibleWith(damagedSprings)) {
+            return 0L;
+        }
+        
         if (remainingSprings.isEmpty()) {
             return runningDamagedGroup.matchesExactly(damagedSprings) ? 1L : 0L;
         }
@@ -47,9 +51,7 @@ public record ConditionRecord(String springs, List<Integer> damagedSprings) {
         long validCount = 0;
         for (SpringCondition sc : currentSpring.getPossibleConditions()) {
             RunningDamagedSpringGroup newRunningDamagedGroup = runningDamagedGroup.addSpring(sc);
-            if (newRunningDamagedGroup.isCompatibleWith(damagedSprings)) {
-                validCount += countValidArrangements(searchCache, newRunningDamagedGroup, newRemainingSprings);
-            }
+            validCount += countValidArrangements(searchCache, newRunningDamagedGroup, newRemainingSprings);
         }
 
         searchCache.put(searchKey, validCount);

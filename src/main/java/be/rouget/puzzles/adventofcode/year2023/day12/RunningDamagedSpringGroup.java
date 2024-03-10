@@ -63,10 +63,10 @@ public record RunningDamagedSpringGroup(boolean inGroup, Integer groupIndex, int
             return damagedSprings.isEmpty();
         }
 
-        if (groupIndex.intValue() + 1 != damagedSprings.size()) {
+        if (groupIndex + 1 != damagedSprings.size()) {
             return false;
         }
 
-        return groupLength == damagedSprings.get(groupIndex.intValue()).intValue();
+        return groupLength == damagedSprings.get(groupIndex);
     }
 }
