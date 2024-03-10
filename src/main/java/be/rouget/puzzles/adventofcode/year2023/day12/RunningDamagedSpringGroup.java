@@ -39,17 +39,17 @@ public record RunningDamagedSpringGroup(boolean inGroup, Integer groupIndex, int
         }
 
         // Validate that we do not have too many groups
-        if (groupIndex.intValue() >= damagedSprings.size()) {
+        if (groupIndex >= damagedSprings.size()) {
             return false;
         }
 
         // Validate that size of current group does not exceed the target size for that group
-        if (inGroup && groupLength > damagedSprings.get(groupIndex.intValue()).intValue()) {
+        if (inGroup && groupLength > damagedSprings.get(groupIndex)) {
             return false;
         }
         
         // Validate that size of previous group does not exceed target
-        if (!inGroup && groupLength != damagedSprings.get(groupIndex.intValue()).intValue()) {
+        if (!inGroup && groupLength != damagedSprings.get(groupIndex)) {
             return false;
         }
 
