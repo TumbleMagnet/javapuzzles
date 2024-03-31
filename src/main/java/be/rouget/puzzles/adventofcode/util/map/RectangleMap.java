@@ -8,7 +8,6 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class RectangleMap<E extends MapCharacter> {
 
@@ -82,12 +81,12 @@ public class RectangleMap<E extends MapCharacter> {
 
     public List<Position> enumerateNeighbourPositions(Position position) {
         if (!isPositionInMap(position)) {
-            throw new IllegalArgumentException("Position " + position.toString() + " is not in map!");
+            throw new IllegalArgumentException("Position " + position + " is not in map!");
         }
 
         return position.enumerateNeighbours().stream()
-                .filter(neighbour -> isPositionInMap(neighbour))
-                .collect(Collectors.toList());
+                .filter(this::isPositionInMap)
+                .toList();
     }
 
     public String toString() {
