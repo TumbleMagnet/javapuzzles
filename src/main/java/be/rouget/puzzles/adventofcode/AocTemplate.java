@@ -26,7 +26,7 @@ public class AocTemplate {
     public long computeResultForPart1() {
         return -1;
     }
-    
+
     public long computeResultForPart2() {
         return -1;
     }
