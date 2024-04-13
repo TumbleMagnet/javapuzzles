@@ -1,15 +1,15 @@
 package be.rouget.puzzles.adventofcode.year2019;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static be.rouget.puzzles.adventofcode.year2019.AoC2019Day25.Item.*;
 import static be.rouget.puzzles.adventofcode.year2019.AoC2019Day25.Item;
 
-public class AoC2019Day25Test {
+class AoC2019Day25Test {
 
     @Test
-    public void testCombinationList() {
+    void testCombinationList() {
         testCombination(0);
         testCombination(1, JAM);
         testCombination(2, LOOM);

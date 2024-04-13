@@ -1,16 +1,16 @@
 package be.rouget.puzzles.adventofcode.year2019;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static be.rouget.puzzles.adventofcode.year2019.AoC2019Day22.*;
 
-public class AoC2019Day22Test {
+class AoC2019Day22Test {
 
     @Test
-    public void testDealIntoNewStack() {
+    void testDealIntoNewStack() {
         Deck deck = createTestDeck();
         deck.shuffle(new ShuffleInstruction(ShuffleType.DEAL_INTO_NEW_STACK, null));
         assertThat(deck.getCards()).containsExactly(9, 8, 7, 6, 5, 4, 3, 2, 1, 0);
@@ -21,28 +21,28 @@ public class AoC2019Day22Test {
     }
 
     @Test
-    public void testPositiveCut() {
+    void testPositiveCut() {
         Deck deck = createTestDeck();
         deck.shuffle(new ShuffleInstruction(ShuffleType.CUT, 3));
         assertThat(deck.getCards()).containsExactly(3, 4, 5, 6, 7, 8, 9, 0, 1, 2);
     }
 
     @Test
-    public void testNegativeCut() {
+    void testNegativeCut() {
         Deck deck = createTestDeck();
         deck.shuffle(new ShuffleInstruction(ShuffleType.CUT, -4));
         assertThat(deck.getCards()).containsExactly(6, 7, 8, 9, 0, 1, 2, 3, 4, 5);
     }
 
     @Test
-    public void testDealWithIncrement() {
+    void testDealWithIncrement() {
         Deck deck = createTestDeck();
         deck.shuffle(new ShuffleInstruction(ShuffleType.DEAL_WITH_INCREMENT, 3));
         assertThat(deck.getCards()).containsExactly(0, 7, 4, 1, 8, 5, 2, 9, 6, 3);
     }
 
     @Test
-    public void testCase1() {
+    void testCase1() {
         Deck deck = createTestDeck();
         deck.shuffle(new ShuffleInstruction(ShuffleType.DEAL_WITH_INCREMENT, 7));
         deck.shuffle(new ShuffleInstruction(ShuffleType.DEAL_INTO_NEW_STACK, null));
@@ -51,7 +51,7 @@ public class AoC2019Day22Test {
     }
 
     @Test
-    public void testCase2() {
+    void testCase2() {
         Deck deck = createTestDeck();
         deck.shuffle(new ShuffleInstruction(ShuffleType.CUT, 6));
         deck.shuffle(new ShuffleInstruction(ShuffleType.DEAL_WITH_INCREMENT, 7));
@@ -60,7 +60,7 @@ public class AoC2019Day22Test {
     }
 
     @Test
-    public void testCase3() {
+    void testCase3() {
         Deck deck = createTestDeck();
         String[] lines = new String[] {
                 "deal with increment 7",
@@ -72,7 +72,7 @@ public class AoC2019Day22Test {
     }
 
     @Test
-    public void testCase4() {
+    void testCase4() {
         Deck deck = createTestDeck();
         String[] lines = new String[] {
                 "deal into new stack",

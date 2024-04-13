@@ -1,8 +1,7 @@
 package be.rouget.puzzles.adventofcode.year2019.computer;
 
 import org.apache.commons.lang3.StringUtils;
-import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -10,10 +9,10 @@ import java.util.List;
 import static be.rouget.puzzles.adventofcode.util.ResourceUtils.readIntoString;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ComputerTest {
+class ComputerTest {
 
     @Test
-    public void testAdd() {
+    void testAdd() {
         new TestRun()
                 .withProgram("1,0,0,0,99")
                 .run()
@@ -21,7 +20,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testMultiply() {
+    void testMultiply() {
         new TestRun()
                 .withProgram("2,3,0,3,99")
                 .run()
@@ -29,7 +28,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testMultiply2() {
+    void testMultiply2() {
         new TestRun()
                 .withProgram("2,4,4,5,99,0")
                 .run()
@@ -37,7 +36,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testMultiply3() {
+    void testMultiply3() {
         new TestRun()
                 .withProgram("1002,4,3,4,33")
                 .run()
@@ -45,7 +44,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testJumpIfTrue() {
+    void testJumpIfTrue() {
         new TestRun()
                 .withProgram("1105,1,4,99,104,123,99")
                 .run()
@@ -76,7 +75,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testJumpIfFalse() {
+    void testJumpIfFalse() {
         new TestRun()
                 .withProgram("1106,0,4,99,104,123,99")
                 .run()
@@ -107,7 +106,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testLessThan() {
+    void testLessThan() {
 
         new TestRun()
                 .withProgram("1107,2,3,7,04,7,99,-1")
@@ -129,7 +128,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testEquals() {
+    void testEquals() {
 
         new TestRun()
                 .withProgram("1108,2,3,7,04,7,99,-1")
@@ -152,7 +151,7 @@ public class ComputerTest {
 
 
     @Test
-    public void testProgram1() {
+    void testProgram1() {
         new TestRun()
                 .withProgram("1,9,10,3,2,3,11,0,99,30,40,50")
                 .run()
@@ -160,7 +159,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testProgram2() {
+    void testProgram2() {
         new TestRun()
                 .withProgram("1,1,1,4,99,5,6,0,99")
                 .run()
@@ -168,7 +167,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testProgram3() {
+    void testProgram3() {
         new TestRun()
                 .withProgram("1101,100,-1,4,0")
                 .run()
@@ -176,7 +175,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testProgram4() {
+    void testProgram4() {
         validateIsEightProgram("3,9,8,9,10,9,4,9,99,-1,8");
         validateIsEightProgram("3,3,1108,-1,8,3,4,3,99");
         validateIsLessThanEightProgram("3,9,7,9,10,9,4,9,99,-1,8");
@@ -184,7 +183,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testProgram5() {
+    void testProgram5() {
         validateIsNonZeroProgram("3,12,6,12,15,1,13,14,13,4,13,99,-1,0,1,9");
         validateIsNonZeroProgram("3,12,6,12,15,1,13,14,13,4,13,99,-1,0,1,9");
     }
@@ -195,7 +194,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testProgram6() {
+    void testProgram6() {
         String program = "3,21,1008,21,8,20,1005,20,22,107,8,21,20,1006,20,31,1106,0,36,98,0,0,1002,21,125,20,4,20,1105,1,46,104,999,1105,1,46,1101,1000,1,20,4,20,1105,1,46,98,99";
         validateOutput(program, "5", "999");
         validateOutput(program, "8", "1000");
@@ -224,7 +223,7 @@ public class ComputerTest {
 
 
     @Test
-    public void testProgramDay2() {
+    void testProgramDay2() {
         String input = readIntoString("aoc_2019_day02_input.txt");
         Computer computer = new Computer(input);
         computer.setMemoryAtPosition(1, 60);
@@ -234,7 +233,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testProgramDay5Part1() {
+    void testProgramDay5Part1() {
         new TestRun()
                 .withProgram(readIntoString("aoc_2019_day05_input.txt"))
                 .withInput("1")
@@ -243,7 +242,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testInteractiveRun() {
+    void testInteractiveRun() {
 
         String program = "3,21,1008,21,8,20,1005,20,22,107,8,21,20,1006,20,31,1106,0,36,98,0,0,1002,21,125,20,4,20,1105,1,46,104,999,1105,1,46,1101,1000,1,20,4,20,1105,1,46,98,99";
 
@@ -256,7 +255,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testRelativeParameter() {
+    void testRelativeParameter() {
         new TestRun()
                 .withProgram("109,1,204,-1,1001,100,1,100,1008,100,16,101,1006,101,0,99")
                 .run()
@@ -264,7 +263,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testLargeNumber1() {
+    void testLargeNumber1() {
         new TestRun()
                 .withProgram("1102,34915192,34915192,7,4,7,99,0")
                 .run()
@@ -272,7 +271,7 @@ public class ComputerTest {
     }
 
     @Test
-    public void testLargeNumber2() {
+    void testLargeNumber2() {
         new TestRun()
                 .withProgram("104,1125899906842624,99")
                 .run()

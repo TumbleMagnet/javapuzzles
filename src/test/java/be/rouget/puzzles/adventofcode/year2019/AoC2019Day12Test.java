@@ -4,15 +4,14 @@ import be.rouget.puzzles.adventofcode.year2019.AoC2019Day12.Moon;
 import be.rouget.puzzles.adventofcode.year2019.AoC2019Day12.Position;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
-
-public class AoC2019Day12Test {
+class AoC2019Day12Test {
 
     private static Logger LOG = LogManager.getLogger(AoC2019Day12Test.class);
+    
     @Test
-    public void simulateStep() {
+    void simulateStep() {
         Moon[] moons = new Moon[] {
                 new Moon(new Position(-8, -10, 0)),
                 new Moon(new Position(5, 5, 10)),

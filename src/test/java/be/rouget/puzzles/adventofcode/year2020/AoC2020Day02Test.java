@@ -1,14 +1,14 @@
 package be.rouget.puzzles.adventofcode.year2020;
 
 import be.rouget.puzzles.adventofcode.year2020.day2.AoC2020Day02;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class AoC2020Day02Test {
+class AoC2020Day02Test {
 
     @Test
-    public void testFromInput() {
+    void testFromInput() {
         AoC2020Day02.Password password = AoC2020Day02.Password.fromInput("1-3 a: abcde");
         assertThat(password.getValue()).isEqualTo("abcde");
         assertThat(password.getRule().getCharacter()).isEqualTo("a");
@@ -17,7 +17,7 @@ public class AoC2020Day02Test {
     }
 
     @Test
-    public void testIsValid() {
+    void testIsValid() {
         validate(1, 3, "a", "abcde", true);
         validate(1, 3, "b", "cdefg", false);
         validate(2, 9, "c", "ccccccccc", true);

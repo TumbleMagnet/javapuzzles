@@ -1,15 +1,15 @@
 package be.rouget.puzzles.adventofcode.year2015;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static be.rouget.puzzles.adventofcode.year2015.day1to5.AdventOfCode2015Day01.computeIndexOfFirstBasement;
 import static be.rouget.puzzles.adventofcode.year2015.day1to5.AdventOfCode2015Day01.computeTargetFloor;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class AdventOfCode2015Day01Test {
+class AdventOfCode2015Day01Test {
 
     @Test
-    public void testComputeTargetFloor() {
+    void testComputeTargetFloor() {
         testFloor("(())", 0);
         testFloor("()()", 0);
         testFloor("(((", 3);
@@ -22,7 +22,7 @@ public class AdventOfCode2015Day01Test {
     }
 
     @Test
-    public void testComputeIndexOfFirstBasement() {
+    void testComputeIndexOfFirstBasement() {
         testIndex(")", 1);
         testIndex("()()))))", 5);
     }
