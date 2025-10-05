@@ -20,6 +20,7 @@ class GuardGallivantTest {
     @Test
     void computeResultForPart2() {
         GuardGallivant solver = new GuardGallivant(TEST_INPUT);
-        assertThat(solver.computeResultForPart2()).isEqualTo(-1L);
+        solver.computeResultForPart1(); // Part 2 needs result from part 1
+        assertThat(solver.computeResultForPart2()).isEqualTo(6L);
     }
 }

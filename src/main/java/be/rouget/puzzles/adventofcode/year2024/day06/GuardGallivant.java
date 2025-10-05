@@ -20,6 +20,8 @@ public class GuardGallivant {
     private final RectangleMap<LabChar> labMap;
     private final GuardPosition startPosition;
 
+    private Set<Position> guardPositionsFromStep1;
+
     @SuppressWarnings("java:S2629")
     public static void main(String[] args) {
         List<String> input = SolverUtils.readInput(GuardGallivant.class);
@@ -33,6 +35,7 @@ public class GuardGallivant {
 
         // Parse input into map of laboratory
         labMap = new RectangleMap<>(input, LabChar::parse);
+        LOG.info("Lab dimensions: {} x {}", labMap.getWidth(), labMap.getHeight());
 
         // Compute start position of guard
         Position startLocation = labMap.getElements().stream()
@@ -41,6 +44,7 @@ public class GuardGallivant {
                 .findFirst()
                 .orElseThrow();
         startPosition = new GuardPosition(startLocation, Direction.UP);
+        LOG.info("Start position: {}", startPosition);
     }
 
     public long computeResultForPart1() {
@@ -50,29 +54,66 @@ public class GuardGallivant {
         Set<Position> uniqueLocations = Sets.newHashSet();
         while (labMap.isPositionInMap(guardPosition.position())) {
             uniqueLocations.add(guardPosition.position());
-            guardPosition = nextPosition(guardPosition);
+            guardPosition = moveGuard(labMap, guardPosition);
         }
 
         // Answer is the number of unique locations
+        guardPositionsFromStep1 = uniqueLocations;
         return uniqueLocations.size();
     }
 
-    private GuardPosition nextPosition(GuardPosition currentPosition) {
+    private static GuardPosition moveGuard(RectangleMap<LabChar> map, GuardPosition currentPosition) {
         GuardPosition newPosition = currentPosition.advanceOneStep();
-        if (!labMap.isPositionInMap(newPosition.position())) {
+        if (!map.isPositionInMap(newPosition.position())) {
             // No obstacles outside the map
             return newPosition;
         }
-        LabChar targetElement = labMap.getElementAt(newPosition.position());
+        LabChar targetElement = map.getElementAt(newPosition.position());
         if (!LabChar.OBSTACLE.equals(targetElement)) {
             // No obstacle, move freely
             return newPosition;
         }
         // Rotate right and try advancing again
-        return nextPosition(currentPosition.rotateRight());
+        return moveGuard(map, currentPosition.rotateRight());
     }
 
     public long computeResultForPart2() {
-        return -1;
+
+        // For every free space reached by the guard in step 1 (excluding the start location):
+        // - build a new map by adding an obstacle at that position
+        // - test whether this new map would cause the guard to be caught in a cycle (by moving the guard until he either
+        //   walks out of the map or ends up in a past position)
+        // - Return the number of maps which caused cycles
+        List<Position> freeSpaces = guardPositionsFromStep1.stream()
+                .filter(p -> labMap.getElementAt(p).equals(LabChar.FREE_SPACE))
+                .toList();
+        LOG.info("{} candidate free spaces for adding an obstacle", freeSpaces.size());
+        return freeSpaces.stream()
+                .map(freeSpace -> cloneAndAddObstacle(labMap, freeSpace))
+                .filter(candidateMap -> isACycleMap(candidateMap, startPosition))
+                .count();
+    }
+
+    private static boolean isACycleMap(RectangleMap<LabChar> map, GuardPosition startPosition) {
+        GuardPosition guardPosition = startPosition;
+        Set<GuardPosition> pastPositions = Sets.newHashSet(startPosition);
+        while (true) {
+            guardPosition = moveGuard(map, guardPosition);
+            if (!map.isPositionInMap(guardPosition.position())) {
+                // guard got out of the map, not a cycle
+                return false;
+            }
+            if (pastPositions.contains(guardPosition)) {
+                // guard came back to a past position + direction, so a cycle was detected
+                return true;
+            }
+            pastPositions.add(guardPosition);
+        }
+    }
+
+    private RectangleMap<LabChar> cloneAndAddObstacle(RectangleMap<LabChar> originalMap, Position freeSpace) {
+        RectangleMap<LabChar> newMap = new RectangleMap<>(originalMap);
+        newMap.setElementAt(freeSpace, LabChar.OBSTACLE);
+        return newMap;
     }
 }
