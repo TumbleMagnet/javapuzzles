@@ -89,31 +89,32 @@ public class GuardGallivant {
                 .toList();
         LOG.info("{} candidate free spaces for adding an obstacle", freeSpaces.size());
         return freeSpaces.stream()
-                .map(freeSpace -> cloneAndAddObstacle(labMap, freeSpace))
-                .filter(candidateMap -> isACycleMap(candidateMap, startPosition))
+                .filter(this::isACycleMap)
                 .count();
     }
 
-    private static boolean isACycleMap(RectangleMap<LabChar> map, GuardPosition startPosition) {
+    private boolean isACycleMap(Position newObstacle) {
+
+        // Modify map by adding the new obstacle
+        labMap.setElementAt(newObstacle, LabChar.OBSTACLE);
+
         GuardPosition guardPosition = startPosition;
         Set<GuardPosition> pastPositions = Sets.newHashSet(startPosition);
         while (true) {
-            guardPosition = moveGuard(map, guardPosition);
-            if (!map.isPositionInMap(guardPosition.position())) {
-                // guard got out of the map, not a cycle
+            guardPosition = moveGuard(labMap, guardPosition);
+            if (!labMap.isPositionInMap(guardPosition.position())) {
+                // Guard got out of the map, not a cycle
+                // Restore the map and return false
+                labMap.setElementAt(newObstacle, LabChar.FREE_SPACE);
                 return false;
             }
             if (pastPositions.contains(guardPosition)) {
-                // guard came back to a past position + direction, so a cycle was detected
+                // Guard came back to a past position + direction, so a cycle was detected
+                // Restore the map and return false
+                labMap.setElementAt(newObstacle, LabChar.FREE_SPACE);
                 return true;
             }
             pastPositions.add(guardPosition);
         }
-    }
-
-    private RectangleMap<LabChar> cloneAndAddObstacle(RectangleMap<LabChar> originalMap, Position freeSpace) {
-        RectangleMap<LabChar> newMap = new RectangleMap<>(originalMap);
-        newMap.setElementAt(freeSpace, LabChar.OBSTACLE);
-        return newMap;
     }
 }
