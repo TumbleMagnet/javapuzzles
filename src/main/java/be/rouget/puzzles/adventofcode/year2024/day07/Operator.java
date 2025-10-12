@@ -9,7 +9,7 @@ public enum Operator {
         return switch (this) {
             case ADD -> leftValue + rightValue;
             case MULTIPLY -> leftValue * rightValue;
-            case CONCATENATE -> Long.parseLong(leftValue + String.valueOf(rightValue));
+            case CONCATENATE -> Long.parseLong(String.valueOf(leftValue) + String.valueOf(rightValue));
         };
     }
 }
