@@ -20,6 +20,6 @@ class BridgeRepairTest {
     @Test
     void computeResultForPart2() {
         BridgeRepair solver = new BridgeRepair(TEST_INPUT);
-        assertThat(solver.computeResultForPart2()).isEqualTo(0L);
+        assertThat(solver.computeResultForPart2()).isEqualTo(11387L);
     }
 }

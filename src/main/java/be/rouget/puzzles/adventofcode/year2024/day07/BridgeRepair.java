@@ -7,6 +7,8 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
+import static be.rouget.puzzles.adventofcode.year2024.day07.Operator.*;
+
 public class BridgeRepair {
 
     private static final Logger LOG = LogManager.getLogger(BridgeRepair.class);
@@ -28,19 +30,27 @@ public class BridgeRepair {
     }
 
     public long computeResultForPart1() {
+        return sumOfValidEquations(List.of(ADD, MULTIPLY));
+    }
+
+    public long computeResultForPart2() {
+        return sumOfValidEquations(List.of(ADD, MULTIPLY, CONCATENATE));
+    }
+
+    private long sumOfValidEquations(List<Operator> operators) {
         return equations.stream()
-                .filter(BridgeRepair::isTrue)
+                .filter(equation -> isTrue(equation, operators))
                 .mapToLong(CalibrationEquation::result)
                 .sum();
     }
 
-    private static boolean isTrue(CalibrationEquation equation) {
+    private static boolean isTrue(CalibrationEquation equation, List<Operator> operators) {
         Long firstValue = equation.values().getFirst();
         List<Long> remainingValues = cloneAndRemoveFirstElement(equation.values());
-        return isTrue(equation.result(), firstValue, remainingValues);
+        return isTrue(equation.result(), firstValue, remainingValues, operators);
     }
 
-    private static boolean isTrue(long expectedResult, long currentValue, List<Long> remainingValues) {
+    private static boolean isTrue(long expectedResult, long currentValue, List<Long> remainingValues, List<Operator> operators) {
         if (remainingValues.isEmpty()) {
             // Compare final value to expected result
             return expectedResult == currentValue;
@@ -53,9 +63,9 @@ public class BridgeRepair {
         // Validate recursively by trying different operators
         long nextValue = remainingValues.getFirst();
         List<Long> newRemainingValues = cloneAndRemoveFirstElement(remainingValues);
-        for (Operator operator : Operator.values()) {
+        for (Operator operator : operators) {
             long newCurrentValue = operator.evaluate(currentValue, nextValue);
-            if (isTrue(expectedResult, newCurrentValue, newRemainingValues)) {
+            if (isTrue(expectedResult, newCurrentValue, newRemainingValues, operators)) {
                 return true;
             }
         }
@@ -68,9 +78,5 @@ public class BridgeRepair {
         List<Long> result = Lists.newArrayList(original);
         result.removeFirst();
         return result;
-    }
-
-    public long computeResultForPart2() {
-        return -1;
     }
 }
