@@ -11,6 +11,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.BiFunction;
 import java.util.stream.Collectors;
 
 
@@ -33,7 +34,10 @@ public class ResonantCollinearity {
     }
 
     public long computeResultForPart1() {
+        return solve(this::computeAntinode);
+    }
 
+    private long solve(BiFunction<Position, Position, Set<Position>> antinodeFunction) {
         // Positions of antinodes
         Set<Position> antinodes = Sets.newHashSet();
 
@@ -45,20 +49,13 @@ public class ResonantCollinearity {
         // For each type of antenna, for each pair of antenna, generate the antinode
         for (Map.Entry<MapItem, List<Position>> entry : antennaPositions.entrySet()) {
             List<Position> positions = entry.getValue();
-            LOG.info("Found {} antennas of type {}", positions.size(), entry.getKey().value());
             if (positions.size() > 1) {
                 for (int i = 0; i < positions.size() - 1; i++) {
                     for (int j = i + 1; j < positions.size(); j++) {
                         Position first = positions.get(i);
                         Position second = positions.get(j);
-                        Position antinode1 = symmetricOf(first, second);
-                        if (antennaMap.isPositionInMap(antinode1)) {
-                            antinodes.add(antinode1);
-                        }
-                        Position antinode2 = symmetricOf(second, first);
-                        if (antennaMap.isPositionInMap(antinode2)) {
-                            antinodes.add(antinode2);
-                        }
+                        antinodes.addAll(antinodeFunction.apply(first, second));
+                        antinodes.addAll(antinodeFunction.apply(second, first));
                     }
                 }
             }
@@ -67,14 +64,35 @@ public class ResonantCollinearity {
         return antinodes.size();
     }
 
-    private Position symmetricOf(Position first, Position second) {
+    // For part 1, we consider only the antinode which is a mirror of second from first
+    private Set<Position> computeAntinode(Position first, Position second) {
+        Set<Position> antinodes = Sets.newHashSet();
         int deltaX = first.getX() - second.getX();
         int deltaY = first.getY() - second.getY();
-        return new Position(first.getX() + deltaX, first.getY() + deltaY);
+        Position antinode = new Position(first.getX() + deltaX, first.getY() + deltaY);
+        if (antennaMap.isPositionInMap(antinode)) {
+            antinodes.add(antinode);
+        }
+        return antinodes;
     }
 
     public long computeResultForPart2() {
-        return -1;
+        return solve(this::computeAntiNodesWithHarmonics);
+    }
+
+    // For part 2, we consider alls the antinodes aligned with second, starting from (and including) first
+    private Set<Position> computeAntiNodesWithHarmonics(Position source, Position other) {
+        Set<Position> antinodes = Sets.newHashSet();
+
+        int deltaX = source.getX() - other.getX();
+        int deltaY = source.getY() - other.getY();
+
+        Position current = source;
+        while (antennaMap.isPositionInMap(current)) {
+            antinodes.add(current);
+            current = new Position(current.getX() + deltaX, current.getY() + deltaY);
+        }
+        return antinodes;
     }
 
     public record MapItem(String value) implements MapCharacter {
@@ -83,12 +101,8 @@ public class ResonantCollinearity {
             return value;
         }
 
-        public boolean isEmpty() {
-            return ".".equals(value);
-        }
-
         public boolean isAnAntenna() {
-            return !isEmpty();
+            return !".".equals(value);
         }
     }
 }

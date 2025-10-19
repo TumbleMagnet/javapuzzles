@@ -20,6 +20,6 @@ class ResonantCollinearityTest {
     @Test
     void computeResultForPart2() {
         ResonantCollinearity solver = new ResonantCollinearity(TEST_INPUT);
-        assertThat(solver.computeResultForPart2()).isEqualTo(0L);
+        assertThat(solver.computeResultForPart2()).isEqualTo(34L);
     }
 }
