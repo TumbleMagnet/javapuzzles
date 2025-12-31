@@ -11,8 +11,8 @@ public class AocTemplate {
 
     private static final Logger LOG = LogManager.getLogger(AocTemplate.class);
 
-    @SuppressWarnings("java:S2629")
-    public static void main(String[] args) {
+    @SuppressWarnings("java:S2629") // OK to compute results when logging
+    static void main() {
         List<String> input = SolverUtils.readInput(AocTemplate.class);
         AocTemplate aoc = new AocTemplate(input);
         LOG.info("Result for part 1 is: {}", aoc.computeResultForPart1());

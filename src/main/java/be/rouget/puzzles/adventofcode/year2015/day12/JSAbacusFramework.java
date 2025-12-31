@@ -9,13 +9,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
-import java.util.stream.StreamSupport;
 
 public class JSAbacusFramework {
 
@@ -57,7 +54,7 @@ public class JSAbacusFramework {
             return false;
         }
 
-        for (Map.Entry<String, JsonNode> fieldEntry : Lists.newArrayList(node.fields()))
+        for (Map.Entry<String, JsonNode> fieldEntry : Lists.newArrayList(node.properties()))
         {
             JsonNode fieldNode = fieldEntry.getValue();
             if (fieldNode.isValueNode() && fieldNode.isTextual() && "red".equals(fieldNode.asText())) {
@@ -74,7 +71,7 @@ public class JSAbacusFramework {
         }
         consumer.accept(node);
         if (node.isObject()) {
-            Streams.stream(node.fields()).forEach(fieldEntry ->  walkJsonTree(fieldEntry.getValue(), filter, consumer));
+            node.properties().forEach(fieldEntry ->  walkJsonTree(fieldEntry.getValue(), filter, consumer));
         } else if (node.isArray()) {
             Streams.stream(node.elements()).forEach(arrayNode -> walkJsonTree(arrayNode, filter, consumer));
         }
