@@ -47,14 +47,14 @@ public class WarehouseWoes {
     }
 
     public long computeResultForPart1() {
-
-        // Move the robot and compute result
         Warehouse warehouse = new Warehouse(startingMap);
         commands.forEach(warehouse::moveRobot);
         return warehouse.computeSumOfBoxGpsCoordinates();
     }
 
     public long computeResultForPart2() {
-        return -1;
+        WideWarehouse warehouse = new WideWarehouse(startingMap);
+        commands.forEach(warehouse::moveRobot);
+        return warehouse.computeSumOfBoxGpsCoordinates();
     }
 }

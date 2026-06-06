@@ -16,4 +16,29 @@ class WarehouseWoesTest {
         WarehouseWoes solver = new WarehouseWoes(TEST_INPUT);
         assertThat(solver.computeResultForPart1()).isEqualTo(10092L);
     }
+
+    @Test
+    void computeResultForPart2Small() {
+
+        List<String> smallInputPart2 = """
+            #######
+            #...#.#
+            #.....#
+            #..OO@#
+            #..O..#
+            #.....#
+            #######
+            
+            <vv<<^^<<^^
+            """.lines().toList();
+
+        WarehouseWoes solver = new WarehouseWoes(smallInputPart2);
+        solver.computeResultForPart2();
+    }
+
+    @Test
+    void computeResultForPart2() {
+        WarehouseWoes solver = new WarehouseWoes(TEST_INPUT);
+        assertThat(solver.computeResultForPart2()).isEqualTo(9021L);
+    }
 }
